@@ -32,6 +32,7 @@ size_based_auto_wrap_policy,
 enable_wrap,
 wrap,
 )
+os.environ["WANDB_START_METHOD"] = "thread"
 
 def setup(rank, world_size):
     os.environ['MASTER_ADDR'] = 'localhost'
@@ -45,18 +46,18 @@ def cleanup():
 
 class QuestionEmbedding(nn.Module):
     """
-    A question embedding module using GRU for text encoding.
+    A question embedding module using LSTM for text encoding.
     """
     def __init__(self, word_embedding_size, hidden_size):
         super(QuestionEmbedding, self).__init__()
-        self.gru = nn.GRU(word_embedding_size, hidden_size, num_layers=1, batch_first=True)
+        self.lstm = nn.LSTM(word_embedding_size, hidden_size, num_layers=1, batch_first=True)
         self.fc = nn.Linear(hidden_size, 1024)
 
     def forward(self, input_data):
-        output, hidden = self.gru(input_data)
-        last_hidden = hidden.squeeze(0)
+        output, (hidden, _) = self.lstm(input_data)
+        last_hidden = hidden[-1]  # Get the last layer's hidden state
         embedding = self.fc(last_hidden)
-        return embedding    
+        return embedding
 
 class Net(nn.Module):
     """
@@ -66,6 +67,7 @@ class Net(nn.Module):
         super(Net, self).__init__()
         self.word_embeddings = nn.Embedding(question_vocab_size, 300)
         if args.use_glove:
+            print(pretrain_embedding)
             self.word_embeddings.weight.data.copy_(torch.from_numpy(pretrain_embedding))
         self.question_encoder = QuestionEmbedding(
             word_embedding_size=300,
@@ -170,9 +172,10 @@ def fsdp_main(rank, world_size, args):
     setup(rank, world_size)
     wandb.init(
             project="Question Type",
-            group="GRU",
-            name= f"GRU {rank}",
-            config=args
+            group="LSTM+GLOVE",
+            name= f"LSTM+GLOVE {rank}",
+            config=args,
+            dir="/home/ndhuynh/github/Question-Analysis/wandb"
             )
 
     dataset1 = QuestionDataset(args, "train")
@@ -183,7 +186,7 @@ def fsdp_main(rank, world_size, args):
 
     train_kwargs = {'batch_size': args.batch_size, 'sampler': sampler1}
     test_kwargs = {'batch_size': args.test_batch_size, 'sampler': sampler2}
-    cuda_kwargs = {'num_workers': 2,
+    cuda_kwargs = {'num_workers': 16,
                     'pin_memory': True,
                     'shuffle': False}
     train_kwargs.update(cuda_kwargs)
@@ -201,9 +204,11 @@ def fsdp_main(rank, world_size, args):
 
     model = Net(question_vocab_size = dataset1.token_size, pretrain_embedding = dataset1.pretrained_emb, args = args).to(rank)
 
+    # model = FSDP(model,
+    #             auto_wrap_policy=my_auto_wrap_policy,
+    #             cpu_offload=CPUOffload(offload_params=True))
     model = FSDP(model,
-                auto_wrap_policy=my_auto_wrap_policy,
-                cpu_offload=CPUOffload(offload_params=True))
+            auto_wrap_policy=my_auto_wrap_policy)
     if rank == 0:
         print(f"{model}")
 
@@ -286,11 +291,11 @@ def fsdp_main(rank, world_size, args):
 if __name__ == '__main__':
     # Training settings
     parser = argparse.ArgumentParser(description='PyTorch MNIST Example')
-    parser.add_argument('--batch-size', type=int, default=512, metavar='N',
+    parser.add_argument('--batch-size', type=int, default=2048, metavar='N',
                         help='input batch size for training (default: 64)')
     parser.add_argument('--test-batch-size', type=int, default=1000, metavar='N',
                         help='input batch size for testing (default: 1000)')
-    parser.add_argument('--epochs', type=int, default=2, metavar='N',
+    parser.add_argument('--epochs', type=int, default=50, metavar='N',
                         help='number of epochs to train (default: 14)')
     parser.add_argument('--lr', type=float, default=0.00001, metavar='LR',
                         help='learning rate (default: 1.0)')
