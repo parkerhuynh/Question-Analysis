@@ -1,7 +1,7 @@
 ## Training:
 question_path: "/home/reda/scratch/ngoc/data/simpsonsvqa/v1_Question_Train_simpsons_vqa.json"
 stat_ques_list: ["/home/reda/scratch/ngoc/data/simpsonsvqa/v1_Question_Train_simpsons_vqa.json","/home/reda/scratch/ngoc/data/simpsonsvqa/v1_Question_Val_simpsons_vqa.json"]
-use_glove: True
+use_glove: False
 train_question: '/home/reda/scratch/ngoc/data/simpsonsvqa/v1_Question_Train_simpsons_vqa.json'
 val_question: '/home/reda/scratch/ngoc/data/simpsonsvqa/v1_Question_Val_simpsons_vqa.json'
 max_ques_len: 20

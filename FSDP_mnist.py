@@ -100,9 +100,9 @@ def train(args, model, rank, world_size, train_loader, optimizer, epoch, sampler
         optimizer.step()
         ddp_loss[0] += loss.item()
         ddp_loss[1] += len(data)
-        wandb.log({
-            "iter_loss": loss.item()
-        })
+        # wandb.log({
+        #     "iter_loss": loss.item()
+        # })
 
     dist.all_reduce(ddp_loss, op=dist.ReduceOp.SUM)
     if rank == 0:
@@ -170,10 +170,10 @@ def fsdp_main(rank, world_size, args):
     setup(rank, world_size)
     wandb.init(
             project="Question Type",
-            group="GRU+Glove",
-            name= f"GRU+Glove {rank}",
-            dir="/home/reda/projects/def-ssanner/reda/ngoc",
-            config=args)
+            group="GRU",
+            name= f"GRU {rank}",
+            config=args
+            )
 
     dataset1 = QuestionDataset(args, "train")
     dataset2 = QuestionDataset(args, "val")
@@ -290,7 +290,7 @@ if __name__ == '__main__':
                         help='input batch size for training (default: 64)')
     parser.add_argument('--test-batch-size', type=int, default=1000, metavar='N',
                         help='input batch size for testing (default: 1000)')
-    parser.add_argument('--epochs', type=int, default=50, metavar='N',
+    parser.add_argument('--epochs', type=int, default=2, metavar='N',
                         help='number of epochs to train (default: 14)')
     parser.add_argument('--lr', type=float, default=0.00001, metavar='LR',
                         help='learning rate (default: 1.0)')
