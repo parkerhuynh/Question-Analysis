@@ -62,11 +62,13 @@ class Net(nn.Module):
     """
     A Visual Question Answering (VQA) model
     """
-    def __init__(self, question_vocab_size):
+    def __init__(self, args, question_vocab_size, pretrain_embedding):
         super(Net, self).__init__()
-        self.word_embeddings = nn.Embedding(question_vocab_size, 512)
+        self.word_embeddings = nn.Embedding(question_vocab_size, 300)
+        if args.use_glove:
+            self.word_embeddings.weight.data.copy_(torch.from_numpy(pretrain_embedding))
         self.question_encoder = QuestionEmbedding(
-            word_embedding_size=512,
+            word_embedding_size=300,
             hidden_size=1024)
     
         self.qt_header = nn.Sequential(
@@ -168,8 +170,9 @@ def fsdp_main(rank, world_size, args):
     setup(rank, world_size)
     wandb.init(
             project="Question Type",
-            group="GRU",
-            name= f"GRU {rank}",
+            group="GRU+Glove",
+            name= f"GRU+Glove {rank}",
+            dir="/home/reda/projects/def-ssanner/reda/ngoc",
             config=args)
 
     dataset1 = QuestionDataset(args, "train")
@@ -195,7 +198,8 @@ def fsdp_main(rank, world_size, args):
 
     init_start_event = torch.cuda.Event(enable_timing=True)
     init_end_event = torch.cuda.Event(enable_timing=True)
-    model = Net(question_vocab_size = dataset1.token_size).to(rank)
+
+    model = Net(question_vocab_size = dataset1.token_size, pretrain_embedding = dataset1.pretrained_emb, args = args).to(rank)
 
     model = FSDP(model,
                 auto_wrap_policy=my_auto_wrap_policy,

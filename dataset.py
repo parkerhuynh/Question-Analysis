@@ -183,17 +183,13 @@ class QuestionDataset(Dataset):
         return  question, label, question_id
     
     def load_vocal(self):
-        if os.path.exists("./question_dict.pkl"):
-            print(f'> Loading question dictionary'.upper())
-            token_to_ix, pretrained_emb = pickle.load(open("./question_dict.pkl", 'rb'))
-        else:
-            stat_ques_list = []
-            for file_path in self.args.stat_ques_list:
-                with open(file_path, 'r') as file:
-                    question_i = json.load(file)["questions"]
-                    stat_ques_list += question_i
-            token_to_ix, pretrained_emb = LSTM_tokenize(stat_ques_list, self.args)
-            pickle.dump([token_to_ix, pretrained_emb], open("./question_dict.pkl", 'wb'))
+        stat_ques_list = []
+        for file_path in self.args.stat_ques_list:
+            with open(file_path, 'r') as file:
+                question_i = json.load(file)["questions"]
+                stat_ques_list += question_i
+        token_to_ix, pretrained_emb = LSTM_tokenize(stat_ques_list, self.args)
+        # pickle.dump([token_to_ix, pretrained_emb], open("./question_dict.pkl", 'wb'))
         return token_to_ix, pretrained_emb
     
     def load_questions(self):
