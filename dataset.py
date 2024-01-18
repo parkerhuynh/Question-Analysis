@@ -7,6 +7,7 @@ import en_core_web_lg, random, re, json
 import numpy as np
 import random
 import pandas as pd
+from transformers import BertTokenizer, BertForSequenceClassification, AdamW
 contractions = {
     "aint": "ain't", "arent": "aren't", "cant": "can't", "couldve":
     "could've", "couldnt": "couldn't", "couldn'tve": "couldn't've",
@@ -151,21 +152,17 @@ class QuestionDataset(Dataset):
     def __init__(self, args, split):
         self.args = args
         self.split = split
-        self.token_to_ix, self.pretrained_emb = self.load_vocal()
-        self.token_size = len(self.token_to_ix)
-        with open('./super_answer_type_simpsons.json', 'r') as file:
+        with open('/home/ndhuynh/github/simpsonsvqa/dataset/super_answer_type_simpsons.json', 'r') as file:
             self.super_types = json.load(file)
         self.questions = self.load_questions()
-        
+        self.tokenizer = BertTokenizer.from_pretrained('bert-large-uncased')
         self.ans_type_to_idx = {'yes/no': 0, 'action': 1, 'object': 2, 'location': 3, 'other': 4, 'color': 5, 'human': 6, 'number': 7}
         self.idx_to_ans_type = {0: 'yes/no', 1: 'action', 2: 'object', 3: 'location', 4: 'other', 5: 'color', 6: 'human', 7: 'number'}
-        
         self.annotations = self.load_annotations()
         self.output_dim = len(self.ans_type_to_idx.keys())
         random.shuffle(self.annotations)
         print(f"sample number: {len(self.annotations)}")
         print(f"output_dim: {self.output_dim }")
-        print(f"token_size: {self.token_size }")
         print(f"ans_type_to_idx: {self.ans_type_to_idx }")
     def __len__(self):
         return len(self.annotations)
@@ -174,15 +171,28 @@ class QuestionDataset(Dataset):
         ann = self.annotations[idx]
         que = self.questions[ann["id"]]
         question_id = ann["id"]
-        question = torch.from_numpy(que["question"])
+        question = que["question"]
         label = self.ans_type_to_idx[ann['answer_type']]
-        # print('-'*100)
-        # print(ann)
-        # print(label)
-        # return question_id, question, label
-        return  question, label, question_id
+        
+        encoding = self.tokenizer.encode_plus(
+            question,
+            add_special_tokens=True,
+            max_length=self.args.max_ques_len,
+            return_token_type_ids=False,
+            padding='max_length',
+            truncation=True,
+            return_attention_mask=True,
+            return_tensors='pt',
+        )
+        
+        return {
+            'question_id': question_id,
+            'question_text': question,
+            'input_ids': encoding['input_ids'].flatten(),
+            'attention_mask': encoding['attention_mask'].flatten(),
+            'labels': torch.tensor(label, dtype=torch.long)
+        }
     
-
     def load_questions(self):
         if self.split == "train":
             question_path = self.args.train_question
@@ -192,7 +202,6 @@ class QuestionDataset(Dataset):
             questions = json.load(file)["questions"]
         processed_questions = {}
         for question in questions:
-            question['question'] = rnn_proc_ques(question["question"], self.token_to_ix, self.args.max_ques_len)
             processed_questions[question["id"]] = question
         return processed_questions
     

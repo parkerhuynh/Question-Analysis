@@ -23,6 +23,7 @@ import numpy as np
 from torch.nn.parallel import DistributedDataParallel as DDP
 from torch.utils.data.distributed import DistributedSampler
 from torch.distributed.fsdp import FullyShardedDataParallel as FSDP
+from transformers import BertTokenizer, BertForSequenceClassification, AdamW
 from torch.distributed.fsdp.fully_sharded_data_parallel import (
 CPUOffload,
 BackwardPrefetch,
@@ -43,65 +44,24 @@ def setup(rank, world_size):
 
 def cleanup():
     dist.destroy_process_group()
-
-class QuestionEmbedding(nn.Module):
-    """
-    A question embedding module using LSTM for text encoding.
-    """
-    def __init__(self, word_embedding_size, hidden_size):
-        super(QuestionEmbedding, self).__init__()
-        self.lstm = nn.LSTM(word_embedding_size, hidden_size, num_layers=1, batch_first=True)
-        self.fc = nn.Linear(hidden_size, 1024)
-
-    def forward(self, input_data):
-        output, (hidden, _) = self.lstm(input_data)
-        last_hidden = hidden[-1]  # Get the last layer's hidden state
-        embedding = self.fc(last_hidden)
-        return embedding
-
-class Net(nn.Module):
-    """
-    A Visual Question Answering (VQA) model
-    """
-    def __init__(self, args, question_vocab_size, pretrain_embedding):
-        super(Net, self).__init__()
-        self.word_embeddings = nn.Embedding(question_vocab_size, 300)
-        if args.use_glove:
-            print(pretrain_embedding)
-            self.word_embeddings.weight.data.copy_(torch.from_numpy(pretrain_embedding))
-        self.question_encoder = QuestionEmbedding(
-            word_embedding_size=300,
-            hidden_size=1024)
-    
-        self.qt_header = nn.Sequential(
-            nn.Linear(1024, 1000),
-            nn.Dropout(p=0.5),
-            nn.Tanh(),
-            nn.Linear(1000, 8)
-        )
-
-    def forward(self, question):
-        question = self.word_embeddings(question)
-        question = self.question_encoder(question)
-        output = self.qt_header(question)
-        return output
     
 def train(args, model, rank, world_size, train_loader, optimizer, epoch, sampler=None):
     model.train()
     ddp_loss = torch.zeros(2).to(rank)
     if sampler:
         sampler.set_epoch(epoch)
-    for batch_idx, (data, target, question_id) in enumerate(train_loader):
-        data, target = data.to(rank), target.to(rank)
+    for batch_idx, batch in enumerate(train_loader):
+        input_ids = batch['input_ids'].to(rank)
+        attention_mask = batch['attention_mask'].to(rank)
+        labels = batch['labels'].to(rank)
         
+        output = model(input_ids, attention_mask=attention_mask, labels=labels)
         optimizer.zero_grad()
-        output = model(data)
-        
-        loss = F.cross_entropy(output, target, reduction='sum')
+        loss = output.loss
         loss.backward()
         optimizer.step()
         ddp_loss[0] += loss.item()
-        ddp_loss[1] += len(data)
+        ddp_loss[1] += len(input_ids)
         # wandb.log({
         #     "iter_loss": loss.item()
         # })
@@ -121,18 +81,26 @@ def test(model, rank, world_size, test_loader, epoch):
     local_targets = []  # List to store targets
     ddp_loss = torch.zeros(3).to(rank)
     with torch.no_grad():
-        for data, target, question_id in test_loader:  # Assuming question_id is part of your dataloader
-            data, target = data.to(rank), target.to(rank)
-            output = model(data)
-            _, pred = torch.max(output, 1)
+        for batch in test_loader:  # Assuming question_id is part of your dataloader
+            question_id = batch['question_id'].to(rank)
+            input_ids = batch['input_ids'].to(rank)
+            attention_mask = batch['attention_mask'].to(rank)
+            labels = batch['labels'].to(rank)
+            
+            output = model(input_ids, attention_mask=attention_mask, labels=labels)
+            logits = output.logits
+            probabilities = F.softmax(logits, dim=1)
+            pred = torch.argmax(probabilities, dim=1)
+            loss = output.loss
+            
             local_preds.extend(pred.cpu().numpy().tolist())
             local_question_ids.extend(question_id.cpu().numpy().tolist())  # Gather question IDs
-            local_targets.extend(target.cpu().numpy().tolist())  # Gather targets
+            local_targets.extend(labels.cpu().numpy().tolist())  # Gather targets
 
             # Loss calculation
-            ddp_loss[0] += F.cross_entropy(output, target, reduction='sum').item()
-            ddp_loss[1] += pred.eq(target.view_as(pred)).sum().item()
-            ddp_loss[2] += len(data)
+            ddp_loss[0] += loss.item()
+            ddp_loss[1] += pred.eq(labels.view_as(pred)).sum().item()
+            ddp_loss[2] += len(input_ids)
 
     # Gather all data to rank 0
     gathered_data = []
@@ -172,10 +140,9 @@ def fsdp_main(rank, world_size, args):
     setup(rank, world_size)
     wandb.init(
             project="Question Type",
-            group="LSTM+GLOVE",
-            name= f"LSTM+GLOVE {rank}",
-            config=args,
-            dir="/home/ndhuynh/github/Question-Analysis/wandb"
+            group="BERT-LARGE",
+            name= f"BERT-LARGE {rank}",
+            config=args
             )
 
     dataset1 = QuestionDataset(args, "train")
@@ -186,7 +153,7 @@ def fsdp_main(rank, world_size, args):
 
     train_kwargs = {'batch_size': args.batch_size, 'sampler': sampler1}
     test_kwargs = {'batch_size': args.test_batch_size, 'sampler': sampler2}
-    cuda_kwargs = {'num_workers': 16,
+    cuda_kwargs = {'num_workers': 4,
                     'pin_memory': True,
                     'shuffle': False}
     train_kwargs.update(cuda_kwargs)
@@ -201,18 +168,15 @@ def fsdp_main(rank, world_size, args):
 
     init_start_event = torch.cuda.Event(enable_timing=True)
     init_end_event = torch.cuda.Event(enable_timing=True)
-
-    model = Net(question_vocab_size = dataset1.token_size, pretrain_embedding = dataset1.pretrained_emb, args = args).to(rank)
-
-    # model = FSDP(model,
-    #             auto_wrap_policy=my_auto_wrap_policy,
-    #             cpu_offload=CPUOffload(offload_params=True))
+    
+    model = BertForSequenceClassification.from_pretrained('bert-large-uncased', num_labels=dataset1.output_dim).to(rank)
     model = FSDP(model,
             auto_wrap_policy=my_auto_wrap_policy)
+    optimizer = AdamW(model.parameters(), lr=2e-5, correct_bias=False)
+    
+
     if rank == 0:
         print(f"{model}")
-
-    optimizer = optim.Adam(model.parameters(), lr=args.lr)
 
     scheduler = StepLR(optimizer, step_size=1, gamma=args.gamma)
     init_start_event.record()
@@ -225,8 +189,7 @@ def fsdp_main(rank, world_size, args):
         if rank == 0:
             if test_acc > best_test_result:
                 best_test_result = test_acc
-                test_result["prediction"] =test_result["prediction"].map(dataset1.idx_to_ans_type)
-                test_result["target"] =test_result["target"].map(dataset1.idx_to_ans_type)
+                
                 wandb.log({"best_accuracy": best_test_result})
                 if args.save_model:
                     # use a barrier to make sure training is done on all ranks
@@ -238,6 +201,8 @@ def fsdp_main(rank, world_size, args):
     init_end_event.record()
 
     if rank == 0:
+        test_result["prediction"] =test_result["prediction"].map(dataset1.idx_to_ans_type)
+        test_result["target"] =test_result["target"].map(dataset1.idx_to_ans_type)
         test_result.to_csv("predictions.csv", index=False)
         print(f"CUDA event elapsed time: {init_start_event.elapsed_time(init_end_event) / 1000}sec")
         print(f"{model}")
@@ -291,7 +256,7 @@ def fsdp_main(rank, world_size, args):
 if __name__ == '__main__':
     # Training settings
     parser = argparse.ArgumentParser(description='PyTorch MNIST Example')
-    parser.add_argument('--batch-size', type=int, default=2048, metavar='N',
+    parser.add_argument('--batch-size', type=int, default=218, metavar='N',
                         help='input batch size for training (default: 64)')
     parser.add_argument('--test-batch-size', type=int, default=1000, metavar='N',
                         help='input batch size for testing (default: 1000)')
