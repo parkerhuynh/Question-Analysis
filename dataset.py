@@ -153,7 +153,7 @@ class QuestionDataset(Dataset):
         self.split = split
         self.token_to_ix, self.pretrained_emb = self.load_vocal()
         self.token_size = len(self.token_to_ix)
-        with open('./super_answer_type_simpsons.json', 'r') as file:
+        with open('super_answer_type_simpsons.json', 'r') as file:
             self.super_types = json.load(file)
         self.questions = self.load_questions()
         
@@ -176,13 +176,18 @@ class QuestionDataset(Dataset):
         question_id = ann["id"]
         question = torch.from_numpy(que["question"])
         label = self.ans_type_to_idx[ann['answer_type']]
-        # print('-'*100)
-        # print(ann)
-        # print(label)
-        # return question_id, question, label
         return  question, label, question_id
     
-
+    def load_vocal(self):
+        stat_ques_list = []
+        for file_path in self.args.stat_ques_list:
+            with open(file_path, 'r') as file:
+                question_i = json.load(file)["questions"]
+                stat_ques_list += question_i
+        token_to_ix, pretrained_emb = LSTM_tokenize(stat_ques_list, self.args)
+        # pickle.dump([token_to_ix, pretrained_emb], open("./question_dict.pkl", 'wb'))
+        return token_to_ix, pretrained_emb
+    
     def load_questions(self):
         if self.split == "train":
             question_path = self.args.train_question

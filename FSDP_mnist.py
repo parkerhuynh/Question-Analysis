@@ -46,16 +46,19 @@ def cleanup():
 
 class QuestionEmbedding(nn.Module):
     """
-    A question embedding module using LSTM for text encoding.
+    A question embedding module using a two-layer BiLSTM for text encoding.
     """
     def __init__(self, word_embedding_size, hidden_size):
         super(QuestionEmbedding, self).__init__()
-        self.lstm = nn.LSTM(word_embedding_size, hidden_size, num_layers=1, batch_first=True)
-        self.fc = nn.Linear(hidden_size, 1024)
+        # Using a two-layer BiLSTM
+        self.lstm = nn.LSTM(word_embedding_size, hidden_size, num_layers=2, batch_first=True, bidirectional=True)
+        # The output feature dimension of BiLSTM is 2 * hidden_size
+        self.fc = nn.Linear(2 * hidden_size, 1024)
 
     def forward(self, input_data):
         output, (hidden, _) = self.lstm(input_data)
-        last_hidden = hidden[-1]  # Get the last layer's hidden state
+        # Concatenate the final hidden states of the forward and backward passes from the last layer
+        last_hidden = torch.cat((hidden[-2], hidden[-1]), dim=1)
         embedding = self.fc(last_hidden)
         return embedding
 
@@ -122,7 +125,7 @@ def test(model, rank, world_size, test_loader, epoch):
     ddp_loss = torch.zeros(3).to(rank)
     with torch.no_grad():
         for data, target, question_id in test_loader:  # Assuming question_id is part of your dataloader
-            data, target = data.to(rank), target.to(rank)
+            data, target, question_id = data.to(rank), target.to(rank), question_id.to(rank)
             output = model(data)
             _, pred = torch.max(output, 1)
             local_preds.extend(pred.cpu().numpy().tolist())
@@ -172,8 +175,8 @@ def fsdp_main(rank, world_size, args):
     setup(rank, world_size)
     wandb.init(
             project="Question Type",
-            group="LSTM+GLOVE",
-            name= f"LSTM+GLOVE {rank}",
+            group="BiLSTM",
+            name= f"BiLSTM {rank}",
             config=args,
             dir="/home/ndhuynh/github/Question-Analysis/wandb"
             )
@@ -225,8 +228,7 @@ def fsdp_main(rank, world_size, args):
         if rank == 0:
             if test_acc > best_test_result:
                 best_test_result = test_acc
-                test_result["prediction"] =test_result["prediction"].map(dataset1.idx_to_ans_type)
-                test_result["target"] =test_result["target"].map(dataset1.idx_to_ans_type)
+                
                 wandb.log({"best_accuracy": best_test_result})
                 if args.save_model:
                     # use a barrier to make sure training is done on all ranks
@@ -238,6 +240,8 @@ def fsdp_main(rank, world_size, args):
     init_end_event.record()
 
     if rank == 0:
+        test_result["prediction"] =test_result["prediction"].map(dataset1.idx_to_ans_type)
+        test_result["target"] =test_result["target"].map(dataset1.idx_to_ans_type)
         test_result.to_csv("predictions.csv", index=False)
         print(f"CUDA event elapsed time: {init_start_event.elapsed_time(init_end_event) / 1000}sec")
         print(f"{model}")
@@ -295,7 +299,7 @@ if __name__ == '__main__':
                         help='input batch size for training (default: 64)')
     parser.add_argument('--test-batch-size', type=int, default=1000, metavar='N',
                         help='input batch size for testing (default: 1000)')
-    parser.add_argument('--epochs', type=int, default=50, metavar='N',
+    parser.add_argument('--epochs', type=int, default=1, metavar='N',
                         help='number of epochs to train (default: 14)')
     parser.add_argument('--lr', type=float, default=0.00001, metavar='LR',
                         help='learning rate (default: 1.0)')

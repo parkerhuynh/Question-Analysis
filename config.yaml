@@ -1,9 +1,9 @@
 ## Training:
 question_path: "/home/ndhuynh/data/simpsonsvqa/v1_Question_Train_simpsons_vqa.json"
 stat_ques_list: ["/home/ndhuynh/data/simpsonsvqa/v1_Question_Train_simpsons_vqa.json","/home/ndhuynh/data/simpsonsvqa/v1_Question_Val_simpsons_vqa.json"]
-use_glove: True
+use_glove: False
 train_question: '/home/ndhuynh/data/simpsonsvqa/v1_Question_Train_simpsons_vqa.json'
 val_question: '/home/ndhuynh/data/simpsonsvqa/v1_Question_Val_simpsons_vqa.json'
-: 20
+max_ques_len: 20
 train_annotation: '/home/ndhuynh/data/simpsonsvqa/v1_Annotation_Train_simpsons_vqa.json'
 val_annotation : '/home/ndhuynh/data/simpsonsvqa/v1_Annotation_Val_simpsons_vqa.json'
