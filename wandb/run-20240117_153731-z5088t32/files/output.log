@@ -1,0 +1,79 @@
+sample number: 96169
+output_dim: 8
+token_size: 7057
+ans_type_to_idx: {'yes/no': 0, 'action': 1, 'object': 2, 'location': 3, 'other': 4, 'color': 5, 'human': 6, 'number': 7}
+sample number: 18473
+output_dim: 8
+token_size: 7057
+ans_type_to_idx: {'yes/no': 0, 'action': 1, 'object': 2, 'location': 3, 'other': 4, 'color': 5, 'human': 6, 'number': 7}
+FullyShardedDataParallel(
+  (_fsdp_wrapped_module): FlattenParamsWrapper(
+    (_fpw_module): Net(
+      (word_embeddings): FullyShardedDataParallel(
+        (_fsdp_wrapped_module): FlattenParamsWrapper(
+          (_fpw_module): Embedding(7057, 300)
+        )
+      )
+      (question_encoder): QuestionEmbedding(
+        (gru): FullyShardedDataParallel(
+          (_fsdp_wrapped_module): FlattenParamsWrapper(
+            (_fpw_module): GRU(300, 1024, batch_first=True)
+          )
+        )
+        (fc): FullyShardedDataParallel(
+          (_fsdp_wrapped_module): FlattenParamsWrapper(
+            (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+          )
+        )
+      )
+      (qt_header): Sequential(
+        (0): FullyShardedDataParallel(
+          (_fsdp_wrapped_module): FlattenParamsWrapper(
+            (_fpw_module): Linear(in_features=1024, out_features=1000, bias=True)
+          )
+        )
+        (1): Dropout(p=0.5, inplace=False)
+        (2): Tanh()
+        (3): Linear(in_features=1000, out_features=8, bias=True)
+      )
+    )
+  )
+)
+Train Epoch: 1 	Loss: 1.749986
+Test set: Average loss: 1.7163, Accuracy: 5012/18474 (27.13%)
+Train Epoch: 2 	Loss: 1.685900
+Test set: Average loss: 1.7146, Accuracy: 4770/18474 (25.82%)
+CUDA event elapsed time: 71.5336015625sec
+FullyShardedDataParallel(
+  (_fsdp_wrapped_module): FlattenParamsWrapper(
+    (_fpw_module): Net(
+      (word_embeddings): FullyShardedDataParallel(
+        (_fsdp_wrapped_module): FlattenParamsWrapper(
+          (_fpw_module): Embedding(7057, 300)
+        )
+      )
+      (question_encoder): QuestionEmbedding(
+        (gru): FullyShardedDataParallel(
+          (_fsdp_wrapped_module): FlattenParamsWrapper(
+            (_fpw_module): GRU(300, 1024, batch_first=True)
+          )
+        )
+        (fc): FullyShardedDataParallel(
+          (_fsdp_wrapped_module): FlattenParamsWrapper(
+            (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+          )
+        )
+      )
+      (qt_header): Sequential(
+        (0): FullyShardedDataParallel(
+          (_fsdp_wrapped_module): FlattenParamsWrapper(
+            (_fpw_module): Linear(in_features=1024, out_features=1000, bias=True)
+          )
+        )
+        (1): Dropout(p=0.5, inplace=False)
+        (2): Tanh()
+        (3): Linear(in_features=1000, out_features=8, bias=True)
+      )
+    )
+  )
+)

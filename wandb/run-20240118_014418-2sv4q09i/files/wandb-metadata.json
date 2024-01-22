@@ -1,0 +1,212 @@
+{
+    "os": "Linux-5.4.0-155-generic-x86_64-with-glibc2.31",
+    "python": "3.9.18",
+    "heartbeatAt": "2024-01-17T14:44:19.022433",
+    "startedAt": "2024-01-17T14:44:18.153744",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/ndhuynh/github/Question-Analysis/FSDP_mnist.py",
+    "codePathLocal": "FSDP_mnist.py",
+    "codePath": "FSDP_mnist.py",
+    "git": {
+        "remote": "git@github.com:parkerhuynh/Question-Analysis.git",
+        "commit": "4e90196ce8932d12f09e3a3a8c5b5ca3fd52acec"
+    },
+    "email": "dunghuynh110496@gmail.com",
+    "root": "/home/ndhuynh/github/Question-Analysis",
+    "host": "thorin-8",
+    "username": "ndhuynh",
+    "executable": "/home/ndhuynh/.conda/envs/hie/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 1932.9270000000001,
+        "min": 1200.0,
+        "max": 3300.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2143.806,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1733.433,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2816.169,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1667.218,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2860.978,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1574.123,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2639.333,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1797.745,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2851.947,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1711.586,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2827.563,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1849.694,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2657.397,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2162.661,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1711.649,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1915.67,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1540.283,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1810.774,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2853.549,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1820.775,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2837.684,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1876.072,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2856.84,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1745.103,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 3101.918,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1832.73,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2864.566,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1869.669,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2639.442,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1875.172,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2844.344,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1885.1,
+            "min": 1200.0,
+            "max": 3300.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 97.87200164794922,
+            "used": 14.43521499633789
+        }
+    },
+    "gpu": "NVIDIA GeForce GTX TITAN X",
+    "gpu_count": 2,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX TITAN X",
+            "memory_total": 12806127616
+        },
+        {
+            "name": "NVIDIA GeForce GTX TITAN X",
+            "memory_total": 12806127616
+        }
+    ],
+    "memory": {
+        "total": 125.841064453125
+    }
+}

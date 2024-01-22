@@ -1,0 +1,83 @@
+diff --git a/FSDP_mnist.py b/FSDP_mnist.py
+index eb2063f..4296081 100644
+--- a/FSDP_mnist.py
++++ b/FSDP_mnist.py
+@@ -46,16 +46,19 @@ def cleanup():
+ 
+ class QuestionEmbedding(nn.Module):
+     """
+-    A question embedding module using LSTM for text encoding.
++    A question embedding module using a two-layer BiLSTM for text encoding.
+     """
+     def __init__(self, word_embedding_size, hidden_size):
+         super(QuestionEmbedding, self).__init__()
+-        self.lstm = nn.LSTM(word_embedding_size, hidden_size, num_layers=1, batch_first=True)
+-        self.fc = nn.Linear(hidden_size, 1024)
++        # Using a two-layer BiLSTM
++        self.lstm = nn.LSTM(word_embedding_size, hidden_size, num_layers=2, batch_first=True, bidirectional=True)
++        # The output feature dimension of BiLSTM is 2 * hidden_size
++        self.fc = nn.Linear(2 * hidden_size, 1024)
+ 
+     def forward(self, input_data):
+         output, (hidden, _) = self.lstm(input_data)
+-        last_hidden = hidden[-1]  # Get the last layer's hidden state
++        # Concatenate the final hidden states of the forward and backward passes from the last layer
++        last_hidden = torch.cat((hidden[-2], hidden[-1]), dim=1)
+         embedding = self.fc(last_hidden)
+         return embedding
+ 
+@@ -172,8 +175,8 @@ def fsdp_main(rank, world_size, args):
+     setup(rank, world_size)
+     wandb.init(
+             project="Question Type",
+-            group="LSTM+GLOVE",
+-            name= f"LSTM+GLOVE {rank}",
++            group="BiLSTM+GLOVE",
++            name= f"BiLSTM+GLOVE {rank}",
+             config=args,
+             dir="/home/ndhuynh/github/Question-Analysis/wandb"
+             )
+diff --git a/config.yaml b/config.yaml
+index be5b978..c95da2b 100644
+--- a/config.yaml
++++ b/config.yaml
+@@ -4,6 +4,6 @@ stat_ques_list: ["/home/ndhuynh/data/simpsonsvqa/v1_Question_Train_simpsons_vqa.
+ use_glove: True
+ train_question: '/home/ndhuynh/data/simpsonsvqa/v1_Question_Train_simpsons_vqa.json'
+ val_question: '/home/ndhuynh/data/simpsonsvqa/v1_Question_Val_simpsons_vqa.json'
+-: 20
++max_ques_len: 20
+ train_annotation: '/home/ndhuynh/data/simpsonsvqa/v1_Annotation_Train_simpsons_vqa.json'
+ val_annotation : '/home/ndhuynh/data/simpsonsvqa/v1_Annotation_Val_simpsons_vqa.json'
+\ No newline at end of file
+diff --git a/dataset.py b/dataset.py
+index 0d44d1b..86fdcd1 100644
+--- a/dataset.py
++++ b/dataset.py
+@@ -153,7 +153,7 @@ class QuestionDataset(Dataset):
+         self.split = split
+         self.token_to_ix, self.pretrained_emb = self.load_vocal()
+         self.token_size = len(self.token_to_ix)
+-        with open('./super_answer_type_simpsons.json', 'r') as file:
++        with open('super_answer_type_simpsons.json', 'r') as file:
+             self.super_types = json.load(file)
+         self.questions = self.load_questions()
+         
+@@ -182,7 +182,16 @@ class QuestionDataset(Dataset):
+         # return question_id, question, label
+         return  question, label, question_id
+     
+-
++    def load_vocal(self):
++        stat_ques_list = []
++        for file_path in self.args.stat_ques_list:
++            with open(file_path, 'r') as file:
++                question_i = json.load(file)["questions"]
++                stat_ques_list += question_i
++        token_to_ix, pretrained_emb = LSTM_tokenize(stat_ques_list, self.args)
++        # pickle.dump([token_to_ix, pretrained_emb], open("./question_dict.pkl", 'wb'))
++        return token_to_ix, pretrained_emb
++    
+     def load_questions(self):
+         if self.split == "train":
+             question_path = self.args.train_question

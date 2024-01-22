@@ -1,0 +1,102 @@
+2024-01-18 02:51:33,633 INFO    StreamThr :1229197 [internal.py:wandb_internal():86] W&B internal server running at pid: 1229197, started at: 2024-01-18 02:51:33.631879
+2024-01-18 02:51:33,635 DEBUG   HandlerThread:1229197 [handler.py:handle_request():146] handle_request: status
+2024-01-18 02:51:33,642 INFO    WriterThread:1229197 [datastore.py:open_for_write():87] open: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/run-mw9894nt.wandb
+2024-01-18 02:51:33,644 DEBUG   SenderThread:1229197 [sender.py:send():382] send: header
+2024-01-18 02:51:33,668 DEBUG   SenderThread:1229197 [sender.py:send():382] send: run
+2024-01-18 02:51:34,250 INFO    SenderThread:1229197 [dir_watcher.py:__init__():211] watching files in: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files
+2024-01-18 02:51:34,250 INFO    SenderThread:1229197 [sender.py:_start_run_threads():1136] run started: mw9894nt with start time 1705506693.633067
+2024-01-18 02:51:34,272 DEBUG   HandlerThread:1229197 [handler.py:handle_request():146] handle_request: check_version
+2024-01-18 02:51:34,273 DEBUG   SenderThread:1229197 [sender.py:send_request():409] send_request: check_version
+2024-01-18 02:51:34,374 DEBUG   HandlerThread:1229197 [handler.py:handle_request():146] handle_request: run_start
+2024-01-18 02:51:34,382 DEBUG   HandlerThread:1229197 [system_info.py:__init__():27] System info init
+2024-01-18 02:51:34,382 DEBUG   HandlerThread:1229197 [system_info.py:__init__():42] System info init done
+2024-01-18 02:51:34,382 INFO    HandlerThread:1229197 [system_monitor.py:start():194] Starting system monitor
+2024-01-18 02:51:34,383 INFO    SystemMonitor:1229197 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-01-18 02:51:34,385 INFO    HandlerThread:1229197 [system_monitor.py:probe():214] Collecting system info
+2024-01-18 02:51:34,386 INFO    SystemMonitor:1229197 [interfaces.py:start():190] Started cpu monitoring
+2024-01-18 02:51:34,387 INFO    SystemMonitor:1229197 [interfaces.py:start():190] Started disk monitoring
+2024-01-18 02:51:34,391 INFO    SystemMonitor:1229197 [interfaces.py:start():190] Started gpu monitoring
+2024-01-18 02:51:34,394 INFO    SystemMonitor:1229197 [interfaces.py:start():190] Started memory monitoring
+2024-01-18 02:51:34,395 INFO    SystemMonitor:1229197 [interfaces.py:start():190] Started network monitoring
+2024-01-18 02:51:34,417 DEBUG   HandlerThread:1229197 [system_info.py:probe():151] Probing system
+2024-01-18 02:51:34,423 DEBUG   HandlerThread:1229197 [system_info.py:_probe_git():136] Probing git
+2024-01-18 02:51:34,437 DEBUG   HandlerThread:1229197 [system_info.py:_probe_git():144] Probing git done
+2024-01-18 02:51:34,437 DEBUG   HandlerThread:1229197 [system_info.py:probe():199] Probing system done
+2024-01-18 02:51:34,437 DEBUG   HandlerThread:1229197 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-155-generic-x86_64-with-glibc2.31', 'python': '3.9.18', 'heartbeatAt': '2024-01-17T15:51:34.417447', 'startedAt': '2024-01-17T15:51:33.599392', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/ndhuynh/github/Question-Analysis/FSDP_mnist.py', 'codePathLocal': 'FSDP_mnist.py', 'codePath': 'FSDP_mnist.py', 'git': {'remote': 'git@github.com:parkerhuynh/Question-Analysis.git', 'commit': '4e90196ce8932d12f09e3a3a8c5b5ca3fd52acec'}, 'email': 'dunghuynh110496@gmail.com', 'root': '/home/ndhuynh/github/Question-Analysis', 'host': 'thorin-6', 'username': 'ndhuynh', 'executable': '/home/ndhuynh/.conda/envs/hie/bin/python', 'cpu_count': 16, 'cpu_count_logical': 32, 'cpu_freq': {'current': 1715.9828125000001, 'min': 1200.0, 'max': 3300.0}, 'cpu_freq_per_core': [{'current': 2656.844, 'min': 1200.0, 'max': 3300.0}, {'current': 2014.937, 'min': 1200.0, 'max': 3300.0}, {'current': 1879.681, 'min': 1200.0, 'max': 3300.0}, {'current': 1969.878, 'min': 1200.0, 'max': 3300.0}, {'current': 1858.139, 'min': 1200.0, 'max': 3300.0}, {'current': 2097.8, 'min': 1200.0, 'max': 3300.0}, {'current': 1904.223, 'min': 1200.0, 'max': 3300.0}, {'current': 1985.266, 'min': 1200.0, 'max': 3300.0}, {'current': 1885.406, 'min': 1200.0, 'max': 3300.0}, {'current': 1976.374, 'min': 1200.0, 'max': 3300.0}, {'current': 1919.69, 'min': 1200.0, 'max': 3300.0}, {'current': 2025.676, 'min': 1200.0, 'max': 3300.0}, {'current': 1926.778, 'min': 1200.0, 'max': 3300.0}, {'current': 2004.374, 'min': 1200.0, 'max': 3300.0}, {'current': 1842.655, 'min': 1200.0, 'max': 3300.0}, {'current': 1773.277, 'min': 1200.0, 'max': 3300.0}, {'current': 2961.442, 'min': 1200.0, 'max': 3300.0}, {'current': 2046.632, 'min': 1200.0, 'max': 3300.0}, {'current': 3155.729, 'min': 1200.0, 'max': 3300.0}, {'current': 1878.542, 'min': 1200.0, 'max': 3300.0}, {'current': 3160.11, 'min': 1200.0, 'max': 3300.0}, {'current': 1850.811, 'min': 1200.0, 'max': 3300.0}, {'current': 3212.71, 'min': 1200.0, 'max': 3300.0}, {'current': 1903.209, 'min': 1200.0, 'max': 3300.0}, {'current': 1944.896, 'min': 1200.0, 'max': 3300.0}, {'current': 2009.111, 'min': 1200.0, 'max': 3300.0}, {'current': 3211.858, 'min': 1200.0, 'max': 3300.0}, {'current': 1946.801, 'min': 1200.0, 'max': 3300.0}, {'current': 3114.061, 'min': 1200.0, 'max': 3300.0}, {'current': 2119.783, 'min': 1200.0, 'max': 3300.0}, {'current': 3225.536, 'min': 1200.0, 'max': 3300.0}, {'current': 1973.281, 'min': 1200.0, 'max': 3300.0}], 'disk': {'/': {'total': 97.87200164794922, 'used': 14.955909729003906}}, 'gpu': 'NVIDIA GeForce GTX 1080 Ti', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 1080 Ti', 'memory_total': 11721506816}, {'name': 'NVIDIA GeForce GTX 1080 Ti', 'memory_total': 11721506816}], 'memory': {'total': 125.841064453125}}
+2024-01-18 02:51:34,437 INFO    HandlerThread:1229197 [system_monitor.py:probe():224] Finished collecting system info
+2024-01-18 02:51:34,437 INFO    HandlerThread:1229197 [system_monitor.py:probe():227] Publishing system info
+2024-01-18 02:51:34,437 DEBUG   HandlerThread:1229197 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-01-18 02:51:35,253 INFO    Thread-12 :1229197 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files/conda-environment.yaml
+2024-01-18 02:51:42,254 INFO    Thread-12 :1229197 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files/conda-environment.yaml
+2024-01-18 02:51:42,313 DEBUG   HandlerThread:1229197 [system_info.py:_save_conda():220] Saving conda packages done
+2024-01-18 02:51:42,314 DEBUG   HandlerThread:1229197 [system_info.py:_save_code():45] Saving code
+2024-01-18 02:51:42,324 DEBUG   HandlerThread:1229197 [system_info.py:_save_code():66] Saving code done
+2024-01-18 02:51:42,324 DEBUG   HandlerThread:1229197 [system_info.py:_save_patches():83] Saving git patches
+2024-01-18 02:51:42,364 DEBUG   HandlerThread:1229197 [system_info.py:_save_patches():125] Saving git patches done
+2024-01-18 02:51:42,366 INFO    HandlerThread:1229197 [system_monitor.py:probe():229] Finished publishing system info
+2024-01-18 02:51:42,372 DEBUG   HandlerThread:1229197 [handler.py:handle_request():146] handle_request: status_report
+2024-01-18 02:51:42,372 DEBUG   HandlerThread:1229197 [handler.py:handle_request():146] handle_request: keepalive
+2024-01-18 02:51:42,373 DEBUG   SenderThread:1229197 [sender.py:send():382] send: files
+2024-01-18 02:51:42,373 INFO    SenderThread:1229197 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-01-18 02:51:42,375 INFO    SenderThread:1229197 [sender.py:_save_file():1403] saving file code/FSDP_mnist.py with policy now
+2024-01-18 02:51:42,376 INFO    SenderThread:1229197 [sender.py:_save_file():1403] saving file diff.patch with policy now
+2024-01-18 02:51:42,386 DEBUG   HandlerThread:1229197 [handler.py:handle_request():146] handle_request: python_packages
+2024-01-18 02:51:42,387 DEBUG   HandlerThread:1229197 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-18 02:51:42,387 DEBUG   HandlerThread:1229197 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-18 02:51:42,389 DEBUG   SenderThread:1229197 [sender.py:send_request():409] send_request: python_packages
+2024-01-18 02:51:42,394 DEBUG   SenderThread:1229197 [sender.py:send_request():409] send_request: stop_status
+2024-01-18 02:51:42,805 DEBUG   SenderThread:1229197 [sender.py:send():382] send: telemetry
+2024-01-18 02:51:43,300 INFO    Thread-12 :1229197 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files/wandb-metadata.json
+2024-01-18 02:51:43,301 INFO    Thread-12 :1229197 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files/code/FSDP_mnist.py
+2024-01-18 02:51:43,301 INFO    Thread-12 :1229197 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files/diff.patch
+2024-01-18 02:51:43,302 INFO    Thread-12 :1229197 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files/requirements.txt
+2024-01-18 02:51:43,302 INFO    Thread-12 :1229197 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files/code
+2024-01-18 02:51:43,313 INFO    wandb-upload_0:1229197 [upload_job.py:push():131] Uploaded file /tmp/tmptt4zd8z9wandb/kd8272dg-wandb-metadata.json
+2024-01-18 02:51:43,460 INFO    wandb-upload_1:1229197 [upload_job.py:push():131] Uploaded file /tmp/tmptt4zd8z9wandb/4sq3uqor-code/FSDP_mnist.py
+2024-01-18 02:51:43,474 INFO    wandb-upload_2:1229197 [upload_job.py:push():131] Uploaded file /tmp/tmptt4zd8z9wandb/gekzt3wy-diff.patch
+2024-01-18 02:51:44,806 DEBUG   HandlerThread:1229197 [handler.py:handle_request():146] handle_request: status_report
+2024-01-18 02:51:49,479 INFO    Thread-12 :1229197 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files/output.log
+2024-01-18 02:51:50,234 DEBUG   HandlerThread:1229197 [handler.py:handle_request():146] handle_request: status_report
+2024-01-18 02:51:50,480 INFO    Thread-12 :1229197 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files/output.log
+2024-01-18 02:51:52,488 INFO    Thread-12 :1229197 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files/output.log
+2024-01-18 02:51:54,489 INFO    Thread-12 :1229197 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files/output.log
+2024-01-18 02:51:55,969 DEBUG   HandlerThread:1229197 [handler.py:handle_request():146] handle_request: status_report
+2024-01-18 02:51:56,491 INFO    Thread-12 :1229197 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files/output.log
+2024-01-18 02:51:57,384 DEBUG   HandlerThread:1229197 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-18 02:51:57,385 DEBUG   HandlerThread:1229197 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-18 02:51:57,385 DEBUG   SenderThread:1229197 [sender.py:send_request():409] send_request: stop_status
+2024-01-18 02:51:58,493 INFO    Thread-12 :1229197 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files/output.log
+2024-01-18 02:52:00,494 INFO    Thread-12 :1229197 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files/output.log
+2024-01-18 02:52:01,145 DEBUG   HandlerThread:1229197 [handler.py:handle_request():146] handle_request: status_report
+2024-01-18 02:52:02,496 INFO    Thread-12 :1229197 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files/output.log
+2024-01-18 02:52:04,499 INFO    Thread-12 :1229197 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files/output.log
+2024-01-18 02:52:06,501 INFO    Thread-12 :1229197 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files/output.log
+2024-01-18 02:52:06,760 DEBUG   HandlerThread:1229197 [handler.py:handle_request():146] handle_request: status_report
+2024-01-18 02:52:07,501 INFO    Thread-12 :1229197 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files/config.yaml
+2024-01-18 02:52:08,502 INFO    Thread-12 :1229197 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files/output.log
+2024-01-18 02:52:10,504 INFO    Thread-12 :1229197 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files/output.log
+2024-01-18 02:52:12,381 DEBUG   HandlerThread:1229197 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-18 02:52:12,383 DEBUG   SenderThread:1229197 [sender.py:send_request():409] send_request: stop_status
+2024-01-18 02:52:12,383 DEBUG   HandlerThread:1229197 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-18 02:52:12,506 INFO    Thread-12 :1229197 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files/output.log
+2024-01-18 02:52:14,501 DEBUG   HandlerThread:1229197 [handler.py:handle_request():146] handle_request: status_report
+2024-01-18 02:52:14,507 INFO    Thread-12 :1229197 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files/output.log
+2024-01-18 02:52:16,509 INFO    Thread-12 :1229197 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files/output.log
+2024-01-18 02:52:18,511 INFO    Thread-12 :1229197 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files/output.log
+2024-01-18 02:52:20,039 DEBUG   HandlerThread:1229197 [handler.py:handle_request():146] handle_request: status_report
+2024-01-18 02:52:20,512 INFO    Thread-12 :1229197 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files/output.log
+2024-01-18 02:52:22,514 INFO    Thread-12 :1229197 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files/output.log
+2024-01-18 02:52:24,515 INFO    Thread-12 :1229197 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files/output.log
+2024-01-18 02:52:25,204 DEBUG   HandlerThread:1229197 [handler.py:handle_request():146] handle_request: status_report
+2024-01-18 02:52:26,517 INFO    Thread-12 :1229197 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files/output.log
+2024-01-18 02:52:27,382 DEBUG   HandlerThread:1229197 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-18 02:52:27,383 DEBUG   SenderThread:1229197 [sender.py:send_request():409] send_request: stop_status
+2024-01-18 02:52:27,389 DEBUG   HandlerThread:1229197 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-18 02:52:28,518 INFO    Thread-12 :1229197 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ndhuynh/github/Question-Analysis/wandb/run-20240118_025133-mw9894nt/files/output.log
+2024-01-18 02:52:30,397 INFO    MainThread:1229197 [internal.py:handle_exit():76] Internal process exited
+2024-01-18 02:52:30,466 INFO    cpu       :1229197 [interfaces.py:monitor():140] Process cpu has exited.
+2024-01-18 02:52:30,467 DEBUG   SystemMonitor:1229197 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-01-18 02:52:30,467 DEBUG   SystemMonitor:1229197 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-01-18 02:52:30,467 DEBUG   SystemMonitor:1229197 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-01-18 02:52:30,472 DEBUG   SenderThread:1229197 [sender.py:send():382] send: stats
+2024-01-18 02:52:30,473 DEBUG   HandlerThread:1229197 [handler.py:handle_request():146] handle_request: status_report

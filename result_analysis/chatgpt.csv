@@ -1,0 +1,101 @@
+question_id,target,prediction,vqa answer,question
+105276,number,number,6,how many feet are in the picture?
+137187,yes/no,yes/no,no,is this plane ready to take off?
+63463,color,color,pink,what color is the wall?
+98653,action,action,standing,what is the woman doing?
+74353,object,object,cloud,what is in the sky?
+103860,yes/no,yes/no,yes,is the plate a solid color?
+142319,yes/no,yes/no,yes,can the toilet be flushed in two different ways?
+116088,yes/no,yes/no,yes,did this bird just finish eating?
+153801,color,color,black,what color is this dog?
+88973,action,action,walking,what is the man doing?
+17621,number,number,2,how many people are there?
+78463,object,object,flag,what is on the table?
+89491,action,action,standing,what is the man doing?
+67231,object,object,wall,what is behind the father and son?
+103861,number,number,13,how many tools are on the counter?
+75123,human,human,people,what is on the bridge?
+98099,other,other,large,what is the size of the window?
+97299,object,object,computer,what is the person working on?
+154897,yes/no,yes/no,yes,are these fruits in a basket?
+75825,object,object,rug,what is on the floor?
+10129,number,number,2,how many kids are there?
+86158,color,color,green,what is the color of the store front?
+159408,object,object,garbage,what is in the back of the truck?
+52686,color,color,blue,what color is the man's hat?
+160914,color,color,blue,what color is the cloth under the bushel of banana's to the far right in this scene?
+164555,yes/no,yes/no,no,is the home cook watching television?
+891,yes/no,yes/no,yes,are the people holding flags?
+121120,yes/no,yes/no,yes,is this a market?
+157149,yes/no,yes/no,no,is the woman touching the fire hydrant?
+144853,yes/no,yes/no,no,do you think this still works?
+163728,number,number,0,how many placemats are pictured?
+154170,yes/no,yes/no,no,is this where you would take a shower?
+60641,color,color,blue,what color is the sky?
+10580,number,number,3,how many men are there?
+128846,yes/no,yes/no,no,is this a business office?
+142291,yes/no,yes/no,yes,is this truck parked?
+7210,yes/no,yes/no,yes,does the show feature fictional characters?
+153293,yes/no,yes/no,yes,does he look happy?
+147519,yes/no,yes/no,no,is there a reflection?
+111962,object,object,picture,what is on the computer screen?
+7775,number,number,2,how many buildings are there?
+161168,number,number,1,how many different types of berries in this picture?
+67203,object,object,pillow,what is behind the dog?
+38266,action,action,standing,what are the people doing?
+65909,color,color,brown,what color pants is the middle man wearing?
+97688,location,location,livingroom,what is the room called?
+124304,yes/no,yes/no,no,are there taking a computer course?
+64948,color,color,blue,what color is the woman's pants?
+147386,number,number,1,how many dogs are there?
+128865,object,object,tree,what is in front of the sheep?
+57552,color,color,blue,what color is the person's cloak?
+107954,object,yes/no,sun,is the umbrella protecting him from?
+112175,object,object,kia,what car company is sponsoring the event?
+103753,number,number,1,how many pans are there?
+63560,color,color,purple,what color is the wall?
+90774,object,object,paper,what is the man holding?
+16455,number,number,2,how many people are there?
+36051,yes/no,yes/no,yes,is there snow on the ground?
+78560,object,object,computer,what is on the table?
+30802,yes/no,yes/no,yes,is there a person in the image?
+136691,color,color,gray,what is the main color of this cat?
+132427,location,object,street,where is the man standing?
+1496,action,action,standing,are the people standing or sitting?
+37774,action,action,standing,what are the people doing?
+69182,object,object,flag,what is behind the woman?
+151562,number,number,4,how many jets are there?
+139959,action,object,frisbee,what is that orange thing in the back?
+47952,color,color,purple,what color is the classroom?
+121767,yes/no,yes/no,yes,could this cake be for twins?
+14548,number,number,3,how many people are there?
+71192,object,object,wall,what is in the background?
+97496,action,action,standing,what is the position of the man?
+11308,number,number,2,how many people are holding a paper?
+83675,color,color,red,what is the color of the hair?
+105930,number,number,2,how many males are skateboarding?
+10267,number,number,2,how many men are in the image?
+150162,yes/no,yes/no,no,has the weather been rainy?
+13512,number,number,2,how many people are sitting at the table?
+155443,yes/no,yes/no,yes,is the kitchen expensive?
+70442,object,object,window,what is in front of the man?
+156070,number,number,1,how many zebras are shown?
+45730,color,color,blue,what color is the boy's cap?
+71757,object,object,wall,what is in the background?
+139358,number,number,1,how many living creatures are present?
+113465,color,color,orange,what color is the cat?
+44184,color,color,brown,what color are the violins?
+142733,color,color,white,what color is the baby's hoodie?
+145688,object,location,boston,what city is this in?
+12101,number,number,2,how many people are in the image?
+110295,object,object,banana,what fruit is this?
+90852,object,object,book,what is the man holding?
+107017,yes/no,yes/no,yes,is the man holding a serving spoon in one of his hands?
+124231,object,object,pizza,what food is on the table?
+82214,color,color,white,what is the color of his teeth?
+127904,yes/no,yes/no,no,is this man casting a shadow?
+142099,yes/no,yes/no,yes,is there a fork on the plate?
+40386,object,object,grass,what are they standing on?
+122655,action,action,cutting,what is the tool to the far left used for?
+53557,color,color,blue,what color is the man's pants?
+114596,yes/no,yes/no,yes,is the candle lit?

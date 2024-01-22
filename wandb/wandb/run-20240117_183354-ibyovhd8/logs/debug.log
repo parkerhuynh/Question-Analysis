@@ -1,0 +1,26 @@
+2024-01-17 18:33:54,166 INFO    MainThread:927670 [wandb_setup.py:_flush():76] Current SDK version is 0.15.5
+2024-01-17 18:33:54,166 INFO    MainThread:927670 [wandb_setup.py:_flush():76] Configure stats pid to 927670
+2024-01-17 18:33:54,167 INFO    MainThread:927670 [wandb_setup.py:_flush():76] Loading settings from /home/ndhuynh/.config/wandb/settings
+2024-01-17 18:33:54,167 INFO    MainThread:927670 [wandb_setup.py:_flush():76] Loading settings from /home/ndhuynh/github/Question-Analysis/wandb/settings
+2024-01-17 18:33:54,167 INFO    MainThread:927670 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'start_method': 'thread'}
+2024-01-17 18:33:54,167 INFO    MainThread:927670 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-01-17 18:33:54,167 INFO    MainThread:927670 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'FSDP_mnist.py', 'program': '/home/ndhuynh/github/Question-Analysis/FSDP_mnist.py'}
+2024-01-17 18:33:54,167 INFO    MainThread:927670 [wandb_init.py:_log_setup():507] Logging user logs to /home/ndhuynh/github/Question-Analysis/wandb/wandb/run-20240117_183354-ibyovhd8/logs/debug.log
+2024-01-17 18:33:54,168 INFO    MainThread:927670 [wandb_init.py:_log_setup():508] Logging internal logs to /home/ndhuynh/github/Question-Analysis/wandb/wandb/run-20240117_183354-ibyovhd8/logs/debug-internal.log
+2024-01-17 18:33:54,168 INFO    MainThread:927670 [wandb_init.py:init():547] calling init triggers
+2024-01-17 18:33:54,168 INFO    MainThread:927670 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {'batch_size': 2048, 'test_batch_size': 1000, 'epochs': 50, 'lr': 1e-05, 'gamma': 0.01, 'no_cuda': False, 'seed': 1, 'save_model': False, 'question_path': '/home/ndhuynh/data/simpsonsvqa/v1_Question_Train_simpsons_vqa.json', 'stat_ques_list': ['/home/ndhuynh/data/simpsonsvqa/v1_Question_Train_simpsons_vqa.json', '/home/ndhuynh/data/simpsonsvqa/v1_Question_Val_simpsons_vqa.json'], 'use_glove': True, 'train_question': '/home/ndhuynh/data/simpsonsvqa/v1_Question_Train_simpsons_vqa.json', 'val_question': '/home/ndhuynh/data/simpsonsvqa/v1_Question_Val_simpsons_vqa.json', 'max_ques_len': 20, 'train_annotation': '/home/ndhuynh/data/simpsonsvqa/v1_Annotation_Train_simpsons_vqa.json', 'val_annotation': '/home/ndhuynh/data/simpsonsvqa/v1_Annotation_Val_simpsons_vqa.json'}
+2024-01-17 18:33:54,168 INFO    MainThread:927670 [wandb_init.py:init():596] starting backend
+2024-01-17 18:33:54,168 INFO    MainThread:927670 [wandb_init.py:init():600] setting up manager
+2024-01-17 18:33:54,175 INFO    MainThread:927670 [wandb_init.py:init():606] backend started and connected
+2024-01-17 18:33:54,180 INFO    MainThread:927670 [wandb_init.py:init():705] updated telemetry
+2024-01-17 18:33:54,208 INFO    MainThread:927670 [wandb_init.py:init():738] communicating run to backend with 60.0 second timeout
+2024-01-17 18:33:54,799 INFO    MainThread:927670 [wandb_run.py:_on_init():2173] communicating current version
+2024-01-17 18:33:54,880 INFO    MainThread:927670 [wandb_run.py:_on_init():2182] got version response upgrade_message: "wandb version 0.16.2 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-01-17 18:33:54,881 INFO    MainThread:927670 [wandb_init.py:init():789] starting run threads in backend
+2024-01-17 18:34:08,684 INFO    MainThread:927670 [wandb_run.py:_console_start():2152] atexit reg
+2024-01-17 18:34:08,684 INFO    MainThread:927670 [wandb_run.py:_redirect():2007] redirect: SettingsConsole.WRAP_RAW
+2024-01-17 18:34:08,685 INFO    MainThread:927670 [wandb_run.py:_redirect():2072] Wrapping output streams.
+2024-01-17 18:34:08,685 INFO    MainThread:927670 [wandb_run.py:_redirect():2097] Redirects installed.
+2024-01-17 18:34:08,687 INFO    MainThread:927670 [wandb_init.py:init():830] run started, returning control to user process

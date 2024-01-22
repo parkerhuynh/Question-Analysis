@@ -1,0 +1,175 @@
+sample number: 96169
+output_dim: 8
+token_size: 7057
+ans_type_to_idx: {'yes/no': 0, 'action': 1, 'object': 2, 'location': 3, 'other': 4, 'color': 5, 'human': 6, 'number': 7}
+sample number: 18473
+output_dim: 8
+token_size: 7057
+ans_type_to_idx: {'yes/no': 0, 'action': 1, 'object': 2, 'location': 3, 'other': 4, 'color': 5, 'human': 6, 'number': 7}
+FullyShardedDataParallel(
+  (_fsdp_wrapped_module): FlattenParamsWrapper(
+    (_fpw_module): Net(
+      (word_embeddings): FullyShardedDataParallel(
+        (_fsdp_wrapped_module): FlattenParamsWrapper(
+          (_fpw_module): Embedding(7057, 300)
+        )
+      )
+      (question_encoder): QuestionEmbedding(
+        (gru): FullyShardedDataParallel(
+          (_fsdp_wrapped_module): FlattenParamsWrapper(
+            (_fpw_module): GRU(300, 1024, batch_first=True)
+          )
+        )
+        (fc): FullyShardedDataParallel(
+          (_fsdp_wrapped_module): FlattenParamsWrapper(
+            (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+          )
+        )
+      )
+      (qt_header): Sequential(
+        (0): FullyShardedDataParallel(
+          (_fsdp_wrapped_module): FlattenParamsWrapper(
+            (_fpw_module): Linear(in_features=1024, out_features=1000, bias=True)
+          )
+        )
+        (1): Dropout(p=0.5, inplace=False)
+        (2): Tanh()
+        (3): Linear(in_features=1000, out_features=8, bias=True)
+      )
+    )
+  )
+)
+Train Epoch: 1 	Loss: 1.756304
+Test set: Average loss: 1.7164, Accuracy: 4986/18474 (26.99%)
+Train Epoch: 2 	Loss: 1.686380
+Test set: Average loss: 1.7165, Accuracy: 4784/18474 (25.90%)
+Train Epoch: 3 	Loss: 1.681872
+Test set: Average loss: 1.6996, Accuracy: 8959/18474 (48.50%)
+Train Epoch: 4 	Loss: 1.511621
+Test set: Average loss: 1.1292, Accuracy: 11251/18474 (60.90%)
+Train Epoch: 5 	Loss: 0.838957
+Test set: Average loss: 0.7268, Accuracy: 14063/18474 (76.12%)
+Train Epoch: 6 	Loss: 0.548096
+Test set: Average loss: 0.5465, Accuracy: 16480/18474 (89.21%)
+Train Epoch: 7 	Loss: 0.430058
+Test set: Average loss: 0.4998, Accuracy: 16545/18474 (89.56%)
+Train Epoch: 8 	Loss: 0.385617
+Test set: Average loss: 0.4758, Accuracy: 16552/18474 (89.60%)
+Train Epoch: 9 	Loss: 0.361817
+Test set: Average loss: 0.4490, Accuracy: 16615/18474 (89.94%)
+Train Epoch: 10 	Loss: 0.342141
+Test set: Average loss: 0.4404, Accuracy: 16635/18474 (90.05%)
+Train Epoch: 11 	Loss: 0.329263
+Test set: Average loss: 0.4345, Accuracy: 16648/18474 (90.12%)
+Train Epoch: 12 	Loss: 0.324429
+Test set: Average loss: 0.4233, Accuracy: 16646/18474 (90.11%)
+Train Epoch: 13 	Loss: 0.308938
+Test set: Average loss: 0.4205, Accuracy: 16641/18474 (90.08%)
+Train Epoch: 14 	Loss: 0.303077
+Test set: Average loss: 0.4037, Accuracy: 16675/18474 (90.26%)
+Train Epoch: 15 	Loss: 0.297677
+Test set: Average loss: 0.4040, Accuracy: 16663/18474 (90.20%)
+Train Epoch: 16 	Loss: 0.290503
+Test set: Average loss: 0.3944, Accuracy: 16694/18474 (90.36%)
+Train Epoch: 17 	Loss: 0.286666
+Test set: Average loss: 0.3863, Accuracy: 16685/18474 (90.32%)
+Train Epoch: 18 	Loss: 0.282586
+Test set: Average loss: 0.3844, Accuracy: 16712/18474 (90.46%)
+Train Epoch: 19 	Loss: 0.280052
+Test set: Average loss: 0.3845, Accuracy: 16709/18474 (90.45%)
+Train Epoch: 20 	Loss: 0.276605
+Test set: Average loss: 0.3701, Accuracy: 16733/18474 (90.58%)
+Train Epoch: 21 	Loss: 0.267220
+Test set: Average loss: 0.3838, Accuracy: 16778/18474 (90.82%)
+Train Epoch: 22 	Loss: 0.266603
+Test set: Average loss: 0.3768, Accuracy: 16778/18474 (90.82%)
+Train Epoch: 23 	Loss: 0.261804
+Test set: Average loss: 0.3792, Accuracy: 16771/18474 (90.78%)
+Train Epoch: 24 	Loss: 0.255952
+Test set: Average loss: 0.3825, Accuracy: 16795/18474 (90.91%)
+Train Epoch: 25 	Loss: 0.251321
+Test set: Average loss: 0.3730, Accuracy: 16808/18474 (90.98%)
+Train Epoch: 26 	Loss: 0.250758
+Test set: Average loss: 0.3730, Accuracy: 16860/18474 (91.26%)
+Train Epoch: 27 	Loss: 0.251940
+Test set: Average loss: 0.3627, Accuracy: 16857/18474 (91.25%)
+Train Epoch: 28 	Loss: 0.247898
+Test set: Average loss: 0.3546, Accuracy: 16876/18474 (91.35%)
+Train Epoch: 29 	Loss: 0.242392
+Test set: Average loss: 0.3660, Accuracy: 16861/18474 (91.27%)
+Train Epoch: 30 	Loss: 0.241598
+Test set: Average loss: 0.3610, Accuracy: 16897/18474 (91.46%)
+Train Epoch: 31 	Loss: 0.239762
+Test set: Average loss: 0.3576, Accuracy: 16918/18474 (91.58%)
+Train Epoch: 32 	Loss: 0.236821
+Test set: Average loss: 0.3549, Accuracy: 16925/18474 (91.62%)
+Train Epoch: 33 	Loss: 0.234788
+Test set: Average loss: 0.3592, Accuracy: 16916/18474 (91.57%)
+Train Epoch: 34 	Loss: 0.232863
+Test set: Average loss: 0.3540, Accuracy: 16930/18474 (91.64%)
+Train Epoch: 35 	Loss: 0.229758
+Test set: Average loss: 0.3460, Accuracy: 16958/18474 (91.79%)
+Train Epoch: 36 	Loss: 0.230793
+Test set: Average loss: 0.3449, Accuracy: 16961/18474 (91.81%)
+Train Epoch: 37 	Loss: 0.228292
+Test set: Average loss: 0.3425, Accuracy: 16962/18474 (91.82%)
+Train Epoch: 38 	Loss: 0.230428
+Test set: Average loss: 0.3467, Accuracy: 16954/18474 (91.77%)
+Train Epoch: 39 	Loss: 0.226948
+Test set: Average loss: 0.3344, Accuracy: 16971/18474 (91.86%)
+Train Epoch: 40 	Loss: 0.225034
+Test set: Average loss: 0.3542, Accuracy: 16977/18474 (91.90%)
+Train Epoch: 41 	Loss: 0.225828
+Test set: Average loss: 0.3441, Accuracy: 16987/18474 (91.95%)
+Train Epoch: 42 	Loss: 0.219350
+Test set: Average loss: 0.3394, Accuracy: 17008/18474 (92.06%)
+Train Epoch: 43 	Loss: 0.217500
+Test set: Average loss: 0.3478, Accuracy: 16993/18474 (91.98%)
+Train Epoch: 44 	Loss: 0.213997
+Test set: Average loss: 0.3344, Accuracy: 17039/18474 (92.23%)
+Train Epoch: 45 	Loss: 0.214861
+Test set: Average loss: 0.3315, Accuracy: 17020/18474 (92.13%)
+Train Epoch: 46 	Loss: 0.215037
+Test set: Average loss: 0.3414, Accuracy: 17034/18474 (92.21%)
+Train Epoch: 47 	Loss: 0.210598
+Test set: Average loss: 0.3413, Accuracy: 17034/18474 (92.21%)
+Train Epoch: 48 	Loss: 0.214808
+Test set: Average loss: 0.3369, Accuracy: 17060/18474 (92.35%)
+Train Epoch: 49 	Loss: 0.210709
+Test set: Average loss: 0.3340, Accuracy: 17034/18474 (92.21%)
+Train Epoch: 50 	Loss: 0.210010
+Test set: Average loss: 0.3444, Accuracy: 17061/18474 (92.35%)
+CUDA event elapsed time: 1780.659875sec
+FullyShardedDataParallel(
+  (_fsdp_wrapped_module): FlattenParamsWrapper(
+    (_fpw_module): Net(
+      (word_embeddings): FullyShardedDataParallel(
+        (_fsdp_wrapped_module): FlattenParamsWrapper(
+          (_fpw_module): Embedding(7057, 300)
+        )
+      )
+      (question_encoder): QuestionEmbedding(
+        (gru): FullyShardedDataParallel(
+          (_fsdp_wrapped_module): FlattenParamsWrapper(
+            (_fpw_module): GRU(300, 1024, batch_first=True)
+          )
+        )
+        (fc): FullyShardedDataParallel(
+          (_fsdp_wrapped_module): FlattenParamsWrapper(
+            (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+          )
+        )
+      )
+      (qt_header): Sequential(
+        (0): FullyShardedDataParallel(
+          (_fsdp_wrapped_module): FlattenParamsWrapper(
+            (_fpw_module): Linear(in_features=1024, out_features=1000, bias=True)
+          )
+        )
+        (1): Dropout(p=0.5, inplace=False)
+        (2): Tanh()
+        (3): Linear(in_features=1000, out_features=8, bias=True)
+      )
+    )
+  )
+)

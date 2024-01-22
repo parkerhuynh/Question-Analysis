@@ -1,0 +1,897 @@
+,target,prediction,question,answer,count
+0,object,other,what shape is the plate?,square,1
+1,object,other,what shape is the plate?,circle,1
+2,object,other,where is the man skiing?,mountain,1
+3,object,other,where is the man skiing?,road,1
+4,object,other,what is the shape of the door?,rectangle,2
+5,object,other,what mode of transportation is he using?,skateboard,1
+6,object,other,where is the plant?,floor,1
+7,object,other,what pattern is the wood on the table laid out in?,squares,1
+8,object,other,what kind of doughnut?,chocolate,1
+9,object,other,is the zebra or the giraffe taller?,giraffe,1
+10,object,other,what pattern is the lady's apron?,stripes,1
+11,object,other,what is the lamp on?,table,1
+12,object,other,what is the umbrella used for in this picture?,shade,1
+13,object,other,what type of region and climate does this scene appear to be located in?,mountains,1
+14,object,other,what bird family does this bird belong to?,parrot,1
+15,object,other,where is the tree located?,mountain,1
+16,object,other,where is the scene taking place?,forest,1
+17,object,other,what is the table covered with?,food,1
+18,object,other,what is on the tree stump?,cake,1
+19,object,other,what holiday is being celebrated?,birthday,1
+20,object,other,what is the statue holding?,sword,1
+21,object,other,is this man on skates or is he walking?,skateboard,1
+22,object,other,why can't we see the boy in the middle's number?,shirt,1
+23,object,other,why is the guy so excited?,donuts,1
+24,object,other,where is the white awning?,restaurant,1
+25,object,other,what shape is the table?,rectangle,1
+26,object,other,what country is this plane from?,canada,1
+27,object,other,why are the cat's eyes shining?,light,1
+28,object,other,what does the bottom sign say?,rice,1
+29,object,other,what is on the bike?,cat,1
+30,object,other,what type of writing is on the sign?,graffiti,1
+31,object,other,what are pedestrians asked not to do on the white sign?,park,1
+32,object,other,what are the picnic tables covered with?,umbrella,1
+33,object,other,what is the brand name on the keyboard?,dell,1
+34,object,other,what does it say on the pizza box?,pizza,1
+35,object,other,where are the clouds in the picture?,sky,1
+36,object,other,what brand phone is this?,sony,1
+37,object,other,what part of this man's outfit is missing?,pants,1
+38,object,other,what is under his feet?,skateboard,1
+39,object,other,why is there so much steam on top of the train?,engine,1
+40,object,other,which bus line is this?,city,1
+41,object,other,where is the grass growing?,floor,1
+42,object,other,where is the surfboard?,water,1
+43,object,other,why are there umbrellas set up in this location?,sun,1
+44,object,other,what is on the donut?,sugar,1
+45,object,other,what is the writing on the top?,bar,1
+46,object,other,what type of range is shown?,gas,1
+47,object,other,what's the name of the fun or water sports item?,surfboard,1
+48,object,other,what fast food restaurant is advertising on the bus?,bananas,1
+49,object,other,where is the lake?,forest,1
+50,object,other,"what does the word ""gigante"" describe?",airplane,1
+51,object,other,what does it say on the large billboard?,toyota,1
+52,object,other,what is the baseball player getting ready to do?,pitch,1
+53,object,other,who owns this truck?,city,1
+54,object,other,where is the word flow?,shirt,1
+55,object,other,what is the setting?,classroom,1
+56,object,other,what kind of kickstand appears?,motorcycle,1
+57,object,other,what is sitting on the back of the toilet?,decoration,1
+58,object,other,where these skiers going?,forest,1
+59,object,other,what country did this take place in?,canada,1
+60,object,other,what is the dog watching?,tv,1
+61,object,other,what has a checkered pattern?,apron,1
+62,object,other,what is sitting on the toilet?,cat,1
+63,object,other,what is the name on the lid on the jar?,ball,1
+64,object,other,what's the pattern on the picnic cloth?,flowers,1
+65,object,other,what event might be taking place here?,birthday,1
+66,object,other,what is on the toilet?,soap,1
+67,object,other,what team might the batter play for?,cardinals,1
+68,object,other,is the door on the building square or round on top?,square,1
+69,object,other,what do the words say?,cross,1
+70,object,other,what is the shape of the plate?,square,1
+71,object,other,where is the building located?,road,1
+72,object,other,where is the computer tower?,floor,1
+73,object,other,where are the goggles?,helmet,1
+74,object,color,what is the fence made of?,metal,5
+75,object,color,what kind of building is this?,office,3
+76,object,color,what kind of building is this?,tower,1
+77,object,color,what is the building made of?,glass,1
+78,object,color,what is the building made of?,concrete,1
+79,object,color,what is the building made of?,stone,1
+80,object,color,what is the material of the fence?,metal,2
+81,object,color,what is the window made of?,metal,1
+82,object,color,what is the window made of?,glass,1
+83,object,color,what kind of glasses is he wearing?,eyeglasses,1
+84,object,color,what is written on the yellow part of the police's jacket?,police,1
+85,object,color,what is the counter on the right made of?,granite,1
+86,object,color,where are the feet of this skateboarder located?,skateboard,1
+87,object,color,what are the pillars made from?,concrete,1
+88,object,color,where is this oven located?,restaurant,1
+89,object,color,what is the dome made of?,glass,1
+90,object,color,what is the fence made out of?,metal,1
+91,object,color,what is the material of the stroller?,metal,1
+92,object,color,what  is the rug made of?,cloth,1
+93,object,color,what is the warehouse made of?,metal,1
+94,object,color,is the chair made of wood or metal?,metal,1
+95,object,color,what is the material of the display case?,glass,1
+96,object,color,what is the hospital bed made of?,metal,1
+97,object,color,what is the bench made of?,plastic,1
+98,object,color,what is the balcony made of?,metal,1
+99,object,color,what are the shelf supports made of?,metal,1
+100,object,color,is the room made of tiles or wood?,tiles,1
+101,object,color,what material is the table made from?,plastic,1
+102,object,color,what is made of wicker?,basket,1
+103,object,color,what is the headboard made of?,metal,1
+104,object,color,what are the swords made of?,metal,1
+105,object,color,what is the building on the right made of?,stone,1
+106,object,color,where is the kitchen faucet mounted?,sink,1
+107,object,color,where are the apples?,laptop,1
+108,object,color,what is the room made up of?,box,1
+109,object,color,what is the birdhouse made of?,glass,1
+110,object,color,what is the material of the wall?,tiles,1
+111,object,color,what kind of bears are these?,teddy,1
+112,object,color,what kind of wood is the tv stand made out of?,oak,1
+113,object,color,of what material is the fence made?,metal,1
+114,object,color,what color is the truck?,rust,1
+115,object,color,where is the skier in the picture?,mountain,1
+116,object,color,what kind of frosting is on the cupcake?,vanilla,1
+117,object,color,what color is the hand rail on the side of the door?,metal,1
+118,object,color,what style of curtains are shown?,shower,1
+119,object,color,what material is the building made from?,stone,1
+120,object,color,what is hanging from the man's apron?,towel,1
+121,object,color,what is the refrigerator made of?,metal,1
+122,object,color,what is the chair made from?,plastic,1
+123,object,color,what kind of hat is the man wearing?,cap,1
+124,object,color,what is the sidewalk made of?,dirt,1
+125,object,color,what is the man wearing on his shirt?,tie,1
+126,object,color,what is the monument made of?,metal,1
+127,object,color,what is the desk made of?,glass,1
+128,object,color,what are the doors made of?,glass,1
+129,object,color,what is the room like?,bedroom,1
+130,object,color,"besides wood, what is the bench made of?",metal,1
+131,object,color,what is the mirror made of?,glass,1
+132,object,color,what is the kid going to eat?,donut,1
+133,object,color,what is the room made of?,tiles,1
+134,object,color,what is the bed made of?,metal,1
+135,object,color,what is the circle made of?,dirt,1
+136,object,color,what is on the tablecloth?,food,1
+137,object,color,what is the color of the fence?,metal,1
+138,object,color,what material are the stairs made of?,metal,1
+139,object,color,what is the patches made of?,fabric,1
+140,object,color,where is the door located?,wall,1
+141,object,action,what sport is this?,baseball,10
+142,object,action,what sport is being played?,baseball,10
+143,object,action,what game is being played?,baseball,3
+144,object,action,what game is being played?,bowling,1
+145,object,action,what type of sport is indicated here?,baseball,2
+146,object,action,what team is playing?,baseball,2
+147,object,action,who is the sheep running from?,horse,1
+148,object,action,what toy is the children playing with?,skateboard,1
+149,object,action,what are these brushes used for?,hair,1
+150,object,action,what kind of sport is this?,baseball,1
+151,object,action,what game is the man playing on the wii?,bowling,1
+152,object,action,what is the child playing with?,ball,1
+153,object,action,what kind of game is the child playing on the tv?,bowling,1
+154,object,action,what kind of business is going on at this premises?,school,1
+155,object,action,what is in the dog's mouth?,ball,1
+156,object,action,what is being played?,baseball,1
+157,object,action,what is the purpose of the white and orange object?,sign,1
+158,object,action,what game are these men playing?,baseball,1
+159,object,action,what are the children playing?,baseball,1
+160,object,action,what is on the paper?,pen,1
+161,object,action,what sport is being played in the picture?,baseball,1
+162,object,action,what game is she playing?,baseball,1
+163,object,action,where are the players playing?,baseball,1
+164,object,action,are the people driving a car or sitting on a bus?,bus,1
+165,object,action,what is the boy practicing?,baseball,1
+166,object,action,what are the man and woman playing?,guitar,1
+167,object,action,what sport does this boy play?,baseball,1
+168,object,action,what is this woman playing?,baseball,1
+169,object,action,what kind of balls are shown?,oranges,1
+170,object,action,what tool is he using?,knife,1
+171,object,action,what is the man playing?,saxophone,1
+172,object,action,what is this sport?,baseball,1
+173,object,action,what sport is the man playing?,baseball,1
+174,object,action,what are the children throwing?,baseball,1
+175,object,action,what activities can be held in the building?,lighthouse,1
+176,object,action,what is he throwing?,baseball,1
+177,object,action,what is the tossing?,bat,1
+178,object,action,what sport is being played in this picture?,baseball,1
+179,object,action,what is the umbrella for?,shade,1
+180,object,action,what is the man reaching for?,kite,1
+181,object,action,what kind of sport was he participating in?,baseball,1
+182,object,action,what game is the subject of the picture playing?,baseball,1
+183,object,action,why are the horses foot white?,fur,1
+184,object,action,what is the dog holding?,ball,1
+185,object,action,what is the woman trying to catch?,kite,1
+186,object,action,what is floating in the air?,kites,1
+187,object,action,what game is he playing?,baseball,1
+188,object,action,what game are they watching?,baseball,1
+189,object,action,what is the giraffe reaching for?,water,1
+190,object,action,what game are they playing?,baseball,1
+191,object,action,what is the position of the posters?,wall,1
+192,object,human,what is the picture on the sign?,arrow,2
+193,object,human,what is on the floor in the image?,toy,1
+194,object,human,who is flying the kite?,child,1
+195,object,human,what is on top of the train?,sign,1
+196,object,human,what can we see in the room?,chair,1
+197,object,human,what is the character in the image?,duck,1
+198,object,human,what is the brown cow leaning on?,fence,1
+199,object,human,what is reflected in the mirror?,curtain,1
+200,object,human,who might have the remote control?,cat,1
+201,object,human,what is the truck transporting?,dog,1
+202,object,human,"who is ""riding"" the boat?",dog,1
+203,object,human,who has glasses on?,chef,1
+204,object,human,what is the picture on the book?,bottle,1
+205,object,human,what is in the image?,sunglasses,1
+206,object,human,who should he call for help?,police,1
+207,object,human,what is the sculpture of?,bear,1
+208,object,human,who is in the water?,boat,1
+209,object,human,who is in the picture?,child,1
+210,object,human,what is on the beach?,boats,1
+211,object,human,who is throwing the baseball?,pitcher,1
+212,object,human,who is in the air?,bird,1
+213,object,human,who is the good listener?,bear,1
+214,object,human,what do you see on the road?,car,1
+215,object,location,what city is this in?,boston,1
+216,object,location,what type of room is shown in the image?,classroom,1
+217,object,location,what is the setting of the image?,room,1
+218,object,location,where was the picture taken?,zoo,1
+219,object,location,what country is represented by the top row of clocks?,canada,1
+220,object,location,what kind of room is in the picture?,bedroom,1
+221,object,location,which cooking appliance is behind him?,grill,1
+222,object,location,what part of the house is the microwave in?,bathroom,1
+223,object,location,what room is this?,classroom,1
+224,object,location,what country's flags are on the bus?,england,1
+225,object,location,what environment is this laptop in?,office,1
+226,object,location,where are the children walking?,room,1
+227,object,location,where is the child?,fridge,1
+228,object,location,where are the sailboats?,water,1
+229,object,location,where is the little girl walking?,square,1
+230,object,yes/no,is the umbrella protecting him from?,sun,1
+231,object,yes/no,are these cows or goats?,sheep,1
+232,object,yes/no,is there any furniture in the room?,cupboard,1
+233,object,yes/no,are the men holding anything?,cup,1
+234,object,yes/no,is there anything on the table?,glasses,1
+235,object,yes/no,are the children holding anything?,bat,1
+236,object,yes/no,are there any objects in the background?,light,1
+237,object,number,what is the name of the pattern appearing on top of the picture?,stripes,1
+238,object,number,what player on the baseball team is this?,batter,1
+239,location,object,what is in the background?,house,6
+240,location,object,what is in the background?,livingroom,1
+241,location,object,what is in the background?,kitchen,1
+242,location,object,what kind of room is it?,livingroom,4
+243,location,object,where are the people standing?,inside,1
+244,location,object,where are the people standing?,outside,1
+245,location,object,where are the people standing?,sidewalk,1
+246,location,object,what type of room is it?,livingroom,3
+247,location,object,what type of room is in the image?,kitchen,1
+248,location,object,what type of room is in the image?,livingroom,1
+249,location,object,what kind of room is this?,livingroom,2
+250,location,object,where is the man standing?,street,1
+251,location,object,where is the man standing?,kitchen,1
+252,location,object,where are they standing?,livingroom,1
+253,location,object,where are they standing?,outside,1
+254,location,object,what country is this?,usa,1
+255,location,object,what country is this?,china,1
+256,location,object,what plane is the women walking through?,crosswalk,1
+257,location,object,what is the guy riding past?,crosswalk,1
+258,location,object,what is the truck on top of?,street,1
+259,location,object,where are the men?,livingroom,1
+260,location,object,what are the chairs sitting on?,dock,1
+261,location,object,what is in the background of the image?,house,1
+262,location,object,where are the men standing?,sidewalk,1
+263,location,object,where is the bear?,outside,1
+264,location,object,where is the hydrant?,sidewalk,1
+265,location,object,what is behind the standing cow?,house,1
+266,location,object,what is the man standing on?,sidewalk,1
+267,location,object,where is the picture frame?,left,1
+268,location,object,where is the bus at?,street,1
+269,location,object,what is on the side of the road?,house,1
+270,location,object,where is the toilet and computer monitor?,outside,1
+271,location,object,what is in the town?,house,1
+272,location,object,what kind of cat is this?,house,1
+273,location,object,what is behind the tree?,house,1
+274,location,object,what is behind the boys?,house,1
+275,location,object,where is the woman standing?,kitchen,1
+276,location,object,what is the woman standing on?,sidewalk,1
+277,location,object,where is the knife from?,chicago,1
+278,location,object,where are the flowers?,left,1
+279,location,object,what is the cat looking at?,outside,1
+280,location,object,what can you see through the window?,house,1
+281,location,object,what is in front of the fence?,house,1
+282,location,object,are the people standing on a sidewalk or a road?,sidewalk,1
+283,location,object,where are the persons standing?,kitchen,1
+284,location,object,are the people on the bus or on the sidewalk?,sidewalk,1
+285,location,object,where was this baking mat made?,france,1
+286,location,object,what is on the sidewalk?,house,1
+287,location,object,what is behind the fence?,house,1
+288,location,object,where are the man and woman standing?,kitchen,1
+289,location,object,what is the truck riding on?,street,1
+290,location,object,where are the people walking?,sidewalk,1
+291,location,object,where is the bicycle?,sidewalk,1
+292,location,object,the motorcycle is driving around what type of track?,street,1
+293,location,object,where is the cat looking?,outside,1
+294,location,object,what are they standing in front of?,house,1
+295,location,object,what is behind the cars?,house,1
+296,location,object,what is in front of the person?,house,1
+297,location,object,what is behind the people?,house,1
+298,location,object,where is seiko located?,left,1
+299,location,object,where is the cat?,left,1
+300,location,object,what is on the right side of the image?,house,1
+301,location,object,how could this dog have fleas?,outside,1
+302,location,object,where is the fork?,left,1
+303,location,object,where is the woman sitting on?,sidewalk,1
+304,location,object,what country is this in?,usa,1
+305,location,object,where are the giraffes?,outside,1
+306,location,object,where are the people?,sidewalk,1
+307,location,object,what type of building is on the right side of the image?,house,1
+308,location,object,where is the soap?,windowsill,1
+309,location,object,where is this being taken place?,outside,1
+310,location,color,which way will the car go?,left,1
+311,location,color,which man has longer sideburns?,left,1
+312,location,color,is the player in the forefront of the image left or right handed?,left,1
+313,location,color,what is the structure of the building?,house,1
+314,location,color,is the guy with the hat on the left or right?,left,1
+315,location,color,what type of building is in the image?,house,1
+316,location,color,which direction is the bird looking?,left,1
+317,location,color,what is the man's dominant hand?,left,1
+318,location,color,which direction is the giraffe's head turned in?,left,1
+319,location,color,what way is the front wheel turned?,left,1
+320,location,color,which moped has the most colors?,left,1
+321,location,color,which foot is at the rear of the board?,left,1
+322,location,color,where are the objects on the wall located?,left,1
+323,location,color,which pizza has a fork?,left,1
+324,location,color,which direction is the giraffe facing?,left,1
+325,location,color,what hand is she holding the racquet with?,left,1
+326,location,color,is the person standing on the left or right side of the image?,left,1
+327,location,color,does the skateboarder have his right or left arm in the air?,left,1
+328,location,color,what direction is the water flowing?,south,1
+329,location,color,which dog is bigger?,left,1
+330,location,color,which leg does the lady have in the air?,left,1
+331,location,color,what side of the computer is the mouse on?,left,1
+332,location,color,which side has onions?,left,1
+333,location,color,which way should the sign's arrow be pointing?,left,1
+334,location,color,what direction on the traffic pole?,left,1
+335,location,other,what is the position of the woman with respect to the man holding the popcorn?,left,1
+336,location,other,what country did the plane come from?,usa,1
+337,location,other,where is the tree located?,sidewalk,1
+338,location,other,what country is this plane from?,usa,1
+339,location,other,what part of the world is this?,london,1
+340,location,other,where is the window in the room?,left,1
+341,location,other,where is the path going?,street,1
+342,location,other,what is the theme of the room?,house,1
+343,location,human,what flag can you see?,usa,1
+344,location,human,what language is written on the signs?,french,1
+345,location,action,what is the position of the men?,sidewalk,1
+346,location,action,what is the position of the man and the woman?,left,1
+347,location,number,which child has a missing front tooth?,left,1
+348,action,object,what is on the wall?,painting,5
+349,action,object,what is in the background?,painting,2
+350,action,object,what is the man holding?,frisbee,2
+351,action,object,what is that orange thing in the back?,frisbee,1
+352,action,object,what is the man about to do?,tennis,1
+353,action,object,what is flying in the air?,frisbee,1
+354,action,object,what teams are these guys on?,tennis,1
+355,action,object,what is the room used for?,sitting,1
+356,action,object,what is on the man's wrist?,watch,1
+357,action,object,how is this man getting across the water?,surfing,1
+358,action,object,what is on the walls?,painting,1
+359,action,object,what is the item on the stove for?,cooking,1
+360,action,object,what is the little boy holding?,frisbee,1
+361,action,object,what is the child swinging?,frisbee,1
+362,action,object,what is the white object the man is holding?,frisbee,1
+363,action,object,what is behind the child?,painting,1
+364,action,object,why are the birds near the shore?,eating,1
+365,action,object,what is on the wall next to the bed?,painting,1
+366,action,object,what supplies does the boat have?,fishing,1
+367,action,object,what type of scene is this?,soccer,1
+368,action,object,why is the man crouching?,catching,1
+369,action,object,what is the man about to hit?,frisbee,1
+370,action,object,what is the folk for?,eating,1
+371,action,object,what support is the woman playing?,frisbee,1
+372,action,object,what is the kid flying?,frisbee,1
+373,action,object,what does the dog have in its mouth?,frisbee,1
+374,action,object,what is the microwave for?,cooking,1
+375,action,object,what is the man flying?,frisbee,1
+376,action,object,what is the baby holding?,frisbee,1
+377,action,object,how do you flush this toilet?,handle,1
+378,action,object,what is on the wall behind the man?,painting,1
+379,action,object,what is in the air?,frisbee,1
+380,action,object,where are the boys going?,skiing,1
+381,action,object,what is happening in the image?,standing,1
+382,action,object,what is the dog carrying?,frisbee,1
+383,action,object,what is the boy sitting next to?,frisbee,1
+384,action,object,where is the person holding the microphone?,standing,1
+385,action,object,what is the man looking at?,painting,1
+386,action,object,what is the road for?,skiing,1
+387,action,object,what is on the wall behind them?,painting,1
+388,action,object,what type of ball is on the field?,soccer,1
+389,action,object,what is on top of the bag?,handle,1
+390,action,object,what is on the wall above the couch?,painting,1
+391,action,other,what do the people in the image do?,standing,1
+392,action,other,what does the purple sign say?,open,1
+393,action,other,how are the chairs arranged?,sitting,1
+394,action,other,what is the position of the figure in front of the window?,standing,1
+395,action,other,what is the woman's facial expression?,smiling,1
+396,action,other,how is the weather?,raining,1
+397,action,other,what is the position of the people in front of the building?,standing,1
+398,action,other,what kind of ball is the man bouncing?,tennis,1
+399,action,other,what position is the woman in?,standing,1
+400,action,other,what is on tv?,soccer,1
+401,action,number,what hometown event might this truck have been in?,parade,1
+402,action,number,what extra word is added to this sign?,listening,1
+403,action,color,what is the color of the man's eyes and mouth?,open,1
+404,action,color,what is the position of the person wearing a suit and tie?,sitting,1
+405,action,yes/no,is there anything on the wall?,painting,1
+406,action,location,where the woman be walking too?,work,1
+407,other,object,where are the people standing?,ground,4
+408,other,object,where are the people standing?,snow,1
+409,other,object,where are the people standing?,background,1
+410,other,object,what is the man standing on?,ground,3
+411,other,object,what brand of bag is in the picture?,adidas,2
+412,other,object,where are they sitting?,courtroom,1
+413,other,object,where are they sitting?,ground,1
+414,other,object,are these toys or real beings?,real,2
+415,other,object,where is the ball?,ground,1
+416,other,object,where is the ball?,air,1
+417,other,object,what is the person standing on?,ground,2
+418,other,object,what is on the ground?,snow,2
+419,other,object,where is the man standing?,courtroom,2
+420,other,object,what is the man eating?,nothing,2
+421,other,object,what brand made the soccer ball?,nike,2
+422,other,object,what is on the right side of the image?,television,2
+423,other,object,what kind of bed is this?,full,2
+424,other,object,what country is this?,germany,1
+425,other,object,what country is this?,japan,1
+426,other,object,where is the dog sitting?,ground,1
+427,other,object,where is the dog sitting?,background,1
+428,other,object,what are they standing on?,ground,2
+429,other,object,where are the children standing?,ground,2
+430,other,object,what is the bird standing on?,air,1
+431,other,object,what is the bird standing on?,ground,1
+432,other,object,what is on the ground in front of the teddy person?,snow,1
+433,other,object,what kind of plane is this?,military,1
+434,other,object,what kind of substance is coming from the bottom left of the train?,steam,1
+435,other,object,what is on the wall behind the woman?,television,1
+436,other,object,where did the man get his coffee?,starbucks,1
+437,other,object,how is the person standing?,ground,1
+438,other,object,what type of flowers are in the vases?,fake,1
+439,other,object,what brand name is seen?,polo,1
+440,other,object,what is the group of people standing on?,ground,1
+441,other,object,where might this image have been taken?,indoor,1
+442,other,object,what is on the mirror?,reflection,1
+443,other,object,what is the man holding?,nothing,1
+444,other,object,what position does this kid play?,outfield,1
+445,other,object,what shape are the main objects?,round,1
+446,other,object,where is this player standing?,outfield,1
+447,other,object,what is behind the objects?,background,1
+448,other,object,what is the person sitting on?,ground,1
+449,other,object,what is the shape of the sign board?,rectangular,1
+450,other,object,what shape is the clock?,round,1
+451,other,object,what is on the other play?,nothing,1
+452,other,object,what is the design on the chair?,floral,1
+453,other,object,what does this kitchen have sitting above the cabinets?,nothing,1
+454,other,object,what is on top of this cake?,nothing,1
+455,other,object,what is floating in the dipping sauce?,nothing,1
+456,other,object,what is on the ground in front of the deer?,snow,1
+457,other,object,what branding is visible?,polo,1
+458,other,object,what can be seen in the mirror?,photographer,1
+459,other,object,what company made this small appliance?,unknown,1
+460,other,object,what is the cat playing with?,nothing,1
+461,other,object,what is the shape of the writing surface?,rectangular,1
+462,other,object,what is the phone manufacturer?,samsung,1
+463,other,object,where are other zebras in this forest?,background,1
+464,other,object,what is the place in the image?,courtroom,1
+465,other,object,what does the cake look like?,face,1
+466,other,object,what is being pulled in this picture?,nothing,1
+467,other,object,where is the motorcycle located?,ground,1
+468,other,object,what part of the fence is broken?,top,1
+469,other,object,where are the cakes?,nowhere,1
+470,other,object,what is the little girl pulling?,nothing,1
+471,other,object,what is on the ground in front of the man?,snow,1
+472,other,object,where is the ruined umbrella?,ground,1
+473,other,object,what might you call this type of road?,country,1
+474,other,object,what type of print do the flags have?,checkered,1
+475,other,object,why is she sitting?,tired,1
+476,other,object,what kind of authority is on the horse?,military,1
+477,other,object,what is in front of the house?,snow,1
+478,other,object,what kind of train is this?,freight,1
+479,other,object,what shape is the pastry?,round,1
+480,other,object,what is the shape of the basket that the giraffes are eating from?,round,1
+481,other,object,what is in his jacket's left pocket?,nothing,1
+482,other,object,what is around the tree?,snow,1
+483,other,object,what is the man in the blue hoodie holding?,nothing,1
+484,other,object,how did the puppy get in there?,owner,1
+485,other,object,what type of doughnuts are these?,glazed,1
+486,other,object,what might the person be celebrating?,christmas,1
+487,other,object,is the stove gas or electric?,electric,1
+488,other,object,what is the bear sitting in?,ground,1
+489,other,object,where is the pig in the second image?,background,1
+490,other,object,what is the bird sitting on?,ground,1
+491,other,object,what is displayed on the laptop?,website,1
+492,other,object,why is there a reflection on the road?,wet,1
+493,other,object,where is the bear?,nowhere,1
+494,other,object,what is he eating?,nothing,1
+495,other,object,what pattern is on the blanket?,floral,1
+496,other,object,what is getting in the way of seeing the whole giraffe's face?,nothing,1
+497,other,object,what is the boy standing on?,ground,1
+498,other,object,what is the dog sleeping on?,lap,1
+499,other,object,what is in the bucket?,nothing,1
+500,other,object,is this cook stove gas or electric?,electric,1
+501,other,object,where are the cabinets?,background,1
+502,other,object,what else is on the tray with the pizza?,nothing,1
+503,other,object,what brand does his suit appear to be?,nike,1
+504,other,object,where are the people sitting?,courtroom,1
+505,other,object,how is the ladies hair fixed?,straight,1
+506,other,object,is this in the city or country?,country,1
+507,other,object,what is this cat looking at?,photographer,1
+508,other,object,what is unsafe about the man's attire?,nothing,1
+509,other,object,where are the books?,ground,1
+510,other,object,where is this located?,africa,1
+511,other,object,is this a picture of a tie or a face?,face,1
+512,other,object,what type of show might these planes be a part of?,air,1
+513,other,object,what kind of phone is this?,samsung,1
+514,other,object,what are the boys standing on?,ground,1
+515,other,object,where are her shoes?,gone,1
+516,other,object,what type of bus is this?,public,1
+517,other,object,what is in the lid?,nothing,1
+518,other,object,what is the little girl feeding?,nothing,1
+519,other,object,what type of reception is being attended?,wedding,1
+520,other,object,what country is this in?,india,1
+521,other,object,what kind of birds are there?,rooster,1
+522,other,object,what is the brand of the girl's backpack?,head,1
+523,other,object,what kind of jacket would this kid benefit from?,winter,1
+524,other,object,what is the primary object in the scene used for?,rain,1
+525,other,object,what is on the wall?,television,1
+526,other,object,what type of kitchen is this?,big,1
+527,other,object,what is behind the person?,background,1
+528,other,object,what is the boy riding?,nothing,1
+529,other,object,where are the walking?,snow,1
+530,other,object,what are first three letters of sign above?,game,1
+531,other,object,what is parked at the meter?,nothing,1
+532,other,object,"what are the black ""dots"" on the face of the cow in the front?",eyes,1
+533,other,object,what is in the pan?,nothing,1
+534,other,object,what type of picture is this?,group,1
+535,other,object,where is the image taken?,indoor,1
+536,other,object,what is that in the middle of the road?,snow,1
+537,other,object,what model of phone is the man using?,nokia,1
+538,other,object,is this in the country or city?,country,1
+539,other,object,where are the giraffes?,nowhere,1
+540,other,object,what is the design pattern on the shoes called?,checkered,1
+541,other,object,what is the man sitting on?,ground,1
+542,other,object,what kind of food is this?,italian,1
+543,other,object,are these bananas or plantains?,neither,1
+544,other,object,what is on top of the tomato?,nothing,1
+545,other,object,what is on the dogs neck?,nothing,1
+546,other,object,where is the other elephant located?,background,1
+547,other,object,what is on the woman's fork?,nothing,1
+548,other,object,what is displayed on the tv?,game,1
+549,other,object,what is the computer's make?,samsung,1
+550,other,object,what is in his left hand?,nothing,1
+551,other,object,what shape is sign?,octagon,1
+552,other,object,what message has dave written?,nothing,1
+553,other,object,what is on the front of the basket?,nothing,1
+554,other,object,why are the skiers going inside?,cold,1
+555,other,object,are the elephants in a zoo or in the wild?,wild,1
+556,other,object,what are they standing in front of?,television,1
+557,other,object,what sort of design is on the surfboard?,floral,1
+558,other,object,what type of light is this?,traffic,1
+559,other,object,what kind of skis is the man riding?,snow,1
+560,other,object,what is this man sitting on?,ground,1
+561,other,object,what type of place is this?,indoor,1
+562,other,object,what kind of cake is this?,checkered,1
+563,other,object,what is on the man's head?,nothing,1
+564,other,object,what is the man in black called?,umpire,1
+565,other,object,what is covering the man's hands?,nothing,1
+566,other,object,where is the toy located?,background,1
+567,other,object,what is in the bag on the counter?,unsure,1
+568,other,object,what is on the ground behind the man?,snow,1
+569,other,object,what is on the newspaper in the frame?,dodgers,1
+570,other,object,what is on the back of the flatbed?,nothing,1
+571,other,object,what can be seen in the foreground of the image?,ground,1
+572,other,object,what is the shape of the pizza?,round,1
+573,other,object,what are the women holding?,nothing,1
+574,other,object,where are the girls standing?,ground,1
+575,other,object,where is the bird?,background,1
+576,other,object,what is parked on this boat?,nothing,1
+577,other,number,how many people are there?,group,12
+578,other,number,how many people are there?,few,1
+579,other,number,how many people are in the image?,group,5
+580,other,number,how many people are in the picture?,group,2
+581,other,number,how many people are sitting at the table?,group,1
+582,other,number,how old is the elephant?,young,1
+583,other,number,how many people are in the illustration?,group,1
+584,other,number,what pattern is on the tablecloths?,checkered,1
+585,other,number,what athletic logo is on her visor?,nike,1
+586,other,number,what festival does the image depict?,christmas,1
+587,other,number,what age demographic are these boys?,indian,1
+588,other,number,what letter is in the upper right corner of the left computer?,unknown,1
+589,other,number,how old is the elephant in the picture?,young,1
+590,other,number,is there a large or small group of people?,large,1
+591,other,number,how many people?,group,1
+592,other,number,how many chairs are on the left side?,few,1
+593,other,number,how many people are playing the saxophone?,group,1
+594,other,number,how many cans are on the table?,few,1
+595,other,number,what restaurant's sign can be seen at left?,mcdonald's,1
+596,other,number,how much does the elephant weigh?,nothing,1
+597,other,number,which child has a missing front tooth?,middle,1
+598,other,color,where are the windows located?,background,1
+599,other,color,what color is the water in the vase?,clear,1
+600,other,color,what type of tree is it?,christmas,1
+601,other,color,which way are the arrows pointing?,up,1
+602,other,color,is the person wearing a red scarf or a blue coat?,both,1
+603,other,color,what direction are the black lines on the table running?,vertical,1
+604,other,color,what color is the plastic cup?,clear,1
+605,other,color,what side of the plane is visible?,bottom,1
+606,other,color,what color are the pillows?,multi,1
+607,other,color,what color is the cup on the left side of the table?,clear,1
+608,other,color,where is the table in the image?,middle,1
+609,other,color,which way does the door swing?,out,1
+610,other,color,what temperature do you think the water is?,warm,1
+611,other,color,which way is the dog's left ear pointing?,down,1
+612,other,color,where are the books located?,background,1
+613,other,color,what is the sky like?,cloudy,1
+614,other,color,what team is at bat?,cubs,1
+615,other,color,what color is the liquid soap?,clear,1
+616,other,color,what direction is his left hand?,up,1
+617,other,color,what is the color pattern of the umbrella?,solid,1
+618,other,color,what is the general direction of the wind?,west,1
+619,other,color,where are the stairs located?,background,1
+620,other,color,what color are the character's eyes?,big,1
+621,other,color,what type of blinds are on the window?,vertical,1
+622,other,color,which direction is the skier facing?,downhill,1
+623,other,color,what types of bears are these?,polar,1
+624,other,color,what direction is the elephant in front facing?,north,1
+625,other,color,what color are the liquid?,clear,1
+626,other,color,what is written on the side of the bike?,nothing,1
+627,other,action,are the people sitting or standing?,both,3
+628,other,action,what is the plane for?,military,1
+629,other,action,what is the cat trying to do?,sleep,1
+630,other,action,what do you call the move he's doing?,flip,1
+631,other,action,is the hamper open or closed?,closed,1
+632,other,action,are people sitting or standing on the bus?,both,1
+633,other,action,what is the horse doing with its tail?,nothing,1
+634,other,action,are the people standing or sitting?,both,1
+635,other,action,what is the position of the people?,ground,1
+636,other,action,why do the dogs play tug of war?,fun,1
+637,other,action,what position are the surfboards in?,horizontal,1
+638,other,action,what is the position of the person in the background?,behind,1
+639,other,action,what does the dog have in his mouth?,nothing,1
+640,other,action,is the window open or closed?,closed,1
+641,other,action,why is the umbrella up?,sunny,1
+642,other,action,what is the curtain for?,privacy,1
+643,other,action,what brand of racket is being used?,wilson,1
+644,other,action,are the zebra's eyes open or closed?,closed,1
+645,other,action,why does the windshield look opaque?,dirty,1
+646,other,action,is the player serving or hitting the tennis ball?,serving,1
+647,other,human,who is standing in front of the bed?,doctor,2
+648,other,human,is this an african or asian elephant?,african,1
+649,other,human,whose cat is that in the picture?,owner,1
+650,other,human,who is recording the skateboarder?,friend,1
+651,other,human,who would use this vehicle?,military,1
+652,other,human,who is sitting at the table?,doctor,1
+653,other,human,who is wearing a stethoscope?,doctor,1
+654,other,human,who is that famous black man?,unknown,1
+655,other,human,how old is this blanket?,new,1
+656,other,human,which family member cleaned up the kitchen for mom?,dad,1
+657,other,human,who is driving the truck?,nobody,1
+658,other,human,who is holding a phone?,both,1
+659,other,human,what is on the television?,game,1
+660,other,location,what is the room called?,courtroom,1
+661,other,location,what city is this?,unknown,1
+662,other,location,where is the person standing in relation to the wall?,front,1
+663,other,location,where is the owner of this vehicle?,gone,1
+664,other,location,where are the dog's owners?,gone,1
+665,other,location,what kind of sign is this?,stop,1
+666,other,location,what is the position of the door?,background,1
+667,other,location,what town is this?,seattle,1
+668,other,location,what room is pictured?,courtroom,1
+669,other,location,which way is the cat facing?,forward,1
+670,other,yes/no,is the grass short and tall in the picture?,tall,1
+671,human,object,what is on the left side of the image?,people,3
+672,human,object,what is on the left side of the image?,person,2
+673,human,object,what is on the left side of the image?,girl,1
+674,human,object,what is on the stage?,people,3
+675,human,object,what is on the stage?,man,1
+676,human,object,what is on the road?,people,4
+677,human,object,what is on the floor?,person,2
+678,human,object,what is on the floor?,people,1
+679,human,object,what is on the ground?,people,3
+680,human,object,what is the woman holding?,baby,2
+681,human,object,what is on the table?,person,1
+682,human,object,what is on the table?,people,1
+683,human,object,what is directly behind the van?,people,2
+684,human,object,what is in front of the building?,people,1
+685,human,object,what is in the room?,people,1
+686,human,object,what is the man on the right holding?,baby,1
+687,human,object,who might have just stacked the banana's?,person,1
+688,human,object,what is in front of the house?,people,1
+689,human,object,what is blocking the picture?,skier,1
+690,human,object,what is sitting in the recliner?,man,1
+691,human,object,what is inside the bus?,people,1
+692,human,object,what is in the picture?,people,1
+693,human,object,what is on the door in the background?,people,1
+694,human,object,what is the image blurry?,woman,1
+695,human,object,what is in the middle of the people?,person,1
+696,human,object,what is on the sofa?,man,1
+697,human,object,what event is being celebrated?,baby,1
+698,human,object,what kinds of food are on the plate?,asian,1
+699,human,object,what is in front of the mountain?,woman,1
+700,human,object,what is in the middle of the image?,person,1
+701,human,object,what is sitting on the chair?,people,1
+702,human,object,what is beside the people?,person,1
+703,human,object,what type of cheese is inside the sandwich?,american,1
+704,human,object,what is in the boat?,people,1
+705,human,object,what is running across the beach?,people,1
+706,human,object,what is in front of the store?,people,1
+707,human,object,what is in the crib?,baby,1
+708,human,object,what is in the foreground?,people,1
+709,human,object,what is the boy looking at?,man,1
+710,human,object,what is on top of the hill?,person,1
+711,human,object,what is giraffe staring at?,people,1
+712,human,object,what is on the chair?,person,1
+713,human,object,what is sitting on top of the elephant?,man,1
+714,human,object,what is in front of the people?,man,1
+715,human,object,what is on the couch?,people,1
+716,human,object,what types of food are on this plate?,asian,1
+717,human,object,what is on the bed?,people,1
+718,human,object,what character is on the cake?,man,1
+719,human,object,what is next to the car?,woman,1
+720,human,object,what is on the podium?,person,1
+721,human,other,is this a boy doll or a girl doll?,girl,1
+722,human,other,what is the condition of the building behind the clock?,old,1
+723,human,other,is this an old dog or a young dog?,old,1
+724,human,other,is there a man or a woman in the mirror?,woman,1
+725,human,other,is there a man or woman on the statue?,man,1
+726,human,other,what style of numbers are used on this clock?,english,1
+727,human,other,what is the shape of the statue?,woman,1
+728,human,other,why is the pavement cracked?,old,1
+729,human,other,what sex is the kid in this picture?,male,1
+730,human,color,what is written on the side of the plane?,american,1
+731,human,color,what is the race of the child?,asian,1
+732,human,number,how old is the stove?,old,1
+733,yes/no,object,are the people holding anything?,yes,3
+734,yes/no,object,why are the girls pupils red?,no,1
+735,yes/no,object,what is picture taken in the city?,no,1
+736,yes/no,object,are there ducks or turtles in the pond?,no,1
+737,yes/no,object,how can you tell it might be close to christmas?,no,1
+738,yes/no,object,is either training emitting smoke or vapor?,yes,1
+739,yes/no,object,yes on the knife?,yes,1
+740,yes/no,object,what is she getting ready to hit?,yes,1
+741,yes/no,object,where is the man sitting?,yes,1
+742,yes/no,other,where are the buildings?,no,1
+743,yes/no,other,why are these boys under the umbrella because of the rain?,no,1
+744,yes/no,other,why is the shower curtain open?,yes,1
+745,yes/no,color,where are the cups in the picture?,no,1
+746,yes/no,color,all the things shown in picture are of wooden or other material also?,yes,1
+747,yes/no,color,what is written on the picture frame on the wall?,no,1
+748,yes/no,action,why is there a step stool?,yes,1
+749,yes/no,action,baseball is being played?,no,1
+750,yes/no,human,can you tell if this zebra is male or female?,no,1
+751,color,object,where is the person standing?,right,4
+752,color,object,where are the people standing?,right,3
+753,color,object,what is the floor made of?,wood,2
+754,color,object,what is the floor made of?,wooden,1
+755,color,object,what type of fruit is this?,orange,2
+756,color,object,what kind of flowers are these?,pink,2
+757,color,object,what is in the sky?,blue,2
+758,color,object,what type of shoes is she wearing?,white,1
+759,color,object,where is the umbrella?,right,1
+760,color,object,what is on the ceiling?,wood,1
+761,color,object,what is on the building's awning?,red,1
+762,color,object,what kind of bear is this?,brown,1
+763,color,object,what is around the border?,purple,1
+764,color,object,what metal do the minute hands look like they are made of?,silver,1
+765,color,object,which fruit can be cut in half and juiced?,orange,1
+766,color,object,what material is the bowl made from?,wood,1
+767,color,object,what kind of juice carton is in the door?,orange,1
+768,color,object,what's the fireplace made of?,brick,1
+769,color,object,what kind of olives are these?,black,1
+770,color,object,what type of print is on that bag?,green,1
+771,color,object,what is on the wall in the background?,red,1
+772,color,object,what kind of material is the countertop made out of?,wood,1
+773,color,object,what is on the stage?,wood,1
+774,color,object,what kind of kite does the lady have?,white,1
+775,color,object,what is the table top made out of?,wood,1
+776,color,object,what kind of cat is this?,black,1
+777,color,object,what material makes up the counter?,brick,1
+778,color,object,what building is in the background?,purple,1
+779,color,object,which fruit can be sliced in half and juiced?,orange,1
+780,color,object,what flavoring is being placed in the drinks?,cherry,1
+781,color,object,where is the woman standing?,right,1
+782,color,object,which can is the recycling bin?,blue,1
+783,color,object,what is on the wall behind the child?,pink,1
+784,color,object,what is the pavement made of?,brick,1
+785,color,object,what kind of suit is the man wearing?,white,1
+786,color,object,what is the pizza pan made of?,wood,1
+787,color,object,what is written on the bus?,blue,1
+788,color,object,what type of salsa is in the two white paper cups?,green,1
+789,color,object,what kind of hair does he have?,brown,1
+790,color,object,what is in the child's mouth?,orange,1
+791,color,object,what type of stone is that?,brick,1
+792,color,object,what kind of bread is that?,white,1
+793,color,object,what material is the field made of?,wood,1
+794,color,object,what is on the deer's eyes?,white,1
+795,color,object,what fruit did the drink likely come from?,orange,1
+796,color,object,what material is the table top made from?,wood,1
+797,color,object,what is the color of the bed frame?,silver,1
+798,color,object,what kind of grass is on the ground?,green,1
+799,color,object,where are the eating utensils?,right,1
+800,color,object,what lines are on the field?,white,1
+801,color,object,what material is the backsplash made of?,wood,1
+802,color,object,what is in her hair?,red,1
+803,color,object,what is the tray made of?,wood,1
+804,color,object,what are the windows made of?,wood,1
+805,color,object,what is the flooring made of?,wood,1
+806,color,object,what material does this table appear to be made from?,wood,1
+807,color,object,what is the fruit in the back?,orange,1
+808,color,object,where is the object located?,right,1
+809,color,object,what is the fruit on top of the patch of cream?,cherry,1
+810,color,object,where is the man on the right standing?,right,1
+811,color,object,which kit seem highest?,blue,1
+812,color,object,what is on the roof of the car?,blue,1
+813,color,object,what juice is in the glass on the left?,orange,1
+814,color,object,what is the difference between the bikes?,color,1
+815,color,object,what is the toilet seat made of?,wood,1
+816,color,object,what is the table made out off?,wood,1
+817,color,location,which cow is closer to the camera?,black,1
+818,color,location,what hand is he holding the pizza in?,right,1
+819,color,location,are the cars driving on the right side or on the left side of the road?,right,1
+820,color,location,what side is the battery on?,right,1
+821,color,location,what hand is she holding the scissors with?,right,1
+822,color,location,which hand is the man raising?,right,1
+823,color,location,which hand is the boy holding the donut in?,right,1
+824,color,location,what hand is this child holding the racquet in?,right,1
+825,color,location,which arm has a wristband?,right,1
+826,color,location,which bird is facing forward?,right,1
+827,color,location,which hand is holding the fon?,right,1
+828,color,location,on what side of the road is this bus driving?,right,1
+829,color,location,where is the person standing in relation to the person giving the speech?,right,1
+830,color,location,which hand holds the reins?,right,1
+831,color,location,is the person on the left or right side of the image?,right,1
+832,color,location,"according to the signs, which side is number 2?",right,1
+833,color,location,which foot does the male have on the skateboard?,right,1
+834,color,location,where is the second table located?,right,1
+835,color,location,which arm is raised in the air?,right,1
+836,color,location,which way is the shadow cast?,right,1
+837,color,other,where are the windows?,right,2
+838,color,other,what pattern is on the fabric of the shorts?,plaid,1
+839,color,other,what is the difference between the donuts?,color,1
+840,color,other,where is the wall located?,right,1
+841,color,other,where are the trees located?,right,1
+842,color,other,what pattern do both the blanket and the pillow have in common?,blue,1
+843,color,other,what kind of table is in this picture?,wooden,1
+844,color,other,what type of bear is this?,brown,1
+845,number,object,which zebras are looking at the camera?,1,1
+846,number,object,what type of insect is shown on the bag?,none,1
+847,number,object,what are the boats called?,none,1
+848,number,object,what symbol is repeated as a pattern on the soccer ball?,none,1
+849,number,object,what brand of cleaning supplies are shown?,none,1
+850,number,object,which are has a pink strap?,none,1
+851,number,object,what processing technique is shown?,none,1
+852,number,object,what kind of dish in the spinach in?,none,1
+853,number,object,what pattern is shown on the book bag?,none,1
+854,number,object,what are the two numbers on the tail that can be seen?,27,1
+855,number,object,what kind of desert is plated?,none,1
+856,number,object,what kind of bikes are there?,0,1
+857,number,object,what breed of cat is on the table?,none,1
+858,number,object,where are the portraits?,none,1
+859,number,object,what design does the man have on his hat?,none,1
+860,number,object,what kind of plane is this?,small,1
+861,number,object,what design encircles the plate in the picture?,none,1
+862,number,object,what seafood is on this plate?,none,1
+863,number,object,what built-in appliance is shown in the upper-left corner?,0,1
+864,number,object,what part of her wardrobe is out of place?,none,1
+865,number,object,what roman numeral is the hour hand closest to?,4,1
+866,number,object,what buttons does the phone have?,1,1
+867,number,other,how many objects are on the table?,2,1
+868,number,other,how many objects are on the table?,15,1
+869,number,other,what kind of pattern on the paper?,none,2
+870,number,other,how big would this space be?,small,1
+871,number,other,is the boy two years old or three years old?,3,1
+872,number,other,what word is written on the rv?,none,1
+873,number,other,how are the shelves arranged?,many,1
+874,number,other,what is the weight on the scale?,0,1
+875,number,other,what type of planes are pictured?,2,1
+876,number,other,who big is this landmark?,very,1
+877,number,other,what sports team is he a fan of?,none,1
+878,number,other,how many objects are on the wall?,2,1
+879,number,other,which world war was this plane probably used in?,2,1
+880,number,other,how many objects are there on the table?,2,1
+881,number,other,what is the mph?,20,1
+882,number,other,these decorations celebrate which holiday?,0,1
+883,number,other,how many objects are in the picture?,3,1
+884,number,other,what is the family size?,5,1
+885,number,color,which direction is the crosswalk?,none,1
+886,number,color,what color is the bird?,none,1
+887,number,color,which one sheep is a different color?,none,1
+888,number,color,what is the name on the building?,none,1
+889,number,color,what color signal is on the traffic light?,none,1
+890,number,color,what color of frisbee is the man holding?,none,1
+891,number,color,what type of clouds are in the picture?,none,1
+892,number,yes/no,can you give count the amount of bananas?,16,1
+893,number,yes/no,was it a total number of lights seem on both trains?,4,1
+894,number,human,what flag is behind the man?,none,1
+895,number,action,what trick is he doing?,0,1

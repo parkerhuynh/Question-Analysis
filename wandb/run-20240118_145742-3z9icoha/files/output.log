@@ -1,0 +1,1219 @@
+sample number: 96169
+output_dim: 8
+ans_type_to_idx: {'yes/no': 0, 'action': 1, 'object': 2, 'location': 3, 'other': 4, 'color': 5, 'human': 6, 'number': 7}
+sample number: 18473
+output_dim: 8
+ans_type_to_idx: {'yes/no': 0, 'action': 1, 'object': 2, 'location': 3, 'other': 4, 'color': 5, 'human': 6, 'number': 7}
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-large-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/ndhuynh/.conda/envs/hie/lib/python3.9/site-packages/transformers/optimization.py:429: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+FullyShardedDataParallel(
+  (_fsdp_wrapped_module): FlattenParamsWrapper(
+    (_fpw_module): BertForSequenceClassification(
+      (bert): BertModel(
+        (embeddings): BertEmbeddings(
+          (word_embeddings): FullyShardedDataParallel(
+            (_fsdp_wrapped_module): FlattenParamsWrapper(
+              (_fpw_module): Embedding(30522, 1024, padding_idx=0)
+            )
+          )
+          (position_embeddings): FullyShardedDataParallel(
+            (_fsdp_wrapped_module): FlattenParamsWrapper(
+              (_fpw_module): Embedding(512, 1024)
+            )
+          )
+          (token_type_embeddings): Embedding(2, 1024)
+          (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (encoder): FullyShardedDataParallel(
+          (_fsdp_wrapped_module): FlattenParamsWrapper(
+            (_fpw_module): BertEncoder(
+              (layer): ModuleList(
+                (0): BertLayer(
+                  (attention): BertAttention(
+                    (self): BertSelfAttention(
+                      (query): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (key): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (value): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                    (output): BertSelfOutput(
+                      (dense): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                  )
+                  (intermediate): BertIntermediate(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=1024, out_features=4096, bias=True)
+                      )
+                    )
+                    (intermediate_act_fn): GELUActivation()
+                  )
+                  (output): BertOutput(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=4096, out_features=1024, bias=True)
+                      )
+                    )
+                    (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                    (dropout): Dropout(p=0.1, inplace=False)
+                  )
+                )
+                (1): BertLayer(
+                  (attention): BertAttention(
+                    (self): BertSelfAttention(
+                      (query): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (key): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (value): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                    (output): BertSelfOutput(
+                      (dense): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                  )
+                  (intermediate): BertIntermediate(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=1024, out_features=4096, bias=True)
+                      )
+                    )
+                    (intermediate_act_fn): GELUActivation()
+                  )
+                  (output): BertOutput(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=4096, out_features=1024, bias=True)
+                      )
+                    )
+                    (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                    (dropout): Dropout(p=0.1, inplace=False)
+                  )
+                )
+                (2): BertLayer(
+                  (attention): BertAttention(
+                    (self): BertSelfAttention(
+                      (query): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (key): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (value): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                    (output): BertSelfOutput(
+                      (dense): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                  )
+                  (intermediate): BertIntermediate(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=1024, out_features=4096, bias=True)
+                      )
+                    )
+                    (intermediate_act_fn): GELUActivation()
+                  )
+                  (output): BertOutput(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=4096, out_features=1024, bias=True)
+                      )
+                    )
+                    (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                    (dropout): Dropout(p=0.1, inplace=False)
+                  )
+                )
+                (3): BertLayer(
+                  (attention): BertAttention(
+                    (self): BertSelfAttention(
+                      (query): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (key): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (value): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                    (output): BertSelfOutput(
+                      (dense): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                  )
+                  (intermediate): BertIntermediate(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=1024, out_features=4096, bias=True)
+                      )
+                    )
+                    (intermediate_act_fn): GELUActivation()
+                  )
+                  (output): BertOutput(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=4096, out_features=1024, bias=True)
+                      )
+                    )
+                    (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                    (dropout): Dropout(p=0.1, inplace=False)
+                  )
+                )
+                (4): BertLayer(
+                  (attention): BertAttention(
+                    (self): BertSelfAttention(
+                      (query): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (key): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (value): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                    (output): BertSelfOutput(
+                      (dense): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                  )
+                  (intermediate): BertIntermediate(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=1024, out_features=4096, bias=True)
+                      )
+                    )
+                    (intermediate_act_fn): GELUActivation()
+                  )
+                  (output): BertOutput(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=4096, out_features=1024, bias=True)
+                      )
+                    )
+                    (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                    (dropout): Dropout(p=0.1, inplace=False)
+                  )
+                )
+                (5): BertLayer(
+                  (attention): BertAttention(
+                    (self): BertSelfAttention(
+                      (query): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (key): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (value): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                    (output): BertSelfOutput(
+                      (dense): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                  )
+                  (intermediate): BertIntermediate(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=1024, out_features=4096, bias=True)
+                      )
+                    )
+                    (intermediate_act_fn): GELUActivation()
+                  )
+                  (output): BertOutput(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=4096, out_features=1024, bias=True)
+                      )
+                    )
+                    (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                    (dropout): Dropout(p=0.1, inplace=False)
+                  )
+                )
+                (6): BertLayer(
+                  (attention): BertAttention(
+                    (self): BertSelfAttention(
+                      (query): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (key): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (value): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                    (output): BertSelfOutput(
+                      (dense): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                  )
+                  (intermediate): BertIntermediate(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=1024, out_features=4096, bias=True)
+                      )
+                    )
+                    (intermediate_act_fn): GELUActivation()
+                  )
+                  (output): BertOutput(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=4096, out_features=1024, bias=True)
+                      )
+                    )
+                    (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                    (dropout): Dropout(p=0.1, inplace=False)
+                  )
+                )
+                (7): BertLayer(
+                  (attention): BertAttention(
+                    (self): BertSelfAttention(
+                      (query): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (key): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (value): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                    (output): BertSelfOutput(
+                      (dense): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                  )
+                  (intermediate): BertIntermediate(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=1024, out_features=4096, bias=True)
+                      )
+                    )
+                    (intermediate_act_fn): GELUActivation()
+                  )
+                  (output): BertOutput(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=4096, out_features=1024, bias=True)
+                      )
+                    )
+                    (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                    (dropout): Dropout(p=0.1, inplace=False)
+                  )
+                )
+                (8): BertLayer(
+                  (attention): BertAttention(
+                    (self): BertSelfAttention(
+                      (query): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (key): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (value): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                    (output): BertSelfOutput(
+                      (dense): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                  )
+                  (intermediate): BertIntermediate(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=1024, out_features=4096, bias=True)
+                      )
+                    )
+                    (intermediate_act_fn): GELUActivation()
+                  )
+                  (output): BertOutput(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=4096, out_features=1024, bias=True)
+                      )
+                    )
+                    (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                    (dropout): Dropout(p=0.1, inplace=False)
+                  )
+                )
+                (9): BertLayer(
+                  (attention): BertAttention(
+                    (self): BertSelfAttention(
+                      (query): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (key): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (value): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                    (output): BertSelfOutput(
+                      (dense): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                  )
+                  (intermediate): BertIntermediate(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=1024, out_features=4096, bias=True)
+                      )
+                    )
+                    (intermediate_act_fn): GELUActivation()
+                  )
+                  (output): BertOutput(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=4096, out_features=1024, bias=True)
+                      )
+                    )
+                    (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                    (dropout): Dropout(p=0.1, inplace=False)
+                  )
+                )
+                (10): BertLayer(
+                  (attention): BertAttention(
+                    (self): BertSelfAttention(
+                      (query): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (key): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (value): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                    (output): BertSelfOutput(
+                      (dense): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                  )
+                  (intermediate): BertIntermediate(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=1024, out_features=4096, bias=True)
+                      )
+                    )
+                    (intermediate_act_fn): GELUActivation()
+                  )
+                  (output): BertOutput(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=4096, out_features=1024, bias=True)
+                      )
+                    )
+                    (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                    (dropout): Dropout(p=0.1, inplace=False)
+                  )
+                )
+                (11): BertLayer(
+                  (attention): BertAttention(
+                    (self): BertSelfAttention(
+                      (query): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (key): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (value): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                    (output): BertSelfOutput(
+                      (dense): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                  )
+                  (intermediate): BertIntermediate(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=1024, out_features=4096, bias=True)
+                      )
+                    )
+                    (intermediate_act_fn): GELUActivation()
+                  )
+                  (output): BertOutput(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=4096, out_features=1024, bias=True)
+                      )
+                    )
+                    (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                    (dropout): Dropout(p=0.1, inplace=False)
+                  )
+                )
+                (12): BertLayer(
+                  (attention): BertAttention(
+                    (self): BertSelfAttention(
+                      (query): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (key): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (value): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                    (output): BertSelfOutput(
+                      (dense): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                  )
+                  (intermediate): BertIntermediate(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=1024, out_features=4096, bias=True)
+                      )
+                    )
+                    (intermediate_act_fn): GELUActivation()
+                  )
+                  (output): BertOutput(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=4096, out_features=1024, bias=True)
+                      )
+                    )
+                    (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                    (dropout): Dropout(p=0.1, inplace=False)
+                  )
+                )
+                (13): BertLayer(
+                  (attention): BertAttention(
+                    (self): BertSelfAttention(
+                      (query): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (key): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (value): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                    (output): BertSelfOutput(
+                      (dense): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                  )
+                  (intermediate): BertIntermediate(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=1024, out_features=4096, bias=True)
+                      )
+                    )
+                    (intermediate_act_fn): GELUActivation()
+                  )
+                  (output): BertOutput(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=4096, out_features=1024, bias=True)
+                      )
+                    )
+                    (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                    (dropout): Dropout(p=0.1, inplace=False)
+                  )
+                )
+                (14): BertLayer(
+                  (attention): BertAttention(
+                    (self): BertSelfAttention(
+                      (query): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (key): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (value): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                    (output): BertSelfOutput(
+                      (dense): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                  )
+                  (intermediate): BertIntermediate(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=1024, out_features=4096, bias=True)
+                      )
+                    )
+                    (intermediate_act_fn): GELUActivation()
+                  )
+                  (output): BertOutput(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=4096, out_features=1024, bias=True)
+                      )
+                    )
+                    (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                    (dropout): Dropout(p=0.1, inplace=False)
+                  )
+                )
+                (15): BertLayer(
+                  (attention): BertAttention(
+                    (self): BertSelfAttention(
+                      (query): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (key): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (value): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                    (output): BertSelfOutput(
+                      (dense): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                  )
+                  (intermediate): BertIntermediate(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=1024, out_features=4096, bias=True)
+                      )
+                    )
+                    (intermediate_act_fn): GELUActivation()
+                  )
+                  (output): BertOutput(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=4096, out_features=1024, bias=True)
+                      )
+                    )
+                    (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                    (dropout): Dropout(p=0.1, inplace=False)
+                  )
+                )
+                (16): BertLayer(
+                  (attention): BertAttention(
+                    (self): BertSelfAttention(
+                      (query): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (key): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (value): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                    (output): BertSelfOutput(
+                      (dense): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                  )
+                  (intermediate): BertIntermediate(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=1024, out_features=4096, bias=True)
+                      )
+                    )
+                    (intermediate_act_fn): GELUActivation()
+                  )
+                  (output): BertOutput(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=4096, out_features=1024, bias=True)
+                      )
+                    )
+                    (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                    (dropout): Dropout(p=0.1, inplace=False)
+                  )
+                )
+                (17): BertLayer(
+                  (attention): BertAttention(
+                    (self): BertSelfAttention(
+                      (query): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (key): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (value): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                    (output): BertSelfOutput(
+                      (dense): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                  )
+                  (intermediate): BertIntermediate(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=1024, out_features=4096, bias=True)
+                      )
+                    )
+                    (intermediate_act_fn): GELUActivation()
+                  )
+                  (output): BertOutput(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=4096, out_features=1024, bias=True)
+                      )
+                    )
+                    (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                    (dropout): Dropout(p=0.1, inplace=False)
+                  )
+                )
+                (18): BertLayer(
+                  (attention): BertAttention(
+                    (self): BertSelfAttention(
+                      (query): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (key): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (value): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                    (output): BertSelfOutput(
+                      (dense): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                  )
+                  (intermediate): BertIntermediate(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=1024, out_features=4096, bias=True)
+                      )
+                    )
+                    (intermediate_act_fn): GELUActivation()
+                  )
+                  (output): BertOutput(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=4096, out_features=1024, bias=True)
+                      )
+                    )
+                    (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                    (dropout): Dropout(p=0.1, inplace=False)
+                  )
+                )
+                (19): BertLayer(
+                  (attention): BertAttention(
+                    (self): BertSelfAttention(
+                      (query): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (key): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (value): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                    (output): BertSelfOutput(
+                      (dense): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                  )
+                  (intermediate): BertIntermediate(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=1024, out_features=4096, bias=True)
+                      )
+                    )
+                    (intermediate_act_fn): GELUActivation()
+                  )
+                  (output): BertOutput(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=4096, out_features=1024, bias=True)
+                      )
+                    )
+                    (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                    (dropout): Dropout(p=0.1, inplace=False)
+                  )
+                )
+                (20): BertLayer(
+                  (attention): BertAttention(
+                    (self): BertSelfAttention(
+                      (query): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (key): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (value): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                    (output): BertSelfOutput(
+                      (dense): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                  )
+                  (intermediate): BertIntermediate(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=1024, out_features=4096, bias=True)
+                      )
+                    )
+                    (intermediate_act_fn): GELUActivation()
+                  )
+                  (output): BertOutput(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=4096, out_features=1024, bias=True)
+                      )
+                    )
+                    (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                    (dropout): Dropout(p=0.1, inplace=False)
+                  )
+                )
+                (21): BertLayer(
+                  (attention): BertAttention(
+                    (self): BertSelfAttention(
+                      (query): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (key): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (value): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                    (output): BertSelfOutput(
+                      (dense): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                  )
+                  (intermediate): BertIntermediate(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=1024, out_features=4096, bias=True)
+                      )
+                    )
+                    (intermediate_act_fn): GELUActivation()
+                  )
+                  (output): BertOutput(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=4096, out_features=1024, bias=True)
+                      )
+                    )
+                    (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                    (dropout): Dropout(p=0.1, inplace=False)
+                  )
+                )
+                (22): BertLayer(
+                  (attention): BertAttention(
+                    (self): BertSelfAttention(
+                      (query): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (key): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (value): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                    (output): BertSelfOutput(
+                      (dense): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                  )
+                  (intermediate): BertIntermediate(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=1024, out_features=4096, bias=True)
+                      )
+                    )
+                    (intermediate_act_fn): GELUActivation()
+                  )
+                  (output): BertOutput(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=4096, out_features=1024, bias=True)
+                      )
+                    )
+                    (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                    (dropout): Dropout(p=0.1, inplace=False)
+                  )
+                )
+                (23): BertLayer(
+                  (attention): BertAttention(
+                    (self): BertSelfAttention(
+                      (query): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (key): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (value): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                    (output): BertSelfOutput(
+                      (dense): FullyShardedDataParallel(
+                        (_fsdp_wrapped_module): FlattenParamsWrapper(
+                          (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+                        )
+                      )
+                      (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                      (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                  )
+                  (intermediate): BertIntermediate(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=1024, out_features=4096, bias=True)
+                      )
+                    )
+                    (intermediate_act_fn): GELUActivation()
+                  )
+                  (output): BertOutput(
+                    (dense): FullyShardedDataParallel(
+                      (_fsdp_wrapped_module): FlattenParamsWrapper(
+                        (_fpw_module): Linear(in_features=4096, out_features=1024, bias=True)
+                      )
+                    )
+                    (LayerNorm): LayerNorm((1024,), eps=1e-12, elementwise_affine=True)
+                    (dropout): Dropout(p=0.1, inplace=False)
+                  )
+                )
+              )
+            )
+          )
+        )
+        (pooler): BertPooler(
+          (dense): FullyShardedDataParallel(
+            (_fsdp_wrapped_module): FlattenParamsWrapper(
+              (_fpw_module): Linear(in_features=1024, out_features=1024, bias=True)
+            )
+          )
+          (activation): Tanh()
+        )
+      )
+      (dropout): Dropout(p=0.1, inplace=False)
+      (classifier): Linear(in_features=1024, out_features=8, bias=True)
+    )
+  )
+)
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x7f3a98a6b8b0>
+Traceback (most recent call last):
+  File "/home/ndhuynh/.conda/envs/hie/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1510, in __del__
+    self._shutdown_workers()
+  File "/home/ndhuynh/.conda/envs/hie/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1468, in _shutdown_workers
+    if self._persistent_workers or self._workers_status[worker_id]:
+AttributeError: '_MultiProcessingDataLoaderIter' object has no attribute '_workers_status'
+Process SpawnProcess-1:
+Traceback (most recent call last):
+  File "/home/ndhuynh/.conda/envs/hie/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ndhuynh/.conda/envs/hie/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ndhuynh/.conda/envs/hie/lib/python3.9/site-packages/torch/multiprocessing/spawn.py", line 71, in _wrap
+    pass  # SIGINT; Killed by parent, do nothing
+KeyboardInterrupt
