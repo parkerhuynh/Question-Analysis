@@ -1,6 +1,0 @@
-sample number: 96169
-output_dim: 8
-ans_type_to_idx: {'yes/no': 0, 'action': 1, 'object': 2, 'location': 3, 'other': 4, 'color': 5, 'human': 6, 'number': 7}
-sample number: 18473
-output_dim: 8
-ans_type_to_idx: {'yes/no': 0, 'action': 1, 'object': 2, 'location': 3, 'other': 4, 'color': 5, 'human': 6, 'number': 7}
