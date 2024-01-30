@@ -155,9 +155,9 @@ class QuestionDataset(Dataset):
         with open('/home/ndhuynh/github/simpsonsvqa/dataset/super_answer_type_simpsons.json', 'r') as file:
             self.super_types = json.load(file)
         self.questions = self.load_questions()
-        self.tokenizer = BertTokenizer.from_pretrained('bert-large-uncased')
-        self.ans_type_to_idx = {'yes/no': 0, 'action': 1, 'object': 2, 'location': 3, 'other': 4, 'color': 5, 'human': 6, 'number': 7}
-        self.idx_to_ans_type = {0: 'yes/no', 1: 'action', 2: 'object', 3: 'location', 4: 'other', 5: 'color', 6: 'human', 7: 'number'}
+        self.tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+        self.ans_type_to_idx = {'yes/no': 0, 'action': 1, 'object': 2, 'location': 3, 'other': 4, 'color': 5, 'human': 6, 'number': 7, "sport": 8}
+        self.idx_to_ans_type = {0: 'yes/no', 1: 'action', 2: 'object', 3: 'location', 4: 'other', 5: 'color', 6: 'human', 7: 'number', 8: "sport"}
         self.annotations = self.load_annotations()
         self.output_dim = len(self.ans_type_to_idx.keys())
         random.shuffle(self.annotations)
