@@ -196,10 +196,10 @@ class QuestionDataset(Dataset):
         self.annotations = self.load_annotations()
         self.output_dim = len(self.ans_type_to_idx.keys())
         random.shuffle(self.annotations)
-        print(f"sample number: {len(self.annotations)}")
-        print(f"output_dim: {self.output_dim }")
-        print(f"ans_type_to_idx: {self.ans_type_to_idx }")
+
     def __len__(self):
+        if self.split =="train":
+            return 16
         return len(self.annotations)
 
     def __getitem__(self, idx):
@@ -258,7 +258,10 @@ class QuestionDataset(Dataset):
                     ans_count += 1
             if ans_count >= 2 or ann["overall_scores"]["question"] < 0.5:
                 processed_annotations.append(ann)
-
+        
+        df = pd.DataFrame(processed_annotations)
+        print(f"{self.split}: {len(processed_annotations)}:  {len(set(df['id']))}" )
+        
         return processed_annotations
     
     def load_question_type(self):
