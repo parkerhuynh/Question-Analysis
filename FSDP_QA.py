@@ -145,8 +145,8 @@ def fsdp_main(rank, world_size, args):
     
     wandb.init(
             project="Question Type",
-            group="BERT-Chatgpt-v2",
-            name= f"BERT-Chatgpt-v2-{rank}",
+            group="BERT",
+            name= f"BERT-{rank}",
             config=vars(args))
     
     directory_path = "./"
@@ -156,8 +156,8 @@ def fsdp_main(rank, world_size, args):
     for filename in files_list:
         file_path = os.path.join(directory, filename)
         wandb.save(file_path, directory)
-    wandb.save("./train_question_type_gpt_v2.json")
-    wandb.save("./val_question_type_gpt_v2.json")
+    # wandb.save("./train_question_type_gpt_v2.json")
+    # wandb.save("./val_question_type_gpt_v2.json")
     seed = args.seed
     torch.manual_seed(seed)
     np.random.seed(seed)
