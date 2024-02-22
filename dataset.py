@@ -155,7 +155,7 @@ class QuestionDataset(Dataset):
         
         self.tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
         self.ans_type_to_idx = {
-            'yes/no': 0,
+            "yes/no":0,
             'color': 1,
             'object identification': 2,
             'counting': 3,
@@ -173,7 +173,7 @@ class QuestionDataset(Dataset):
             'other': 15
             }
         self.idx_to_ans_type = {
-            0: 'yes/no',
+            0: "yes/no",
             1: 'color',
             2: 'object identification',
             3: 'counting',
@@ -198,8 +198,8 @@ class QuestionDataset(Dataset):
         random.shuffle(self.annotations)
 
     def __len__(self):
-        if self.split =="train":
-            return 16
+        if self.args.debug:
+            return 500
         return len(self.annotations)
 
     def __getitem__(self, idx):
@@ -258,10 +258,6 @@ class QuestionDataset(Dataset):
                     ans_count += 1
             if ans_count >= 2 or ann["overall_scores"]["question"] < 0.5:
                 processed_annotations.append(ann)
-        
-        df = pd.DataFrame(processed_annotations)
-        print(f"{self.split}: {len(processed_annotations)}:  {len(set(df['id']))}" )
-        
         return processed_annotations
     
     def load_question_type(self):

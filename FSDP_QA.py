@@ -8,6 +8,7 @@ import torch.optim as optim
 from torchvision import datasets, transforms
 from dataset import QuestionDataset
 import yaml
+import torch.backends.cudnn as cudnn
 from torch.optim.lr_scheduler import StepLR
 import pandas as pd
 import torch.distributed as dist
@@ -24,7 +25,7 @@ from torch.nn.parallel import DistributedDataParallel as DDP
 from torch.utils.data.distributed import DistributedSampler
 from torch.distributed.fsdp import FullyShardedDataParallel as FSDP
 from transformers import BertTokenizer, BertForSequenceClassification, AdamW
-from utils import collect_result
+from utils import collect_result, plot_confusion_matrix, list_files
 from torch.distributed.fsdp.fully_sharded_data_parallel import (
 CPUOffload,
 BackwardPrefetch,
@@ -34,6 +35,7 @@ size_based_auto_wrap_policy,
 enable_wrap,
 wrap,
 )
+import random
 os.environ["WANDB_START_METHOD"] = "thread"
 import shutil
 def setup(rank, world_size):
@@ -48,7 +50,7 @@ def cleanup():
     
 def train(args, model, rank, world_size, train_loader, optimizer, epoch, sampler=None):
     model.train()
-    ddp_loss = torch.zeros(2).to(rank)
+    ddp_loss = torch.zeros(3).to(rank)
     if sampler:
         sampler.set_epoch(epoch)
     for batch_idx, batch in enumerate(train_loader):
@@ -57,25 +59,44 @@ def train(args, model, rank, world_size, train_loader, optimizer, epoch, sampler
         labels = batch['labels'].to(rank)
         
         output = model(input_ids, attention_mask=attention_mask, labels=labels)
+        logits = output.logits
+        probabilities = F.softmax(logits, dim=1)
+        pred = torch.argmax(probabilities, dim=1)
+        
         optimizer.zero_grad()
         loss = output.loss
         loss.backward()
         optimizer.step()
+        
         ddp_loss[0] += loss.item()
-        ddp_loss[1] += len(input_ids)
-
+        ddp_loss[1] += pred.eq(labels.view_as(pred)).sum().item()
+        ddp_loss[2] += len(input_ids)
+        
+        if batch_idx % 50 == 0 and rank == 0:
+            wandb.log({"iter_loss": loss.item()})
+            print(f'Train Epoch {epoch} [{batch_idx}/{len(train_loader)}]:  loss: {loss.item():.4f}')
+    
     dist.all_reduce(ddp_loss, op=dist.ReduceOp.SUM)
     if rank == 0:
-        print('Train Epoch: {} \tLoss: {:.6f}'.format(epoch, ddp_loss[0] / ddp_loss[1]))
+        train_loss = ddp_loss[0] / ddp_loss[2]
+        accuracy = ddp_loss[1] / ddp_loss[2]
+        print('Train Epoch {}:  Average loss: {:.4f}, Accuracy: {}/{} ({:.2f}%)\n'.format(epoch, 
+                train_loss, int(ddp_loss[1]), int(ddp_loss[2]),
+                100. * accuracy))
+        wandb.log({"epoch":epoch,
+                   "train_loss": train_loss,
+                   "train_accuracy": accuracy
+                   })
         
     
 def test(model, rank, world_size, test_loader, epoch):
+    idx_to_ans_type = test_loader.dataset.idx_to_ans_type
     model.eval()
     ddp_loss = torch.zeros(3).to(rank)
     results = []
-    print(f"len data loader {len(test_loader.dataset)}")
     ids = set()
     ids_list = []
+    accuracy = 0
     with torch.no_grad():
         for batch in test_loader:  # Assuming question_id is part of your dataloader
             question_id = batch['question_id'].to(rank)
@@ -94,7 +115,6 @@ def test(model, rank, world_size, test_loader, epoch):
             ids.update(set(local_question_ids))
             ids_list += local_question_ids
             local_targets = labels.cpu().numpy().tolist()
-
             # Loss calculation
             ddp_loss[0] += loss.item()
             ddp_loss[1] += pred.eq(labels.view_as(pred)).sum().item()
@@ -103,24 +123,46 @@ def test(model, rank, world_size, test_loader, epoch):
             for ques_id, pres, target in zip(local_question_ids, local_preds, local_targets):
                 item = {
                     "question_id": ques_id,
-                    "prediction": pres,
-                    "target": target
+                    "prediction": idx_to_ans_type[pres],
+                    "target": idx_to_ans_type[target]
                     }
                 results.append(item)
-        print(f"len IDS set: {len(ids)}")
-        print(f"len IDS list: {len(ids_list)}")
         dist.all_reduce(ddp_loss, op=dist.ReduceOp.SUM)
         if rank == 0:
             test_loss = ddp_loss[0] / ddp_loss[2]
-            print('Test set: Average loss: {:.4f}, Accuracy: {}/{} ({:.2f}%)\n'.format(
+            accuracy = ddp_loss[1] / ddp_loss[2]
+            print('Test Epoch  {}: Average loss: {:.4f}, Accuracy: {}/{} ({:.2f}%)\n'.format(epoch, 
                 test_loss, int(ddp_loss[1]), int(ddp_loss[2]),
-                100. * ddp_loss[1] / ddp_loss[2]))
-        return results
+                100. * accuracy))
+            wandb.log({"val_accuracy": accuracy,
+                       "val_loss": test_loss,
+                       "epoch":epoch})
+        return accuracy, results
 
         
 def fsdp_main(rank, world_size, args):
     setup(rank, world_size)
-
+    
+    wandb.init(
+            project="Question Type",
+            group="BERT-Chatgpt-v2",
+            name= f"BERT-Chatgpt-v2-{rank}",
+            config=vars(args))
+    
+    directory_path = "./"
+    extensions = ['.py', '.yaml', ".ipynb"]
+    files_list = list_files(directory_path, extensions)
+    directory = os.getcwd()
+    for filename in files_list:
+        file_path = os.path.join(directory, filename)
+        wandb.save(file_path, directory)
+    wandb.save("./train_question_type_gpt_v2.json")
+    wandb.save("./val_question_type_gpt_v2.json")
+    seed = args.seed
+    torch.manual_seed(seed)
+    np.random.seed(seed)
+    random.seed(seed)
+    cudnn.benchmark = True
     dataset1 = QuestionDataset(args, "train")
     dataset2 = QuestionDataset(args, "val")
     if rank == 0:
@@ -129,7 +171,7 @@ def fsdp_main(rank, world_size, args):
         print(f"output_dim: {dataset1.output_dim }")
         print(f"ans_type_to_idx: {dataset1.ans_type_to_idx }")
 
-    sampler1 = DistributedSampler(dataset1, rank=rank, num_replicas=world_size, shuffle=True)
+    sampler1 = DistributedSampler(dataset1, rank=rank, num_replicas=world_size,shuffle=True)
     sampler2 = DistributedSampler(dataset2, rank=rank, num_replicas=world_size)
 
     train_kwargs = {'batch_size': args.batch_size, 'sampler': sampler1}
@@ -166,22 +208,39 @@ def fsdp_main(rank, world_size, args):
         print(f"Untrainable Parameters: {untrainable_params}")
 
     init_start_event.record()
+    best_acc = 0
+    best_result = None
     for epoch in range(1, args.epochs + 1):
         train(args, model, rank, world_size, train_loader, optimizer, epoch, sampler=sampler1)
-        dist.barrier()
-        results = test(model, rank, world_size, test_loader, epoch)
+        val_accuracy, results  = test(model, rank, world_size, test_loader, epoch)
         final_result = collect_result(results, rank, epoch)
+        if val_accuracy > best_acc and rank == 0:
+            best_acc = val_accuracy
+            best_result = final_result
+            wandb.log({"best_accuracy": best_acc})
         scheduler.step()
-        dist.barrier()
+    dist.barrier()
+    if rank == 0:
+        predictions = pd.DataFrame(best_result)
+        predictions.to_csv("predictions.csv", index=False)
+        y_true = predictions['prediction']
+        y_pred = predictions['target']
+        plot_confusion_matrix(y_true, y_pred)
+        wandb.save("predictions.csv")
+        # print('saving the model')
+        # torch.save(model.state_dict(), "./checkpoints/bert-chatgptv1.pt")
+        print('done!')
+    dist.barrier()
+    wandb.finish()
     init_end_event.record()
 
     cleanup()
 if __name__ == '__main__':
     # Training settings
     parser = argparse.ArgumentParser(description='PyTorch MNIST Example')
-    parser.add_argument('--batch-size', type=int, default=8, metavar='N',
+    parser.add_argument('--batch-size', type=int, default=512, metavar='N',
                         help='input batch size for training (default: 64)')
-    parser.add_argument('--test-batch-size', type=int, default=128, metavar='N',
+    parser.add_argument('--test-batch-size', type=int, default=512, metavar='N',
                         help='input batch size for testing (default: 1000)')
     parser.add_argument('--epochs', type=int, default=30, metavar='N',
                         help='number of epochs to train (default: 14)')
@@ -191,10 +250,10 @@ if __name__ == '__main__':
                         help='Learning rate step gamma (default: 0.7)')
     parser.add_argument('--no-cuda', action='store_true', default=False,
                         help='disables CUDA training')
-    parser.add_argument('--seed', type=int, default=1, metavar='S',
-                        help='random seed (default: 1)')
-    parser.add_argument('--save-model', action='store_true', default=False,
-                        help='For Saving the current Model')
+    parser.add_argument('--seed', type=int, default=42, metavar='S',
+                        help='random seed (default: 42)')
+    parser.add_argument('--debug', action='store_true', default=False,
+                        help='For Debuging')
     if os.path.exists("./temp_result") and os.path.isdir("./temp_result"):
         shutil.rmtree("./temp_result")
     os.makedirs("./temp_result")
