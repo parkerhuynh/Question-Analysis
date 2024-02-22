@@ -152,19 +152,54 @@ class QuestionDataset(Dataset):
     def __init__(self, args, split):
         self.args = args
         self.split = split
-        with open('/home/ndhuynh/github/simpsonsvqa/dataset/super_answer_type_simpsons.json', 'r') as file:
-            self.super_types = json.load(file)
-        self.questions = self.load_questions()
+        
         self.tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-        self.ans_type_to_idx = {'yes/no': 0, 'action': 1, 'object': 2, 'location': 3, 'other': 4, 'color': 5, 'human': 6, 'number': 7, "sport": 8}
-        self.idx_to_ans_type = {0: 'yes/no', 1: 'action', 2: 'object', 3: 'location', 4: 'other', 5: 'color', 6: 'human', 7: 'number', 8: "sport"}
+        self.ans_type_to_idx = {
+            "yes/no":0,
+            'color': 1,
+            'object identification': 2,
+            'counting': 3,
+            'location and spatial relations': 4,
+            'activity recognition': 5,
+            'person identification': 6,
+            'comparison': 7,
+            'sport identification': 8,
+            'emotion and sentiment': 9,
+            'signage recognition': 10,
+            'weather': 11,
+            'shape': 12,
+            'time and sequence': 13,
+            'animal': 14,
+            'other': 15
+            }
+        self.idx_to_ans_type = {
+            0: "yes/no",
+            1: 'color',
+            2: 'object identification',
+            3: 'counting',
+            4: 'location and spatial relations',
+            5: 'activity recognition',
+            6: 'person identification',
+            7: 'comparison',
+            8: 'sport identification',
+            9: 'emotion and sentiment',
+            10: 'signage recognition',
+            11: 'weather',
+            12: 'shape',
+            13: 'time and sequence',
+            14: 'animal',
+            15: 'other'
+            }
+        self.question_type_dict = self.load_question_type()
+        self.questions = self.load_questions()
+        
         self.annotations = self.load_annotations()
         self.output_dim = len(self.ans_type_to_idx.keys())
         random.shuffle(self.annotations)
-        print(f"sample number: {len(self.annotations)}")
-        print(f"output_dim: {self.output_dim }")
-        print(f"ans_type_to_idx: {self.ans_type_to_idx }")
+
     def __len__(self):
+        if self.args.debug:
+            return 500
         return len(self.annotations)
 
     def __getitem__(self, idx):
@@ -172,7 +207,7 @@ class QuestionDataset(Dataset):
         que = self.questions[ann["id"]]
         question_id = ann["id"]
         question = que["question"]
-        label = self.ans_type_to_idx[ann['answer_type']]
+        label = que["question_type"]
         
         encoding = self.tokenizer.encode_plus(
             question,
@@ -202,6 +237,9 @@ class QuestionDataset(Dataset):
             questions = json.load(file)["questions"]
         processed_questions = {}
         for question in questions:
+            question_type_str = self.question_type_dict[question["question"]]
+            question_type_idx = self.ans_type_to_idx[question_type_str]
+            question["question_type"] = question_type_idx
             processed_questions[question["id"]] = question
         return processed_questions
     
@@ -219,8 +257,70 @@ class QuestionDataset(Dataset):
                 if judge["answer"] == 1:
                     ans_count += 1
             if ans_count >= 2 or ann["overall_scores"]["question"] < 0.5:
-                ann["answer"] = prep_ans(ann["answer"])
-                ann["answer_type"] = self.super_types[ann["answer"]]
                 processed_annotations.append(ann)
-
         return processed_annotations
+    
+    def load_question_type(self):
+        question_type_dict = {}
+        with open('/home/ndhuynh/github/Question-Analysis/train_question_type_gpt_v2.json', 'r') as file:
+            for line in file:
+                question_object = json.loads(line)
+                question_str = question_object["question"]
+                question_type = question_object["question_type"]
+                question_type = question_type_processing(question_type)
+                question_type_dict[question_str] = question_type
+        file.close()
+        
+        with open('/home/ndhuynh/github/Question-Analysis/val_question_type_gpt_v2.json', 'r') as file:
+            for line in file:
+                question_object = json.loads(line)
+                question_str = question_object["question"]
+                if question_str not in question_type_dict:
+                    question_type = question_object["question_type"]
+                    question_type = question_type_processing(question_type)
+                    question_type_dict[question_str] = question_type
+        file.close()
+        return question_type_dict
+        
+def question_type_processing(question_type):
+    question_type = question_type.split(",")[0]
+    question_type = question_type.lower()
+    question_type = question_type.replace("'", "")
+    question_type = question_type.replace(".", "")
+    question_type = question_type.replace("`", "")
+    question_type = question_type.replace('"', "")
+    question_type = question_type.replace("question type: ", "")
+    question_type = question_type.replace("question: ", "")
+    question_type = question_type.replace("’", "")
+    question_type = question_type.replace("[", "")
+    question_type = question_type.replace("]", "")
+    question_type = question_type.replace("-", "")
+    question_type = question_type.split('(')[0].strip()
+
+    question_type = question_type.replace("-", "")
+    if "yes/no" in question_type:
+        return 'yes/no'
+    elif "color" in question_type:
+        return 'color'
+    elif "object identification" in question_type:
+        return 'object identification'
+    elif "signage recognition" in question_type:
+        return 'signage recognition'
+    elif "spatial relations" in question_type:
+        return 'location and spatial relations'
+    elif "emoition and sentiment" in question_type or 'emotikon and sentiment' in question_type:
+        return 'emotion and sentiment'
+    elif "compariosn" in question_type or "comparision" in question_type:
+        return 'comparison'
+    elif "counting" in question_type:
+        return 'counting'
+    elif "personal  " in question_type:
+        return 'person identification'
+
+    if question_type not in ['yes/no', 'color', 'object identification', 'counting', 
+                             'location and spatial relations', 'person identification',
+                             'activity recognition', 'comparison', 'sport identification', 
+                             'emotion and sentiment', 'signage recognition', 'weather', 'shape', 
+                             'time and sequence', 'animal']:
+        return 'other'
+    return question_type
