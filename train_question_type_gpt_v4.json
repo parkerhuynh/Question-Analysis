@@ -12744,3 +12744,1898 @@
 {"question": "what color is the woman's tongue?", "question_type": "color"}
 {"question": "what color is the woman's top?", "question_type": "color"}
 {"question": "what color is the woman's tshirt?", "question_type": "color"}
+{"question": "what color is the woman's umbrella?", "question_type": "color"}
+{"question": "what color is the woman's uniform?", "question_type": "color"}
+{"question": "what color is the woman's vest?", "question_type": "color"}
+{"question": "what color is the woman's wig?", "question_type": "color"}
+{"question": "what color is the woman\u2019s coat?", "question_type": "color"}
+{"question": "what color is the woman\u2019s dress?", "question_type": "color"}
+{"question": "what color is the woman\u2019s hair?", "question_type": "color"}
+{"question": "what color is the woman\u2019s shirt?", "question_type": "color"}
+{"question": "what color is the wood in the room?", "question_type": "color"}
+{"question": "what color is the wood?", "question_type": "color"}
+{"question": "what color is the wooden box?", "question_type": "color"}
+{"question": "what color is the wooden railing?", "question_type": "color"}
+{"question": "what color is the word 'netflix'?", "question_type": "color"}
+{"question": "what color is the worm's necklace?", "question_type": "object identification"}
+{"question": "what color is the wrestler's shirt?", "question_type": "color"}
+{"question": "what color is the wristband on the man's left hand?", "question_type": "color and object identification"}
+{"question": "what color is the wristband?", "question_type": "color"}
+{"question": "what color is the writing on the blackboard?", "question_type": "color"}
+{"question": "what color is the writing on the book?", "question_type": "color"}
+{"question": "what color is the writing on the box?", "question_type": "color"}
+{"question": "what color is the writing on the building?", "question_type": "color"}
+{"question": "what color is the writing on the bus?", "question_type": "color"}
+{"question": "what color is the writing on the card?", "question_type": "color"}
+{"question": "what color is the writing on the computer screen?", "question_type": "color"}
+{"question": "what color is the writing on the hat?", "question_type": "color, object identification"}
+{"question": "what color is the writing on the paper?", "question_type": "color"}
+{"question": "what color is the writing on the plane?", "question_type": "color"}
+{"question": "what color is the writing on the shirt?", "question_type": "color"}
+{"question": "what color is the writing on the sign?", "question_type": "color"}
+{"question": "what color is the writing on the signboard?", "question_type": "color"}
+{"question": "what color is the writing on the table?", "question_type": "color"}
+{"question": "what color is the writing on the truck?", "question_type": "color"}
+{"question": "what color is the writing on the tube?", "question_type": "color"}
+{"question": "what color is the writing on the wall?", "question_type": "color"}
+{"question": "what color is the writing on the whiteboard?", "question_type": "color"}
+{"question": "what color is the writing on the window?", "question_type": "color"}
+{"question": "what color is the writing?", "question_type": "color"}
+{"question": "what color is the yard?", "question_type": "color"}
+{"question": "what color is the yoga mat?", "question_type": "color"}
+{"question": "what color is the zombie's hair?", "question_type": "color"}
+{"question": "what color is the zombie's pants?", "question_type": "color"}
+{"question": "what color is the zombie's shirt?", "question_type": "color"}
+{"question": "what color is the zombie?", "question_type": "color"}
+{"question": "what color is their hair?", "question_type": "color"}
+{"question": "what color is their shirt?", "question_type": "color"}
+{"question": "what color is their skin?", "question_type": "color"}
+{"question": "what color is their tie?", "question_type": "color"}
+{"question": "what color is their vest?", "question_type": "color"}
+{"question": "what color is winnie the pooh's jacket?", "question_type": "color"}
+{"question": "what color is winnie's shirt?", "question_type": "color"}
+{"question": "what color jacket is he wearing?", "question_type": "color"}
+{"question": "what color jacket is one of the people wearing?", "question_type": "color"}
+{"question": "what color jacket is the left man wearing?", "question_type": "object identification (jacket color)"}
+{"question": "what color jacket is the man in the middle wearing?", "question_type": "object identification (jacket color)"}
+{"question": "what color jacket is the man on the left wearing?", "question_type": "color"}
+{"question": "what color jacket is the man wearing?", "question_type": "color"}
+{"question": "what color jacket is the middle man wearing?", "question_type": "color"}
+{"question": "what color jacket is the people wearing?", "question_type": "color"}
+{"question": "what color jacket is the person in the middle wearing?", "question_type": "color identification"}
+{"question": "what color jacket is the person on the left wearing?", "question_type": "color"}
+{"question": "what color jacket is the person wearing in the middle?", "question_type": "object identification"}
+{"question": "what color jacket is the person wearing?", "question_type": "color"}
+{"question": "what color jacket is the woman wearing?", "question_type": "color"}
+{"question": "what color jeans is the boy wearing?", "question_type": "color"}
+{"question": "what color jeans is the man in the park wearing?", "question_type": "object identification (jeans), color"}
+{"question": "what color jeans is the man on the right wearing?", "question_type": "color"}
+{"question": "what color jeans is the person in the middle wearing?", "question_type": "object identification, color"}
+{"question": "what color jeans is the person on the left wearing?", "question_type": "color"}
+{"question": "what color jeans is the person on the right wearing?", "question_type": "color"}
+{"question": "what color jumpsuit is the woman wearing?", "question_type": "color"}
+{"question": "what color light is coming from the windows?", "question_type": "color"}
+{"question": "what color necklace is the man wearing?", "question_type": "color"}
+{"question": "what color object is the person holding in their hand?", "question_type": "object identification, color"}
+{"question": "what color of pants is the woman wearing?", "question_type": "object identification"}
+{"question": "what color of shirt is the man on the left wearing?", "question_type": "color"}
+{"question": "what color of shirt is the man on the right wearing?", "question_type": "color"}
+{"question": "what color of shirt is the woman wearing?", "question_type": "color"}
+{"question": "what color outfit is the woman wearing?", "question_type": "color (outfit identification)"}
+{"question": "what color pants are the children wearing?", "question_type": "color"}
+{"question": "what color pants are the people on the right wearing?", "question_type": "object identification, color"}
+{"question": "what color pants are they wearing?", "question_type": "color"}
+{"question": "what color pants does one of the people characters wear?", "question_type": "object identification, color"}
+{"question": "what color pants is he wearing?", "question_type": "color"}
+{"question": "what color pants is the boy wearing?", "question_type": "color"}
+{"question": "what color pants is the first child wearing?", "question_type": "object identification"}
+{"question": "what color pants is the girl wearing?", "question_type": "color"}
+{"question": "what color pants is the left man wearing?", "question_type": "color and attribute identification"}
+{"question": "what color pants is the man in blue shirt wearing?", "question_type": "clothing identification"}
+{"question": "what color pants is the man in the blue jacket wearing?", "question_type": "object identification"}
+{"question": "what color pants is the man in the middle wearing?", "question_type": "color identification"}
+{"question": "what color pants is the man in?", "question_type": "color"}
+{"question": "what color pants is the man on the chair wearing?", "question_type": "color"}
+{"question": "what color pants is the man on the left wearing?", "question_type": "color, object identification"}
+{"question": "what color pants is the man on the right wearing?", "question_type": "color"}
+{"question": "what color pants is the man wearing on the left?", "question_type": "color, object identification"}
+{"question": "what color pants is the man wearing on the right?", "question_type": "object identification (pants), location identification (on the right), color"}
+{"question": "what color pants is the man wearing?", "question_type": "color"}
+{"question": "what color pants is the person behind the front wearing?", "question_type": "object identification"}
+{"question": "what color pants is the person in the foreground wearing?", "question_type": "color"}
+{"question": "what color pants is the person in the middle wearing?", "question_type": "color"}
+{"question": "what color pants is the person next to the bed wearing?", "question_type": "object identification, color identification"}
+{"question": "what color pants is the person on the left wearing?", "question_type": "color"}
+{"question": "what color pants is the person on the right wearing?", "question_type": "object identification"}
+{"question": "what color pants is the person wearing in the middle?", "question_type": "object identification"}
+{"question": "what color pants is the person wearing on the left side of the image?", "question_type": "object identification, location identification, color"}
+{"question": "what color pants is the person wearing on the right side of the image?", "question_type": "color and object identification"}
+{"question": "what color pants is the person wearing?", "question_type": "color"}
+{"question": "what color pants is the right man wearing?", "question_type": "color identification"}
+{"question": "what color pants is the second man wearing?", "question_type": "object identification"}
+{"question": "what color pants is the simpson wearing?", "question_type": "color"}
+{"question": "what color pants is the woman on the left wearing?", "question_type": "object identification"}
+{"question": "what color pants is the woman wearing?", "question_type": "color"}
+{"question": "what color pen is the person in the middle holding?", "question_type": "object identification"}
+{"question": "what color ribbon is on the front man's headband?", "question_type": "object identification"}
+{"question": "what color shirt are they wearing?", "question_type": "color"}
+{"question": "what color shirt does the boy have on?", "question_type": "color"}
+{"question": "what color shirt does the man on the left wear?", "question_type": "object identification"}
+{"question": "what color shirt is he wearing?", "question_type": "color"}
+{"question": "what color shirt is one child wearing?", "question_type": "color"}
+{"question": "what color shirt is one of the children wearing?", "question_type": "color"}
+{"question": "what color shirt is one of the girls wearing?", "question_type": "color"}
+{"question": "what color shirt is one of the men wearing?", "question_type": "object identification"}
+{"question": "what color shirt is one of the people sitting in the bleachers wearing?", "question_type": "object identification"}
+{"question": "what color shirt is one of the people wearing?", "question_type": "color"}
+{"question": "what color shirt is one person wearing?", "question_type": "color"}
+{"question": "what color shirt is one simpson wearing?", "question_type": "color"}
+{"question": "what color shirt is she wearing?", "question_type": "color"}
+{"question": "what color shirt is the boy on the left wearing?", "question_type": "object identification, color"}
+{"question": "what color shirt is the boy on the right wearing?", "question_type": "color"}
+{"question": "what color shirt is the boy wearing?", "question_type": "color"}
+{"question": "what color shirt is the character on the left wearing?", "question_type": "object identification"}
+{"question": "what color shirt is the character wearing?", "question_type": "color"}
+{"question": "what color shirt is the child on the left wearing?", "question_type": "color"}
+{"question": "what color shirt is the child wearing?", "question_type": "color"}
+{"question": "what color shirt is the dog wearing?", "question_type": "color"}
+{"question": "what color shirt is the first woman wearing?", "question_type": "measurement"}
+{"question": "what color shirt is the girl on the left wearing?", "question_type": "object identification"}
+{"question": "what color shirt is the girl wearing?", "question_type": "color"}
+{"question": "what color shirt is the left boy wearing?", "question_type": "color"}
+{"question": "what color shirt is the left clown wearing?", "question_type": "object identification"}
+{"question": "what color shirt is the left man wearing?", "question_type": "object identification/color"}
+{"question": "what color shirt is the little boy wearing?", "question_type": "color"}
+{"question": "what color shirt is the man holding spongebob squarepants wearing?", "question_type": "object identification"}
+{"question": "what color shirt is the man in the back wearing?", "question_type": "color"}
+{"question": "what color shirt is the man in the front wearing?", "question_type": "color"}
+{"question": "what color shirt is the man in the middle wearing?", "question_type": "object identification"}
+{"question": "what color shirt is the man in white wearing?", "question_type": "color"}
+{"question": "what color shirt is the man in?", "question_type": "color"}
+{"question": "what color shirt is the man next to him wearing?", "question_type": "color"}
+{"question": "what color shirt is the man on the far left wearing?", "question_type": "object identification (color - shirt), position (far left)"}
+{"question": "what color shirt is the man on the left wearing?", "question_type": "object identification"}
+{"question": "what color shirt is the man on the right wearing?", "question_type": "color"}
+{"question": "what color shirt is the man on the stool wearing?", "question_type": "color"}
+{"question": "what color shirt is the man to the left wearing?", "question_type": "color, object identification"}
+{"question": "what color shirt is the man wearing at the table?", "question_type": "color"}
+{"question": "what color shirt is the man wearing in the park?", "question_type": "object identification, color"}
+{"question": "what color shirt is the man wearing on the left?", "question_type": "object identification and color"}
+{"question": "what color shirt is the man wearing under the black shirt?", "question_type": "color, object identification"}
+{"question": "what color shirt is the man wearing?", "question_type": "color"}
+{"question": "what color shirt is the middle girl wearing?", "question_type": "object identification, color"}
+{"question": "what color shirt is the middle man wearing?", "question_type": "color"}
+{"question": "what color shirt is the minion wearing?", "question_type": "color"}
+{"question": "what color shirt is the officer on the far left wearing?", "question_type": "object identification"}
+{"question": "what color shirt is the people wearing?", "question_type": "color"}
+{"question": "what color shirt is the person in the background wearing?", "question_type": "color"}
+{"question": "what color shirt is the person in the car wearing?", "question_type": "color"}
+{"question": "what color shirt is the person in the foreground wearing?", "question_type": "color"}
+{"question": "what color shirt is the person in the middle wearing?", "question_type": "object identification, color"}
+{"question": "what color shirt is the person on the left wearing?", "question_type": "object identification"}
+{"question": "what color shirt is the person on the right wearing?", "question_type": "object identification"}
+{"question": "what color shirt is the person on the television wearing?", "question_type": "object identification"}
+{"question": "what color shirt is the person sitting in the middle wearing?", "question_type": "object identification or color"}
+{"question": "what color shirt is the person standing in front of the crowd wearing?", "question_type": "color (shirt)"}
+{"question": "what color shirt is the person wearing on the bench?", "question_type": "object identification"}
+{"question": "what color shirt is the person wearing on the right side of the image?", "question_type": "object identification"}
+{"question": "what color shirt is the person wearing who is not in the frame completely?", "question_type": "object identification (shirt color)"}
+{"question": "what color shirt is the person wearing with blue pants?", "question_type": "color"}
+{"question": "what color shirt is the person wearing?", "question_type": "color"}
+{"question": "what color shirt is the person with blue hair wearing?", "question_type": "color, object identification"}
+{"question": "what color shirt is the policeman wearing?", "question_type": "color"}
+{"question": "what color shirt is the right boy wearing?", "question_type": "color"}
+{"question": "what color shirt is the second child wearing?", "question_type": "object identification or color"}
+{"question": "what color shirt is the simpson wearing?", "question_type": "color"}
+{"question": "what color shirt is the standing person wearing on the right side of the image?", "question_type": "object identification, color"}
+{"question": "what color shirt is the woman also wearing?", "question_type": "color"}
+{"question": "what color shirt is the woman in the middle wearing?", "question_type": "color"}
+{"question": "what color shirt is the woman on the left wearing?", "question_type": "object identification (identifying the color of a specific object - the woman's shirt)"}
+{"question": "what color shirt is the woman on the right wearing?", "question_type": "color"}
+{"question": "what color shirt is the woman wearing?", "question_type": "color"}
+{"question": "what color shirts are the people on the left wearing?", "question_type": "object identification/color"}
+{"question": "what color shirts are the people wearing?", "question_type": "color"}
+{"question": "what color shirts are they wearing?", "question_type": "color"}
+{"question": "what color shoes is the man in the blue suit wearing?", "question_type": "object identification, color"}
+{"question": "what color shoes is the man on the right wearing?", "question_type": "object identification"}
+{"question": "what color shoes is the man wearing?", "question_type": "color"}
+{"question": "what color shoes is the people wearing?", "question_type": "color"}
+{"question": "what color shoes is the person in the doorway wearing?", "question_type": "color, object identification"}
+{"question": "what color shoes is the second simpson wearing?", "question_type": "object identification"}
+{"question": "what color shoes is the woman wearing?", "question_type": "color"}
+{"question": "what color shorts are the girl in the middle wearing?", "question_type": "object identification, color"}
+{"question": "what color shorts is one of the people wearing?", "question_type": "color"}
+{"question": "what color shorts is the first woman wearing?", "question_type": "clothing identification"}
+{"question": "what color shorts is the man wearing?", "question_type": "color"}
+{"question": "what color shorts is the people wearing?", "question_type": "color and object identification"}
+{"question": "what color shorts is the person wearing?", "question_type": "clothing color"}
+{"question": "what color stroller is she pushing?", "question_type": "color, object identification"}
+{"question": "what color suit is one of the men wearing?", "question_type": "color"}
+{"question": "what color suit is she wearing?", "question_type": "color"}
+{"question": "what color suit is the man behind him wearing?", "question_type": "color, object identification"}
+{"question": "what color suit is the man in the front wearing?", "question_type": "color"}
+{"question": "what color suit is the man in the middle wearing?", "question_type": "color"}
+{"question": "what color suit is the man on the left wearing?", "question_type": "color"}
+{"question": "what color suit is the man wearing?", "question_type": "color, object identification"}
+{"question": "what color suit is the middle person wearing?", "question_type": "color"}
+{"question": "what color suit is the woman wearing?", "question_type": "color"}
+{"question": "what color sunglasses is the person on the left wearing?", "question_type": "color, object identification"}
+{"question": "what color sweater is the man wearing?", "question_type": "color"}
+{"question": "what color sweater is the woman wearing?", "question_type": "color"}
+{"question": "what color t-shirt is the man on the right wearing?", "question_type": "object identification"}
+{"question": "what color t-shirt is the person holding?", "question_type": "object identification"}
+{"question": "what color tie are the police officers on the right wearing?", "question_type": "object identification"}
+{"question": "what color tie is he wearing?", "question_type": "color"}
+{"question": "what color tie is she wearing?", "question_type": "color"}
+{"question": "what color tie is the man in the middle wearing?", "question_type": "object identification"}
+{"question": "what color tie is the man on the left wearing?", "question_type": "color"}
+{"question": "what color tie is the man on the right wearing?", "question_type": "object identification"}
+{"question": "what color tie is the man wearing?", "question_type": "color"}
+{"question": "what color tie is the policeman wearing?", "question_type": "color"}
+{"question": "what color tie is the woman wearing?", "question_type": "color"}
+{"question": "what color torch is the man behind the front man holding?", "question_type": "object identification"}
+{"question": "what color trousers is the person in the background wearing?", "question_type": "color"}
+{"question": "what color tshirt is the man wearing?", "question_type": "color"}
+{"question": "what color vest is the man wearing?", "question_type": "color, object identification"}
+{"question": "what colors are the boy's shirt?", "question_type": "color"}
+{"question": "what colors are the girl's pants?", "question_type": "color"}
+{"question": "what colors are the man's pants?", "question_type": "color"}
+{"question": "what colors are the man's t-shirt and backpack?", "question_type": "color"}
+{"question": "what colors are the sweaters?", "question_type": "color"}
+{"question": "what colors are the ties?", "question_type": "color"}
+{"question": "what colors is the first man's tie?", "question_type": "color"}
+{"question": "what colors is the man's shirt?", "question_type": "color"}
+{"question": "what colors is the man's suit?", "question_type": "color"}
+{"question": "what colors is the person's t-shirt?", "question_type": "color"}
+{"question": "what colors is the woman's dress on the left?", "question_type": "color/object identification"}
+{"question": "what colour is the child's hair?", "question_type": "color"}
+{"question": "what device is the man holding?", "question_type": "object identification"}
+{"question": "what device is the person holding?", "question_type": "object identification"}
+{"question": "what direction is the arrow pointing?", "question_type": "object identification"}
+{"question": "what direction is the man looking?", "question_type": "direction"}
+{"question": "what direction is the person pointing?", "question_type": "spatial orientation"}
+{"question": "what direction is the rain falling?", "question_type": "direction"}
+{"question": "what do the children have on their faces?", "question_type": "object identification"}
+{"question": "what do the leaves on the trunks look like?", "question_type": "object identification"}
+{"question": "what do the man's glasses look like?", "question_type": "object identification"}
+{"question": "what do the men have in their hands?", "question_type": "object identification"}
+{"question": "what do the men hold?", "question_type": "object identification"}
+{"question": "what do the people have in their hands?", "question_type": "object identification"}
+{"question": "what do the people in the movie wear?", "question_type": "clothing"}
+{"question": "what do the people look like?", "question_type": "object identification"}
+{"question": "what do the stars in the background tell us about the time of day?", "question_type": "object identification"}
+{"question": "what do they have on their faces?", "question_type": "object identification"}
+{"question": "what do they look like they are doing?", "question_type": "activity recognition"}
+{"question": "what do they look like?", "question_type": "shape"}
+{"question": "what do they see in the front?", "question_type": "object identification"}
+{"question": "what do we see on the right side of the image?", "question_type": "object identification"}
+{"question": "what do you do with a bottle?", "question_type": "object identification"}
+{"question": "what do you see in front of the balloon?", "question_type": "object identification"}
+{"question": "what do you see in the air?", "question_type": "object identification"}
+{"question": "what do you see in the background?", "question_type": "object identification"}
+{"question": "what do you see in the image?", "question_type": "object identification"}
+{"question": "what do you see on the building?", "question_type": "object identification"}
+{"question": "what do you see on the ground?", "question_type": "object identification"}
+{"question": "what do you see on the right side of the image?", "question_type": "object identification"}
+{"question": "what do you see outside the house?", "question_type": "object identification"}
+{"question": "what do you see outside?", "question_type": "object identification"}
+{"question": "what do you think the man is doing?", "question_type": "activity recognition"}
+{"question": "what do you think the people are doing?", "question_type": "activity recognition"}
+{"question": "what does he have in his mouth?", "question_type": "object identification"}
+{"question": "what does the accessory look like?", "question_type": "shape"}
+{"question": "what does the background look like?", "question_type": "shape"}
+{"question": "what does the bird's neck look like?", "question_type": "shape"}
+{"question": "what does the boy have in his hand?", "question_type": "object identification"}
+{"question": "what does the boy on the right have around his neck?", "question_type": "object identification"}
+{"question": "what does the building have on it?", "question_type": "object identification"}
+{"question": "what does the city have?", "question_type": "object identification"}
+{"question": "what does the doctor have around his neck?", "question_type": "object identification"}
+{"question": "what does the door look like?", "question_type": "shape"}
+{"question": "what does the group of people seem to be doing?", "question_type": "activity recognition"}
+{"question": "what does the image show?", "question_type": "object identification"}
+{"question": "what does the man have in his hand?", "question_type": "object identification"}
+{"question": "what does the man have on his face?", "question_type": "object identification"}
+{"question": "what does the man hold in his hand?", "question_type": "object identification"}
+{"question": "what does the man on the right wear?", "question_type": "object identification"}
+{"question": "what does the man seem to be doing?", "question_type": "activity recognition"}
+{"question": "what does the man's hair look like?", "question_type": "description"}
+{"question": "what does the person have in their hand?", "question_type": "object identification"}
+{"question": "what does the person in the image wear on his head?", "question_type": "object identification"}
+{"question": "what does the sign on the building look like?", "question_type": "shape"}
+{"question": "what does the simpson have on its head?", "question_type": "object identification"}
+{"question": "what does the table have on top?", "question_type": "object identification"}
+{"question": "what does the window look like?", "question_type": "shape"}
+{"question": "what does the woman behind the man wear?", "question_type": "object identification"}
+{"question": "what does the woman have in her hand?", "question_type": "object identification"}
+{"question": "what does the woman's necklace look like?", "question_type": "object identification"}
+{"question": "what dress is the woman wearing?", "question_type": "object identification"}
+{"question": "what electronic device are they holding?", "question_type": "object identification"}
+{"question": "what electronic device is on the table?", "question_type": "object identification"}
+{"question": "what electronic device is pictured?", "question_type": "object identification"}
+{"question": "what emotions can you see?", "question_type": "emotion recognition"}
+{"question": "what episode number is this?", "question_type": "information retrieval"}
+{"question": "what event might be happening in the image?", "question_type": "event recognition"}
+{"question": "what facial expression does the man have?", "question_type": "facial expression identification"}
+{"question": "what fruit is the woman holding?", "question_type": "object identification"}
+{"question": "what fruit is wearing a cap?", "question_type": "object identification"}
+{"question": "what furniture are the people sitting on?", "question_type": "object identification"}
+{"question": "what furniture are they sitting on?", "question_type": "object identification"}
+{"question": "what furniture can you see in the image?", "question_type": "object identification"}
+{"question": "what furniture can you see?", "question_type": "object identification"}
+{"question": "what furniture is depicted in the image?", "question_type": "object identification"}
+{"question": "what furniture is in the image?", "question_type": "object identification"}
+{"question": "what furniture is in the picture?", "question_type": "object identification"}
+{"question": "what furniture is in the room?", "question_type": "object identification"}
+{"question": "what furniture is on the floor?", "question_type": "object identification"}
+{"question": "what furniture is on the left side?", "question_type": "object identification"}
+{"question": "what furniture is on the table?", "question_type": "object identification"}
+{"question": "what furniture is present?", "question_type": "object identification"}
+{"question": "what furniture is the person sitting on?", "question_type": "object identification"}
+{"question": "what game are the people playing?", "question_type": "sport identification"}
+{"question": "what game are they playing?", "question_type": "sport identification"}
+{"question": "what game is being played?", "question_type": "sport identification"}
+{"question": "what game is the man playing?", "question_type": "sport identification"}
+{"question": "what grows in the box?", "question_type": "object identification"}
+{"question": "what hair color does the man have?", "question_type": "object identification (hair color)"}
+{"question": "what has the group of people in front of them?", "question_type": "object identification"}
+{"question": "what holiday are the elves celebrating?", "question_type": "holiday identification"}
+{"question": "what holiday are they celebrating?", "question_type": "object identification"}
+{"question": "what holiday does the tree symbolize?", "question_type": "object identification"}
+{"question": "what holiday is associated with the wreath?", "question_type": "object identification"}
+{"question": "what holiday is being celebrated in the image?", "question_type": "object identification"}
+{"question": "what holiday is being celebrated?", "question_type": "object identification"}
+{"question": "what holiday is it possibly?", "question_type": "object identification (trying to identify the holiday based on context and clues)"}
+{"question": "what holiday is it?", "question_type": "object identification"}
+{"question": "what holiday season is it?", "question_type": "season identification"}
+{"question": "what image is in the window behind the people characters?", "question_type": "object identification"}
+{"question": "what instrument are they playing?", "question_type": "object identification"}
+{"question": "what instrument is in the image?", "question_type": "object identification"}
+{"question": "what instrument is in the picture?", "question_type": "object identification"}
+{"question": "what instrument is on the table?", "question_type": "object identification"}
+{"question": "what instrument is she playing?", "question_type": "object identification"}
+{"question": "what instrument is the boy playing?", "question_type": "object identification"}
+{"question": "what instrument is the character playing?", "question_type": "object identification"}
+{"question": "what instrument is the dog playing?", "question_type": "object identification"}
+{"question": "what instrument is the man holding?", "question_type": "object identification"}
+{"question": "what instrument is the man next to the man holding?", "question_type": "object identification"}
+{"question": "what instrument is the man playing?", "question_type": "object identification"}
+{"question": "what instrument is the person holding?", "question_type": "object identification"}
+{"question": "what instrument is the person next to the person holding?", "question_type": "object identification"}
+{"question": "what instrument is the person on the right holding?", "question_type": "object identification"}
+{"question": "what instrument is the woman playing?", "question_type": "object identification"}
+{"question": "what instruments are the people playing?", "question_type": "object identification"}
+{"question": "what instruments are they playing?", "question_type": "object identification"}
+{"question": "what is above him?", "question_type": "object identification"}
+{"question": "what is above the bar?", "question_type": "object identification"}
+{"question": "what is above the bed?", "question_type": "object identification"}
+{"question": "what is above the building's door?", "question_type": "object identification"}
+{"question": "what is above the building?", "question_type": "object identification"}
+{"question": "what is above the car?", "question_type": "object identification"}
+{"question": "what is above the couch?", "question_type": "object identification"}
+{"question": "what is above the door in the room?", "question_type": "object identification"}
+{"question": "what is above the door?", "question_type": "object identification"}
+{"question": "what is above the dresser?", "question_type": "object identification"}
+{"question": "what is above the fireplace?", "question_type": "object identification"}
+{"question": "what is above the group?", "question_type": "object identification"}
+{"question": "what is above the house?", "question_type": "object identification"}
+{"question": "what is above the light?", "question_type": "object identification"}
+{"question": "what is above the man?", "question_type": "object identification"}
+{"question": "what is above the microwave?", "question_type": "object identification"}
+{"question": "what is above the people?", "question_type": "object identification"}
+{"question": "what is above the piano?", "question_type": "object identification"}
+{"question": "what is above the pillars?", "question_type": "object identification"}
+{"question": "what is above the podium?", "question_type": "object identification"}
+{"question": "what is above the sink?", "question_type": "object identification"}
+{"question": "what is above the table?", "question_type": "object identification"}
+{"question": "what is above the television?", "question_type": "object identification"}
+{"question": "what is above the trees?", "question_type": "object identification"}
+{"question": "what is above the window?", "question_type": "object identification"}
+{"question": "what is above the woman?", "question_type": "object identification"}
+{"question": "what is against the wall?", "question_type": "object identification"}
+{"question": "what is around the bench?", "question_type": "object identification"}
+{"question": "what is around the building?", "question_type": "object identification"}
+{"question": "what is around the car?", "question_type": "object identification"}
+{"question": "what is around the field?", "question_type": "object identification"}
+{"question": "what is around the hill?", "question_type": "object identification (identifying objects around the hill)"}
+{"question": "what is around the horse?", "question_type": "object identification"}
+{"question": "what is around the house?", "question_type": "object identification"}
+{"question": "what is around the image on the left side?", "question_type": "object identification"}
+{"question": "what is around the man in the background?", "question_type": "object identification"}
+{"question": "what is around the man's neck?", "question_type": "object identification"}
+{"question": "what is around the man?", "question_type": "object identification"}
+{"question": "what is around the monster's neck?", "question_type": "object identification"}
+{"question": "what is around the park?", "question_type": "object identification"}
+{"question": "what is around the person's neck?", "question_type": "object identification"}
+{"question": "what is around the person?", "question_type": "object identification"}
+{"question": "what is around the planet?", "question_type": "object identification"}
+{"question": "what is around the pool?", "question_type": "object identification"}
+{"question": "what is around the statue?", "question_type": "object identification"}
+{"question": "what is around the table?", "question_type": "object identification"}
+{"question": "what is around the tree?", "question_type": "object identification"}
+{"question": "what is around the wall?", "question_type": "object identification"}
+{"question": "what is around the woman's neck?", "question_type": "object identification"}
+{"question": "what is at the back of the man?", "question_type": "object identification"}
+{"question": "what is at the bus stop?", "question_type": "object identification"}
+{"question": "what is at the top of the image?", "question_type": "object identification"}
+{"question": "what is at the top of the platform?", "question_type": "object identification"}
+{"question": "what is attached to the dog?", "question_type": "object identification"}
+{"question": "what is attached to the telephone pole?", "question_type": "object identification"}
+{"question": "what is attached to the van?", "question_type": "object identification"}
+{"question": "what is attached to the wall?", "question_type": "object identification"}
+{"question": "what is behind her?", "question_type": "object identification"}
+{"question": "what is behind him on the wall?", "question_type": "object identification"}
+{"question": "what is behind him?", "question_type": "object identification"}
+{"question": "what is behind the ape?", "question_type": "object identification"}
+{"question": "what is behind the banana people?", "question_type": "object identification"}
+{"question": "what is behind the banana?", "question_type": "object identification"}
+{"question": "what is behind the bar?", "question_type": "object identification"}
+{"question": "what is behind the bed?", "question_type": "object identification"}
+{"question": "what is behind the beds?", "question_type": "object identification"}
+{"question": "what is behind the bench?", "question_type": "object identification"}
+{"question": "what is behind the bird?", "question_type": "object identification"}
+{"question": "what is behind the birds?", "question_type": "object identification"}
+{"question": "what is behind the blinds?", "question_type": "object identification"}
+{"question": "what is behind the boat?", "question_type": "object identification"}
+{"question": "what is behind the box?", "question_type": "object identification"}
+{"question": "what is behind the boy on the left?", "question_type": "object identification"}
+{"question": "what is behind the boy?", "question_type": "object identification"}
+{"question": "what is behind the boys in the image?", "question_type": "object identification"}
+{"question": "what is behind the boys?", "question_type": "object identification"}
+{"question": "what is behind the building?", "question_type": "object identification"}
+{"question": "what is behind the buildings?", "question_type": "object identification"}
+{"question": "what is behind the bus?", "question_type": "object identification"}
+{"question": "what is behind the cake?", "question_type": "object identification"}
+{"question": "what is behind the calendar?", "question_type": "object identification"}
+{"question": "what is behind the camera?", "question_type": "object identification"}
+{"question": "what is behind the car?", "question_type": "object identification"}
+{"question": "what is behind the cars?", "question_type": "object identification"}
+{"question": "what is behind the castle?", "question_type": "object identification"}
+{"question": "what is behind the cat?", "question_type": "object identification"}
+{"question": "what is behind the cats?", "question_type": "object identification"}
+{"question": "what is behind the cell phone?", "question_type": "object identification"}
+{"question": "what is behind the chair?", "question_type": "object identification"}
+{"question": "what is behind the chairs in the room?", "question_type": "object identification"}
+{"question": "what is behind the chairs?", "question_type": "object identification"}
+{"question": "what is behind the character?", "question_type": "object identification"}
+{"question": "what is behind the characters?", "question_type": "object identification"}
+{"question": "what is behind the chef?", "question_type": "object identification"}
+{"question": "what is behind the chicken?", "question_type": "object identification"}
+{"question": "what is behind the child in the water?", "question_type": "object identification"}
+{"question": "what is behind the child?", "question_type": "object identification"}
+{"question": "what is behind the children?", "question_type": "object identification"}
+{"question": "what is behind the clown?", "question_type": "object identification"}
+{"question": "what is behind the clowns?", "question_type": "object identification"}
+{"question": "what is behind the comedian?", "question_type": "object identification"}
+{"question": "what is behind the computer?", "question_type": "object identification"}
+{"question": "what is behind the cones?", "question_type": "object identification"}
+{"question": "what is behind the couch?", "question_type": "object identification"}
+{"question": "what is behind the counter?", "question_type": "object identification"}
+{"question": "what is behind the couple?", "question_type": "object identification"}
+{"question": "what is behind the creature?", "question_type": "object identification"}
+{"question": "what is behind the crowd of people?", "question_type": "object identification"}
+{"question": "what is behind the crowd?", "question_type": "object identification"}
+{"question": "what is behind the cup?", "question_type": "object identification"}
+{"question": "what is behind the curtain?", "question_type": "object identification"}
+{"question": "what is behind the curtains?", "question_type": "object identification"}
+{"question": "what is behind the desk?", "question_type": "object identification"}
+{"question": "what is behind the dinosaur?", "question_type": "object identification"}
+{"question": "what is behind the dinosaurs?", "question_type": "object identification"}
+{"question": "what is behind the doctor?", "question_type": "object identification"}
+{"question": "what is behind the dog?", "question_type": "object identification"}
+{"question": "what is behind the door in the image?", "question_type": "object identification"}
+{"question": "what is behind the door?", "question_type": "object identification"}
+{"question": "what is behind the dragon?", "question_type": "object identification"}
+{"question": "what is behind the egg?", "question_type": "object identification"}
+{"question": "what is behind the elephant?", "question_type": "object identification"}
+{"question": "what is behind the family?", "question_type": "object identification"}
+{"question": "what is behind the fence?", "question_type": "object identification"}
+{"question": "what is behind the field?", "question_type": "object identification"}
+{"question": "what is behind the fire?", "question_type": "object identification"}
+{"question": "what is behind the flag?", "question_type": "object identification"}
+{"question": "what is behind the foxes?", "question_type": "object identification"}
+{"question": "what is behind the gate?", "question_type": "object identification"}
+{"question": "what is behind the girl?", "question_type": "object identification"}
+{"question": "what is behind the girls?", "question_type": "object identification"}
+{"question": "what is behind the glass case?", "question_type": "object identification"}
+{"question": "what is behind the group of people?", "question_type": "object identification"}
+{"question": "what is behind the group?", "question_type": "object identification"}
+{"question": "what is behind the hammock?", "question_type": "object identification"}
+{"question": "what is behind the hand?", "question_type": "object identification"}
+{"question": "what is behind the hedge?", "question_type": "object identification"}
+{"question": "what is behind the helicopter?", "question_type": "object identification"}
+{"question": "what is behind the hill?", "question_type": "object identification"}
+{"question": "what is behind the horse?", "question_type": "object identification"}
+{"question": "what is behind the horses?", "question_type": "object identification"}
+{"question": "what is behind the house?", "question_type": "object identification"}
+{"question": "what is behind the jail cell?", "question_type": "object identification"}
+{"question": "what is behind the kitchen?", "question_type": "object identification"}
+{"question": "what is behind the lady?", "question_type": "object identification"}
+{"question": "what is behind the lamp?", "question_type": "object identification"}
+{"question": "what is behind the large window?", "question_type": "object identification"}
+{"question": "what is behind the lego people?", "question_type": "object identification"}
+{"question": "what is behind the lion?", "question_type": "object location"}
+{"question": "what is behind the locker?", "question_type": "object identification"}
+{"question": "what is behind the machine?", "question_type": "object identification"}
+{"question": "what is behind the man and boy?", "question_type": "object identification"}
+{"question": "what is behind the man and children?", "question_type": "object identification"}
+{"question": "what is behind the man and girl?", "question_type": "object identification"}
+{"question": "what is behind the man and little girl?", "question_type": "object identification"}
+{"question": "what is behind the man and the boy?", "question_type": "object identification"}
+{"question": "what is behind the man and the building?", "question_type": "object identification"}
+{"question": "what is behind the man and the dog?", "question_type": "object identification"}
+{"question": "what is behind the man and woman?", "question_type": "object identification"}
+{"question": "what is behind the man at the piano?", "question_type": "object identification"}
+{"question": "what is behind the man in the blue shirt?", "question_type": "object identification"}
+{"question": "what is behind the man in the car?", "question_type": "object identification"}
+{"question": "what is behind the man in the first picture?", "question_type": "object identification"}
+{"question": "what is behind the man in the image?", "question_type": "object identification"}
+{"question": "what is behind the man in the middle?", "question_type": "object identification"}
+{"question": "what is behind the man in the picture on the phone?", "question_type": "object identification"}
+{"question": "what is behind the man in the picture?", "question_type": "object identification"}
+{"question": "what is behind the man in the suit?", "question_type": "object identification"}
+{"question": "what is behind the man on stage?", "question_type": "object identification"}
+{"question": "what is behind the man on the ground?", "question_type": "object identification"}
+{"question": "what is behind the man on the left?", "question_type": "object identification"}
+{"question": "what is behind the man on the right?", "question_type": "object identification"}
+{"question": "what is behind the man on the stage?", "question_type": "object identification"}
+{"question": "what is behind the man on the stairs?", "question_type": "object identification"}
+{"question": "what is behind the man playing guitar?", "question_type": "object identification"}
+{"question": "what is behind the man sitting on the bed?", "question_type": "object identification"}
+{"question": "what is behind the man sitting on the chair?", "question_type": "object identification"}
+{"question": "what is behind the man sitting on the stool?", "question_type": "object identification"}
+{"question": "what is behind the man standing?", "question_type": "object identification"}
+{"question": "what is behind the man with blue hair?", "question_type": "object identification"}
+{"question": "what is behind the man?", "question_type": "object identification"}
+{"question": "what is behind the men and the car?", "question_type": "object identification"}
+{"question": "what is behind the men on the right?", "question_type": "object identification"}
+{"question": "what is behind the men on the shelf?", "question_type": "object identification"}
+{"question": "what is behind the men on the wall?", "question_type": "object identification"}
+{"question": "what is behind the men?", "question_type": "object identification"}
+{"question": "what is behind the microwave?", "question_type": "object identification"}
+{"question": "what is behind the mirror?", "question_type": "object identification"}
+{"question": "what is behind the monkey?", "question_type": "object identification"}
+{"question": "what is behind the monster?", "question_type": "object identification"}
+{"question": "what is behind the mural?", "question_type": "object identification"}
+{"question": "what is behind the officers?", "question_type": "object identification"}
+{"question": "what is behind the people at the table?", "question_type": "object identification"}
+{"question": "what is behind the people characters?", "question_type": "object identification"}
+{"question": "what is behind the people in the background?", "question_type": "object identification"}
+{"question": "what is behind the people in the image?", "question_type": "object identification"}
+{"question": "what is behind the people in the library?", "question_type": "object identification"}
+{"question": "what is behind the people in the park?", "question_type": "object identification"}
+{"question": "what is behind the people in the picture?", "question_type": "object identification"}
+{"question": "what is behind the people on stage?", "question_type": "object identification"}
+{"question": "what is behind the people on the bench?", "question_type": "object identification"}
+{"question": "what is behind the people on the left?", "question_type": "object identification"}
+{"question": "what is behind the people on the platform?", "question_type": "object identification"}
+{"question": "what is behind the people on the right?", "question_type": "object identification"}
+{"question": "what is behind the people on the stage?", "question_type": "object identification"}
+{"question": "what is behind the people on the wall?", "question_type": "Question type: object identification"}
+{"question": "what is behind the people outside?", "question_type": "object identification"}
+{"question": "what is behind the people sitting at the table?", "question_type": "object identification"}
+{"question": "what is behind the people sitting?", "question_type": "object identification"}
+{"question": "what is behind the people?", "question_type": "object identification"}
+{"question": "what is behind the people?- a wall or a tree?", "question_type": "object identification"}
+{"question": "what is behind the person and the car?", "question_type": "object identification"}
+{"question": "what is behind the person holding the box?", "question_type": "object identification"}
+{"question": "what is behind the person holding the mobile?", "question_type": "object identification"}
+{"question": "what is behind the person holding the stick?", "question_type": "object identification"}
+{"question": "what is behind the person holding the toothbrush?", "question_type": "object identification"}
+{"question": "what is behind the person holding the wallet?", "question_type": "object identification"}
+{"question": "what is behind the person in the background?", "question_type": "object identification"}
+{"question": "what is behind the person in the doorway?", "question_type": "object identification"}
+{"question": "what is behind the person in the image?", "question_type": "object identification"}
+{"question": "what is behind the person on the chair?", "question_type": "object identification"}
+{"question": "what is behind the person on the right?", "question_type": "object identification"}
+{"question": "what is behind the person sitting down?", "question_type": "object identification"}
+{"question": "what is behind the person sitting on the bench?", "question_type": "object identification"}
+{"question": "what is behind the person sitting on the chair?", "question_type": "object identification"}
+{"question": "what is behind the person standing in the background?", "question_type": "object identification"}
+{"question": "what is behind the person standing on the sofa?", "question_type": "object identification"}
+{"question": "what is behind the person standing?", "question_type": "object identification"}
+{"question": "what is behind the person?", "question_type": "object identification"}
+{"question": "what is behind the persons?", "question_type": "object identification"}
+{"question": "what is behind the phone?", "question_type": "object location"}
+{"question": "what is behind the pig?", "question_type": "object identification"}
+{"question": "what is behind the pineapple?", "question_type": "object identification"}
+{"question": "what is behind the pink and beige pillars?", "question_type": "object identification"}
+{"question": "what is behind the pizzas?", "question_type": "object identification"}
+{"question": "what is behind the planes?", "question_type": "object identification"}
+{"question": "what is behind the plant?", "question_type": "object identification"}
+{"question": "what is behind the plants?", "question_type": "object identification"}
+{"question": "what is behind the player?", "question_type": "object identification"}
+{"question": "what is behind the playground?", "question_type": "object identification"}
+{"question": "what is behind the podium?", "question_type": "object identification"}
+{"question": "what is behind the pole?", "question_type": "object identification"}
+{"question": "what is behind the police officer?", "question_type": "object identification"}
+{"question": "what is behind the porch?", "question_type": "object identification"}
+{"question": "what is behind the presenter?", "question_type": "object identification"}
+{"question": "what is behind the rabbit?", "question_type": "object identification"}
+{"question": "what is behind the ramp?", "question_type": "object identification"}
+{"question": "what is behind the river?", "question_type": "object identification"}
+{"question": "what is behind the shelf?", "question_type": "object identification"}
+{"question": "what is behind the shoes?", "question_type": "object identification"}
+{"question": "what is behind the sign?", "question_type": "object identification"}
+{"question": "what is behind the simpson characters?", "question_type": "object identification"}
+{"question": "what is behind the simpson family?", "question_type": "object identification"}
+{"question": "what is behind the skateboarder?", "question_type": "object identification"}
+{"question": "what is behind the skating rink?", "question_type": "object identification"}
+{"question": "what is behind the sofa?", "question_type": "object identification"}
+{"question": "what is behind the stadium?", "question_type": "object or location description"}
+{"question": "what is behind the stage?", "question_type": "object identification"}
+{"question": "what is behind the stairs?", "question_type": "object identification"}
+{"question": "what is behind the statue?", "question_type": "object identification"}
+{"question": "what is behind the stone fence?", "question_type": "object identification"}
+{"question": "what is behind the store?", "question_type": "object identification"}
+{"question": "what is behind the table?", "question_type": "object identification"}
+{"question": "what is behind the tables?", "question_type": "object identification"}
+{"question": "what is behind the tablet?", "question_type": "object identification"}
+{"question": "what is behind the teddy person?", "question_type": "object identification"}
+{"question": "what is behind the television?", "question_type": "object identification"}
+{"question": "what is behind the tennis court?", "question_type": "object identification"}
+{"question": "what is behind the theatre?", "question_type": "object identification"}
+{"question": "what is behind the toy?", "question_type": "object location"}
+{"question": "what is behind the toys on the shelf?", "question_type": "object identification"}
+{"question": "what is behind the tractor?", "question_type": "object identification"}
+{"question": "what is behind the tree?", "question_type": "object identification"}
+{"question": "what is behind the trees?", "question_type": "object identification"}
+{"question": "what is behind the troll?", "question_type": "object identification"}
+{"question": "what is behind the truck?", "question_type": "object identification"}
+{"question": "what is behind the turkey?", "question_type": "object identification"}
+{"question": "what is behind the tv?", "question_type": "object identification"}
+{"question": "what is behind the two men?", "question_type": "object identification"}
+{"question": "what is behind the two people?", "question_type": "object identification"}
+{"question": "what is behind the two persons?", "question_type": "object identification"}
+{"question": "what is behind the van?", "question_type": "object identification"}
+{"question": "what is behind the vehicle?", "question_type": "object identification"}
+{"question": "what is behind the wall?", "question_type": "object identification"}
+{"question": "what is behind the water?", "question_type": "object identification"}
+{"question": "what is behind the window?", "question_type": "object identification"}
+{"question": "what is behind the woman and child?", "question_type": "object identification"}
+{"question": "what is behind the woman and man?", "question_type": "object identification"}
+{"question": "what is behind the woman in the second image?", "question_type": "object identification"}
+{"question": "what is behind the woman?", "question_type": "object identification"}
+{"question": "what is behind the women?", "question_type": "object identification"}
+{"question": "what is behind the wooden fence?", "question_type": "object identification"}
+{"question": "what is behind the worm?", "question_type": "object identification"}
+{"question": "what is behind the yellow head?", "question_type": "object identification"}
+{"question": "what is behind the zombie?", "question_type": "object identification"}
+{"question": "what is behind them in picture 2?", "question_type": "object identification"}
+{"question": "what is behind them in the second picture?", "question_type": "object identification"}
+{"question": "what is behind them?", "question_type": "object identification"}
+{"question": "what is being reflected in the mirror?", "question_type": "object identification"}
+{"question": "what is being sold in the store?", "question_type": "object identification"}
+{"question": "what is beside the bed?", "question_type": "object identification"}
+{"question": "what is beside the building?", "question_type": "object identification"}
+{"question": "what is beside the car?", "question_type": "object identification"}
+{"question": "what is beside the chair?", "question_type": "object identification"}
+{"question": "what is beside the couch?", "question_type": "object identification"}
+{"question": "what is beside the door?", "question_type": "object identification"}
+{"question": "what is beside the fence?", "question_type": "object identification"}
+{"question": "what is beside the glass door?", "question_type": "object identification"}
+{"question": "what is beside the house?", "question_type": "object identification"}
+{"question": "what is beside the house?- a tree or a river?", "question_type": "object identification"}
+{"question": "what is beside the man with the plaid cap?", "question_type": "object identification"}
+{"question": "what is beside the man?", "question_type": "object identification"}
+{"question": "what is beside the person?", "question_type": "object identification"}
+{"question": "what is beside the phone?", "question_type": "object identification"}
+{"question": "what is beside the sidewalk?", "question_type": "object identification"}
+{"question": "what is beside the wall?", "question_type": "object identification"}
+{"question": "what is beside the water?", "question_type": "object identification"}
+{"question": "what is beside the woman?", "question_type": "object identification"}
+{"question": "what is beside them?", "question_type": "object identification"}
+{"question": "what is between the man and woman?", "question_type": "object identification"}
+{"question": "what is between the persons?", "question_type": "object identification"}
+{"question": "what is blocking the door?", "question_type": "object identification"}
+{"question": "what is burning in the corner?", "question_type": "object identification"}
+{"question": "what is burning in the middle of the image?", "question_type": "object identification"}
+{"question": "what is color is the person on the left's shorts?", "question_type": "color"}
+{"question": "what is coming out of the car?", "question_type": "object identification"}
+{"question": "what is covering the field?", "question_type": "object identification"}
+{"question": "what is covering the ground in front of the man?", "question_type": "object identification"}
+{"question": "what is covering the ground?", "question_type": "object identification"}
+{"question": "what is covering the trees?", "question_type": "object identification"}
+{"question": "what is covering the wall behind the man?", "question_type": "object identification"}
+{"question": "what is covering the yard?", "question_type": "object identification"}
+{"question": "what is depicted in the sky?", "question_type": "object identification"}
+{"question": "what is drawn on the book?", "question_type": "object identification"}
+{"question": "what is each person doing?", "question_type": "activity recognition"}
+{"question": "what is each person's hair color?", "question_type": "object identification"}
+{"question": "what is floating on the water?", "question_type": "object identification"}
+{"question": "what is flying in the air?", "question_type": "object identification"}
+{"question": "what is flying in the sky?", "question_type": "object identification"}
+{"question": "what is for sale in the store?", "question_type": "object identification"}
+{"question": "what is found in the background?", "question_type": "object identification"}
+{"question": "what is growing in the baskets?", "question_type": "object identification"}
+{"question": "what is hanging above the dog?", "question_type": "object identification"}
+{"question": "what is hanging around the man's neck?", "question_type": "object identification"}
+{"question": "what is hanging around the person's neck?", "question_type": "object identification"}
+{"question": "what is hanging from a line?", "question_type": "object identification"}
+{"question": "what is hanging from the building?", "question_type": "object identification"}
+{"question": "what is hanging from the ceiling above him?", "question_type": "object identification"}
+{"question": "what is hanging from the ceiling above the cabinet?", "question_type": "object identification"}
+{"question": "what is hanging from the ceiling above the man?", "question_type": "object identification"}
+{"question": "what is hanging from the ceiling?", "question_type": "object identification"}
+{"question": "what is hanging from the christmas tree?", "question_type": "object identification"}
+{"question": "what is hanging from the curtain?", "question_type": "object identification"}
+{"question": "what is hanging from the gate?", "question_type": "object identification"}
+{"question": "what is hanging from the man's neck?", "question_type": "object identification"}
+{"question": "what is hanging from the pole?", "question_type": "object identification"}
+{"question": "what is hanging from the scaffolding?", "question_type": "object identification"}
+{"question": "what is hanging from the side of a building?", "question_type": "object identification"}
+{"question": "what is hanging from the table?", "question_type": "object identification"}
+{"question": "what is hanging from the tent?", "question_type": "object identification"}
+{"question": "what is hanging from the top of the building?", "question_type": "object identification"}
+{"question": "what is hanging from the wall?", "question_type": "object identification"}
+{"question": "what is hanging from the window?", "question_type": "object identification"}
+{"question": "what is hanging from the wires?", "question_type": "object identification"}
+{"question": "what is hanging in front of the window?", "question_type": "object identification"}
+{"question": "what is hanging in the background?", "question_type": "object identification"}
+{"question": "what is hanging on the background?", "question_type": "object identification"}
+{"question": "what is hanging on the bookshelf?", "question_type": "object identification"}
+{"question": "what is hanging on the ceiling?", "question_type": "object identification"}
+{"question": "what is hanging on the door?", "question_type": "object identification"}
+{"question": "what is hanging on the man in the middle's neck?", "question_type": "object identification"}
+{"question": "what is hanging on the mirror?", "question_type": "object identification"}
+{"question": "what is hanging on the rack in the background?", "question_type": "object identification"}
+{"question": "what is hanging on the rack?", "question_type": "object identification"}
+{"question": "what is hanging on the side of the building?", "question_type": "object identification"}
+{"question": "what is hanging on the wall above the bed?", "question_type": "object identification"}
+{"question": "what is hanging on the wall above the classroom?", "question_type": "object identification"}
+{"question": "what is hanging on the wall above the couch?", "question_type": "object identification"}
+{"question": "what is hanging on the wall above the counter?", "question_type": "object identification"}
+{"question": "what is hanging on the wall above the door?", "question_type": "object identification"}
+{"question": "what is hanging on the wall above the hoop?", "question_type": "object identification"}
+{"question": "what is hanging on the wall above the man?", "question_type": "object identification"}
+{"question": "what is hanging on the wall above the table?", "question_type": "object identification"}
+{"question": "what is hanging on the wall above the toilet?", "question_type": "object identification"}
+{"question": "what is hanging on the wall above the tv?", "question_type": "object identification"}
+{"question": "what is hanging on the wall above the woman?", "question_type": "object identification"}
+{"question": "what is hanging on the wall behind the bench?", "question_type": "object identification"}
+{"question": "what is hanging on the wall behind the man?", "question_type": "object identification"}
+{"question": "what is hanging on the wall behind the people?", "question_type": "object identification"}
+{"question": "what is hanging on the wall behind the person?", "question_type": "object identification"}
+{"question": "what is hanging on the wall behind the woman?", "question_type": "object identification"}
+{"question": "what is hanging on the wall behind them?", "question_type": "object identification"}
+{"question": "what is hanging on the wall in the second image?", "question_type": "object identification"}
+{"question": "what is hanging on the wall next to the classroom?", "question_type": "object identification"}
+{"question": "what is hanging on the wall next to the person?", "question_type": "object identification"}
+{"question": "what is hanging on the wall?", "question_type": "object identification"}
+{"question": "what is hanging on the walls in the pub image?", "question_type": "object identification"}
+{"question": "what is hanging on the walls?", "question_type": "object identification"}
+{"question": "what is hanging on the window?", "question_type": "object identification"}
+{"question": "what is hanging over the window?", "question_type": "object identification"}
+{"question": "what is hanging the flag?", "question_type": "object identification"}
+{"question": "what is happening at the table?", "question_type": "activity recognition"}
+{"question": "what is happening in the background?", "question_type": "activity recognition"}
+{"question": "what is happening in the image?", "question_type": "activity recognition"}
+{"question": "what is happening in the picture?", "question_type": "activity recognition"}
+{"question": "what is happening on the right side of the stage?", "question_type": "location"}
+{"question": "what is happening?", "question_type": "activity recognition"}
+{"question": "what is he carrying?", "question_type": "object identification"}
+{"question": "what is he doing with the chicken?", "question_type": "activity recognition"}
+{"question": "what is he doing with the dog?", "question_type": "activity recognition"}
+{"question": "what is he doing with the pen?", "question_type": "activity recognition"}
+{"question": "what is he doing?", "question_type": "activity recognition"}
+{"question": "what is he holding in his hand?", "question_type": "object identification"}
+{"question": "what is he holding in his hands?", "question_type": "object identification"}
+{"question": "what is he holding in his mouth?", "question_type": "object identification"}
+{"question": "what is he holding?", "question_type": "object identification"}
+{"question": "what is he in front of?", "question_type": "object identification"}
+{"question": "what is he laying on?", "question_type": "object identification"}
+{"question": "what is he leaning against?", "question_type": "object identification"}
+{"question": "what is he looking at?", "question_type": "object identification"}
+{"question": "what is he pointing at?", "question_type": "object identification"}
+{"question": "what is he pointing to?", "question_type": "object identification"}
+{"question": "what is he pulling?", "question_type": "object identification"}
+{"question": "what is he reading?", "question_type": "object identification"}
+{"question": "what is he riding on?", "question_type": "activity identification"}
+{"question": "what is he riding?", "question_type": "object identification"}
+{"question": "what is he sitting on?", "question_type": "object identification"}
+{"question": "what is he standing behind?", "question_type": "object identification"}
+{"question": "what is he standing in front of?", "question_type": "object identification"}
+{"question": "what is he standing next to?", "question_type": "object identification"}
+{"question": "what is he standing on?", "question_type": "object identification"}
+{"question": "what is he using?", "question_type": "object identification"}
+{"question": "what is he watching?", "question_type": "object identification"}
+{"question": "what is he wearing around his neck?", "question_type": "object identification"}
+{"question": "what is he wearing around his waist?", "question_type": "object identification"}
+{"question": "what is he wearing on his face?", "question_type": "object identification"}
+{"question": "what is he wearing on his head?", "question_type": "object identification"}
+{"question": "what is he wearing?", "question_type": "object identification"}
+{"question": "what is he writing on?", "question_type": "object identification"}
+{"question": "what is her hair color?", "question_type": "color"}
+{"question": "what is his eye equipment called?", "question_type": "object identification"}
+{"question": "what is his relation to the table?", "question_type": "spatial relationship"}
+{"question": "what is holding the pen?", "question_type": "object identification"}
+{"question": "what is in background of the image?", "question_type": "object identification"}
+{"question": "what is in front of her?", "question_type": "object identification"}
+{"question": "what is in front of him?", "question_type": "object identification"}
+{"question": "what is in front of the banana people?", "question_type": "object identification"}
+{"question": "what is in front of the banana?", "question_type": "object identification"}
+{"question": "what is in front of the bar?", "question_type": "object identification"}
+{"question": "what is in front of the basket?", "question_type": "object identification"}
+{"question": "what is in front of the bed?", "question_type": "object identification"}
+{"question": "what is in front of the bench?", "question_type": "object identification"}
+{"question": "what is in front of the blackboard?", "question_type": "object identification"}
+{"question": "what is in front of the books?", "question_type": "object identification"}
+{"question": "what is in front of the boy?", "question_type": "object identification"}
+{"question": "what is in front of the boys?", "question_type": "object identification"}
+{"question": "what is in front of the brick building?", "question_type": "object identification"}
+{"question": "what is in front of the brown person?", "question_type": "object identification"}
+{"question": "what is in front of the bugs?", "question_type": "object identification"}
+{"question": "what is in front of the building besides the people?", "question_type": "object identification"}
+{"question": "what is in front of the building in the painting?", "question_type": "object identification"}
+{"question": "what is in front of the building?", "question_type": "object identification"}
+{"question": "what is in front of the buildings?", "question_type": "object identification"}
+{"question": "what is in front of the cabinets?", "question_type": "object identification"}
+{"question": "what is in front of the car?", "question_type": "object identification"}
+{"question": "what is in front of the cave?", "question_type": "object identification"}
+{"question": "what is in front of the chair?", "question_type": "object identification"}
+{"question": "what is in front of the chairs?", "question_type": "object identification"}
+{"question": "what is in front of the chalkboard?", "question_type": "object identification"}
+{"question": "what is in front of the character?", "question_type": "object identification"}
+{"question": "what is in front of the characters?", "question_type": "object identification"}
+{"question": "what is in front of the chef?", "question_type": "object identification"}
+{"question": "what is in front of the child?", "question_type": "object identification"}
+{"question": "what is in front of the children?", "question_type": "object identification"}
+{"question": "what is in front of the city?", "question_type": "object identification"}
+{"question": "what is in front of the coffee table?", "question_type": "object identification"}
+{"question": "what is in front of the comedian?", "question_type": "object identification"}
+{"question": "what is in front of the computer?", "question_type": "object identification"}
+{"question": "what is in front of the couch?", "question_type": "object identification"}
+{"question": "what is in front of the counter?", "question_type": "object identification"}
+{"question": "what is in front of the courtroom?", "question_type": "object identification"}
+{"question": "what is in front of the dinosaur?", "question_type": "question type: object identification"}
+{"question": "what is in front of the dog?", "question_type": "object identification"}
+{"question": "what is in front of the dogs?", "question_type": "object identification"}
+{"question": "what is in front of the door?", "question_type": "object identification"}
+{"question": "what is in front of the drawers?", "question_type": "object identification"}
+{"question": "what is in front of the dresser?", "question_type": "object identification"}
+{"question": "what is in front of the family?", "question_type": "object identification"}
+{"question": "what is in front of the fence?", "question_type": "object identification"}
+{"question": "what is in front of the field?", "question_type": "object identification"}
+{"question": "what is in front of the gate?", "question_type": "object identification"}
+{"question": "what is in front of the giraffe?", "question_type": "object identification"}
+{"question": "what is in front of the girl?", "question_type": "object identification"}
+{"question": "what is in front of the girls?", "question_type": "object identification"}
+{"question": "what is in front of the goblin?", "question_type": "object identification"}
+{"question": "what is in front of the green chalkboard?", "question_type": "object identification"}
+{"question": "what is in front of the group of people?", "question_type": "object identification"}
+{"question": "what is in front of the group?", "question_type": "object identification"}
+{"question": "what is in front of the helicopter?", "question_type": "object identification"}
+{"question": "what is in front of the hot air balloon?", "question_type": "object identification"}
+{"question": "what is in front of the house?", "question_type": "object identification"}
+{"question": "what is in front of the houses?", "question_type": "object identification"}
+{"question": "what is in front of the kitchen?", "question_type": "object identification"}
+{"question": "what is in front of the lady?", "question_type": "object identification"}
+{"question": "what is in front of the large green chair?", "question_type": "object identification"}
+{"question": "what is in front of the lego people?", "question_type": "object identification"}
+{"question": "what is in front of the man and child?", "question_type": "question type: object identification"}
+{"question": "what is in front of the man and woman?", "question_type": "object identification"}
+{"question": "what is in front of the man at the lectern?", "question_type": "object identification"}
+{"question": "what is in front of the man in the hospital bed?", "question_type": "object identification"}
+{"question": "what is in front of the man on the right?", "question_type": "object identification"}
+{"question": "what is in front of the man playing?", "question_type": "object identification"}
+{"question": "what is in front of the man?", "question_type": "object identification"}
+{"question": "what is in front of the men?", "question_type": "object identification"}
+{"question": "what is in front of the minion?", "question_type": "object identification"}
+{"question": "what is in front of the mirror?", "question_type": "object identification"}
+{"question": "what is in front of the missile?", "question_type": "object identification"}
+{"question": "what is in front of the monster?", "question_type": "object identification"}
+{"question": "what is in front of the mountain?", "question_type": "object identification"}
+{"question": "what is in front of the officers?", "question_type": "object identification"}
+{"question": "what is in front of the painting?", "question_type": "object identification"}
+{"question": "what is in front of the park?", "question_type": "object identification"}
+{"question": "what is in front of the people on the couch?", "question_type": "object identification"}
+{"question": "what is in front of the people on the right?", "question_type": "object identification"}
+{"question": "what is in front of the people sitting on chairs?", "question_type": "object identification"}
+{"question": "what is in front of the people?", "question_type": "object identification"}
+{"question": "what is in front of the person holding food?", "question_type": "object identification"}
+{"question": "what is in front of the person in the black jacket?", "question_type": "object identification"}
+{"question": "what is in front of the person in the foreground?", "question_type": "object identification"}
+{"question": "what is in front of the person on the couch?", "question_type": "object identification"}
+{"question": "what is in front of the person on the left side?", "question_type": "object identification"}
+{"question": "what is in front of the person on the right?", "question_type": "object identification"}
+{"question": "what is in front of the person sitting on the bench?", "question_type": "object identification"}
+{"question": "what is in front of the person sitting on the chair?", "question_type": "object identification"}
+{"question": "what is in front of the person sitting on the swing?", "question_type": "object identification"}
+{"question": "what is in front of the person?", "question_type": "object identification"}
+{"question": "what is in front of the picture?", "question_type": "object identification"}
+{"question": "what is in front of the pile?", "question_type": "object identification"}
+{"question": "what is in front of the plane?", "question_type": "object identification"}
+{"question": "what is in front of the platform?", "question_type": "object identification"}
+{"question": "what is in front of the podium?", "question_type": "object identification"}
+{"question": "what is in front of the popcorn?", "question_type": "object identification"}
+{"question": "what is in front of the purple dresser?", "question_type": "object identification"}
+{"question": "what is in front of the rock formation?", "question_type": "object identification"}
+{"question": "what is in front of the rock wall?", "question_type": "object identification"}
+{"question": "what is in front of the room?", "question_type": "object/location identification"}
+{"question": "what is in front of the rug?", "question_type": "object identification"}
+{"question": "what is in front of the shelf?", "question_type": "object identification"}
+{"question": "what is in front of the sidewalk?", "question_type": "object identification"}
+{"question": "what is in front of the skeleton?", "question_type": "object identification"}
+{"question": "what is in front of the stage?", "question_type": "object identification"}
+{"question": "what is in front of the statue?", "question_type": "object identification"}
+{"question": "what is in front of the store?", "question_type": "object identification"}
+{"question": "what is in front of the students?", "question_type": "object identification"}
+{"question": "what is in front of the table?", "question_type": "object identification"}
+{"question": "what is in front of the tables?", "question_type": "object identification"}
+{"question": "what is in front of the teacher?", "question_type": "object identification"}
+{"question": "what is in front of the television?", "question_type": "object identification"}
+{"question": "what is in front of the temple?", "question_type": "object identification"}
+{"question": "what is in front of the tents?", "question_type": "object identification"}
+{"question": "what is in front of the tower?", "question_type": "object identification"}
+{"question": "what is in front of the train?", "question_type": "object identification"}
+{"question": "what is in front of the tree?", "question_type": "object identification"}
+{"question": "what is in front of the trees?", "question_type": "object identification"}
+{"question": "what is in front of the trolley?", "question_type": "object identification"}
+{"question": "what is in front of the tv?", "question_type": "object identification"}
+{"question": "what is in front of the wall?", "question_type": "object identification"}
+{"question": "what is in front of the water?", "question_type": "object identification"}
+{"question": "what is in front of the window?", "question_type": "object identification"}
+{"question": "what is in front of the windows?", "question_type": "object identification"}
+{"question": "what is in front of the woman on the bike?", "question_type": "object identification"}
+{"question": "what is in front of the woman on the far left?", "question_type": "object identification"}
+{"question": "what is in front of the woman?", "question_type": "object identification"}
+{"question": "what is in front of the women?", "question_type": "object identification"}
+{"question": "what is in front of the yellow object?", "question_type": "object identification"}
+{"question": "what is in front of the yellow person?", "question_type": "object identification"}
+{"question": "what is in front of them?", "question_type": "object identification"}
+{"question": "what is in her hand?", "question_type": "object identification"}
+{"question": "what is in his hand?", "question_type": "object identification"}
+{"question": "what is in his hands?", "question_type": "object identification"}
+{"question": "what is in his mouth?", "question_type": "object identification"}
+{"question": "what is in his right hand?", "question_type": "object identification"}
+{"question": "what is in the animation cel?", "question_type": "object identification"}
+{"question": "what is in the background behind the car?", "question_type": "object identification"}
+{"question": "what is in the background behind the group of people?", "question_type": "object identification"}
+{"question": "what is in the background behind the man?", "question_type": "object identification"}
+{"question": "what is in the background behind them?", "question_type": "object identification"}
+{"question": "what is in the background besides the banana?", "question_type": "object identification"}
+{"question": "what is in the background besides the bookshelf?", "question_type": "object identification"}
+{"question": "what is in the background besides the building?", "question_type": "object identification"}
+{"question": "what is in the background besides the fence?", "question_type": "object identification"}
+{"question": "what is in the background besides the man and woman?", "question_type": "object identification"}
+{"question": "what is in the background besides the man?", "question_type": "object identification"}
+{"question": "what is in the background besides the people?", "question_type": "object identification"}
+{"question": "what is in the background besides the stage?", "question_type": "object identification"}
+{"question": "what is in the background besides the trees?", "question_type": "object identification"}
+{"question": "what is in the background besides the wall?", "question_type": "object identification"}
+{"question": "what is in the background in image 2?", "question_type": "object identification"}
+{"question": "what is in the background of the car?", "question_type": "object identification"}
+{"question": "what is in the background of the first image?", "question_type": "object identification"}
+{"question": "what is in the background of the first picture?", "question_type": "object identification"}
+{"question": "what is in the background of the house?", "question_type": "object/location identification"}
+{"question": "what is in the background of the image?", "question_type": "object identification"}
+{"question": "what is in the background of the man?", "question_type": "object identification"}
+{"question": "what is in the background of the mural?", "question_type": "object identification"}
+{"question": "what is in the background of the painting?", "question_type": "object identification"}
+{"question": "what is in the background of the people in the park?", "question_type": "object identification"}
+{"question": "what is in the background of the person brushing their teeth?", "question_type": "object identification"}
+{"question": "what is in the background of the person?", "question_type": "object identification"}
+{"question": "what is in the background of the photo?", "question_type": "object identification"}
+{"question": "what is in the background of the picture besides the trees?", "question_type": "object identification"}
+{"question": "what is in the background of the picture?", "question_type": "object identification"}
+{"question": "what is in the background of the room?", "question_type": "object identification"}
+{"question": "what is in the background of the second image?", "question_type": "object identification"}
+{"question": "what is in the background of the second picture?", "question_type": "object identification"}
+{"question": "what is in the background of the street view?", "question_type": "object identification"}
+{"question": "what is in the background of the umbrella image?", "question_type": "object identification"}
+{"question": "what is in the background of the window?", "question_type": "object identification"}
+{"question": "what is in the background on the right side?", "question_type": "object identification"}
+{"question": "what is in the background on the top of the image?", "question_type": "object identification"}
+{"question": "what is in the background with the tree?", "question_type": "object identification"}
+{"question": "what is in the background?", "question_type": "object identification"}
+{"question": "what is in the backyard of the house?", "question_type": "object identification"}
+{"question": "what is in the backyard?", "question_type": "object identification"}
+{"question": "what is in the bag?", "question_type": "object identification"}
+{"question": "what is in the basket?", "question_type": "object identification"}
+{"question": "what is in the baskets?", "question_type": "object identification"}
+{"question": "what is in the bathroom?", "question_type": "object identification"}
+{"question": "what is in the bed?", "question_type": "object identification"}
+{"question": "what is in the bedroom?", "question_type": "object identification"}
+{"question": "what is in the blue vase?", "question_type": "object identification"}
+{"question": "what is in the body of water?", "question_type": "object identification"}
+{"question": "what is in the bottom right corner?", "question_type": "object identification"}
+{"question": "what is in the bottom right side of the image?", "question_type": "object identification"}
+{"question": "what is in the bowl in front of the man?", "question_type": "object identification"}
+{"question": "what is in the bowl on the plate?", "question_type": "object identification"}
+{"question": "what is in the bowl on the right side?", "question_type": "object identification"}
+{"question": "what is in the bowl on the table?", "question_type": "object identification"}
+{"question": "what is in the bowl?", "question_type": "object identification"}
+{"question": "what is in the box?", "question_type": "object identification"}
+{"question": "what is in the boxes on the shelves?", "question_type": "object identification"}
+{"question": "what is in the boxes?", "question_type": "object identification"}
+{"question": "what is in the boy's hand?", "question_type": "object identification"}
+{"question": "what is in the boy's mouth?", "question_type": "object identification"}
+{"question": "what is in the building?", "question_type": "object identification"}
+{"question": "what is in the cabinet?", "question_type": "object identification"}
+{"question": "what is in the cage?", "question_type": "object identification"}
+{"question": "what is in the car's window?", "question_type": "object identification"}
+{"question": "what is in the car?", "question_type": "object identification"}
+{"question": "what is in the cart?", "question_type": "object identification"}
+{"question": "what is in the center of the image?", "question_type": "object identification"}
+{"question": "what is in the center of the room?", "question_type": "object identification"}
+{"question": "what is in the character's hair?", "question_type": "object identification"}
+{"question": "what is in the character's hand?", "question_type": "object identification"}
+{"question": "what is in the child's mouth?", "question_type": "object identification"}
+{"question": "what is in the children's hands?", "question_type": "object identification"}
+{"question": "what is in the city street?", "question_type": "object identification"}
+{"question": "what is in the city?", "question_type": "object identification"}
+{"question": "what is in the classroom?", "question_type": "object identification"}
+{"question": "what is in the clown's hand?", "question_type": "object identification"}
+{"question": "what is in the coloring book?", "question_type": "object identification"}
+{"question": "what is in the corner of the building?", "question_type": "object identification"}
+{"question": "what is in the corner of the kitchen?", "question_type": "object identification"}
+{"question": "what is in the corner of the room?", "question_type": "object identification"}
+{"question": "what is in the crowd?", "question_type": "object identification"}
+{"question": "what is in the cupboard in the background?", "question_type": "object identification"}
+{"question": "what is in the cupboard in the second picture?", "question_type": "object identification"}
+{"question": "what is in the cupboard?", "question_type": "object identification"}
+{"question": "what is in the distance?", "question_type": "object identification"}
+{"question": "what is in the dog's mouth?", "question_type": "object identification"}
+{"question": "what is in the dumpster?", "question_type": "object identification"}
+{"question": "what is in the emperor's hand?", "question_type": "object identification"}
+{"question": "what is in the father's hand?", "question_type": "object identification"}
+{"question": "what is in the field?", "question_type": "object identification"}
+{"question": "what is in the fireplace?", "question_type": "object identification"}
+{"question": "what is in the flower box?", "question_type": "question type: object identification"}
+{"question": "what is in the flower pot?", "question_type": "object identification"}
+{"question": "what is in the forefront of the photo?", "question_type": "object identification"}
+{"question": "what is in the foreground of the image?", "question_type": "object identification"}
+{"question": "what is in the foreground?", "question_type": "object identification"}
+{"question": "what is in the forest?", "question_type": "object identification"}
+{"question": "what is in the fridge?", "question_type": "object identification"}
+{"question": "what is in the front of the car?", "question_type": "object identification"}
+{"question": "what is in the girl's hand?", "question_type": "object identification"}
+{"question": "what is in the glass case?", "question_type": "object identification"}
+{"question": "what is in the glass container?", "question_type": "object identification"}
+{"question": "what is in the glass on the right side?", "question_type": "object identification"}
+{"question": "what is in the glass?", "question_type": "object identification"}
+{"question": "what is in the glasses on the table?", "question_type": "object identification"}
+{"question": "what is in the gorilla's hand?", "question_type": "object identification"}
+{"question": "what is in the hallway?", "question_type": "object identification"}
+{"question": "what is in the hand of one of the people?", "question_type": "object identification"}
+{"question": "what is in the hand of the person?", "question_type": "object identification"}
+{"question": "what is in the hands of one of the people standing by the table?", "question_type": "object identification"}
+{"question": "what is in the hands of one of the people?", "question_type": "object identification"}
+{"question": "what is in the hands of the children?", "question_type": "object identification"}
+{"question": "what is in the hands of the people?", "question_type": "object identification"}
+{"question": "what is in the hands of the person wearing a green jacket?", "question_type": "object identification"}
+{"question": "what is in the hands of the person?", "question_type": "object identification"}
+{"question": "what is in the hands of the persons?", "question_type": "object identification"}
+{"question": "what is in the hospital room?", "question_type": "object identification"}
+{"question": "what is in the hospital?", "question_type": "object identification"}
+{"question": "what is in the image?", "question_type": "object identification"}
+{"question": "what is in the kitchen?", "question_type": "object identification"}
+{"question": "what is in the laboratory?", "question_type": "object identification"}
+{"question": "what is in the left side of the image?", "question_type": "object identification"}
+{"question": "what is in the library?", "question_type": "object identification"}
+{"question": "what is in the living room?", "question_type": "object identification"}
+{"question": "what is in the log cabin?", "question_type": "object identification"}
+{"question": "what is in the man's hand besides the pen?", "question_type": "object identification"}
+{"question": "what is in the man's hand on the left?", "question_type": "object identification"}
+{"question": "what is in the man's hand?", "question_type": "object identification"}
+{"question": "what is in the man's hands?", "question_type": "object identification"}
+{"question": "what is in the man's left hand?", "question_type": "object identification"}
+{"question": "what is in the man's mouth?", "question_type": "object identification"}
+{"question": "what is in the man's right hand on the left?", "question_type": "object identification"}
+{"question": "what is in the man's shopping cart?", "question_type": "object identification"}
+{"question": "what is in the men's hands?", "question_type": "object identification"}
+{"question": "what is in the middle of the audience?", "question_type": "object identification"}
+{"question": "what is in the middle of the auditorium?", "question_type": "object identification"}
+{"question": "what is in the middle of the bar?", "question_type": "object identification"}
+{"question": "what is in the middle of the building and sign?", "question_type": "object identification"}
+{"question": "what is in the middle of the building?", "question_type": "object identification"}
+{"question": "what is in the middle of the car?", "question_type": "object identification"}
+{"question": "what is in the middle of the children?", "question_type": "object identification"}
+{"question": "what is in the middle of the classroom?", "question_type": "object identification"}
+{"question": "what is in the middle of the crowd?", "question_type": "object identification"}
+{"question": "what is in the middle of the desk?", "question_type": "object identification"}
+{"question": "what is in the middle of the field?", "question_type": "object identification"}
+{"question": "what is in the middle of the floor?", "question_type": "object identification"}
+{"question": "what is in the middle of the forest?", "question_type": "object identification"}
+{"question": "what is in the middle of the grass?", "question_type": "object identification"}
+{"question": "what is in the middle of the group?", "question_type": "object identification"}
+{"question": "what is in the middle of the house?", "question_type": "object identification"}
+{"question": "what is in the middle of the image?", "question_type": "object identification"}
+{"question": "what is in the middle of the kitchen?", "question_type": "object identification"}
+{"question": "what is in the middle of the living room?", "question_type": "object identification"}
+{"question": "what is in the middle of the park?", "question_type": "object identification"}
+{"question": "what is in the middle of the people in the image?", "question_type": "object identification"}
+{"question": "what is in the middle of the people?", "question_type": "object identification"}
+{"question": "what is in the middle of the picture?", "question_type": "object identification"}
+{"question": "what is in the middle of the road?", "question_type": "object identification"}
+{"question": "what is in the middle of the room?", "question_type": "object identification"}
+{"question": "what is in the middle of the street?", "question_type": "object identification"}
+{"question": "what is in the middle of the table?", "question_type": "object identification"}
+{"question": "what is in the middle of the train station?", "question_type": "object identification"}
+{"question": "what is in the middle?", "question_type": "object identification"}
+{"question": "what is in the mirror in the picture?", "question_type": "object identification"}
+{"question": "what is in the mirror?", "question_type": "object identification"}
+{"question": "what is in the office?", "question_type": "object identification"}
+{"question": "what is in the park?", "question_type": "object identification"}
+{"question": "what is in the parking lot?", "question_type": "object identification"}
+{"question": "what is in the people's hands?", "question_type": "object identification"}
+{"question": "what is in the person's ear?", "question_type": "object identification"}
+{"question": "what is in the person's hand besides the bird?", "question_type": "object identification"}
+{"question": "what is in the person's hand in the middle?", "question_type": "object identification"}
+{"question": "what is in the person's hand in the second picture?", "question_type": "object identification"}
+{"question": "what is in the person's hand next to the computer?", "question_type": "object identification"}
+{"question": "what is in the person's hand on the left?", "question_type": "object identification"}
+{"question": "what is in the person's hand on the platform?", "question_type": "object identification"}
+{"question": "what is in the person's hand on the right side?", "question_type": "object identification"}
+{"question": "what is in the person's hand who is standing?", "question_type": "object identification"}
+{"question": "what is in the person's hand?", "question_type": "object identification"}
+{"question": "what is in the person's hands?", "question_type": "object identification"}
+{"question": "what is in the person's mouth on the right?", "question_type": "object identification"}
+{"question": "what is in the person's mouth?", "question_type": "object identification"}
+{"question": "what is in the person's right hand?", "question_type": "object identification"}
+{"question": "what is in the person\u2019s hand?", "question_type": "object identification"}
+{"question": "what is in the picture frame?", "question_type": "object identification"}
+{"question": "what is in the picture on the right side of the image?", "question_type": "Object identification"}
+{"question": "what is in the picture?", "question_type": "object identification"}
+{"question": "what is in the planter?", "question_type": "object identification"}
+{"question": "what is in the plates on the table?", "question_type": "object identification"}
+{"question": "what is in the plates?", "question_type": "object identification"}
+{"question": "what is in the pool?", "question_type": "object identification"}
+{"question": "what is in the pot behind the woman?", "question_type": "object identification"}
+{"question": "what is in the pot in the kitchen scene?", "question_type": "object identification"}
+{"question": "what is in the pot on the left side?", "question_type": "object identification"}
+{"question": "what is in the pot on the right side?", "question_type": "object identification"}
+{"question": "what is in the pot on the table?", "question_type": "object identification"}
+{"question": "what is in the pot?", "question_type": "object identification"}
+{"question": "what is in the right side of the image?", "question_type": "object identification"}
+{"question": "what is in the room along with the people?", "question_type": "object identification"}
+{"question": "what is in the room besides chairs and a couch?", "question_type": "object identification"}
+{"question": "what is in the room besides the people character?", "question_type": "object identification"}
+{"question": "what is in the room besides the person and the girl?", "question_type": "object identification"}
+{"question": "what is in the room with the people?", "question_type": "object identification"}
+{"question": "what is in the room?", "question_type": "object identification"}
+{"question": "what is in the shelf?", "question_type": "object identification"}
+{"question": "what is in the shopping cart?", "question_type": "object identification"}
+{"question": "what is in the sky above the building?", "question_type": "object identification"}
+{"question": "what is in the sky above the car?", "question_type": "Object identification"}
+{"question": "what is in the sky above the house?", "question_type": "object identification"}
+{"question": "what is in the sky above the man?", "question_type": "object identification"}
+{"question": "what is in the sky above the people?", "question_type": "object identification"}
+{"question": "what is in the sky above the person?", "question_type": "object identification"}
+{"question": "what is in the sky above the pillars?", "question_type": "object identification"}
+{"question": "what is in the sky above the woman?", "question_type": "object identification"}
+{"question": "what is in the sky behind the man?", "question_type": "object identification"}
+{"question": "what is in the sky besides the rocket?", "question_type": "object identification"}
+{"question": "what is in the sky in the painting?", "question_type": "object identification"}
+{"question": "what is in the sky outside the window?", "question_type": "object identification"}
+{"question": "what is in the sky?", "question_type": "object identification"}
+{"question": "what is in the store?", "question_type": "object identification"}
+{"question": "what is in the stroller?", "question_type": "object identification"}
+{"question": "what is in the teacher's hand?", "question_type": "object identification"}
+{"question": "what is in the top of the image?", "question_type": "object identification"}
+{"question": "what is in the top of the picture?", "question_type": "object identification"}
+{"question": "what is in the top right corner of the image?", "question_type": "object identification"}
+{"question": "what is in the top right corner of the picture?", "question_type": "object identification"}
+{"question": "what is in the top right corner?", "question_type": "object identification"}
+{"question": "what is in the trashcan?", "question_type": "object identification"}
+{"question": "what is in the tub?", "question_type": "object identification"}
+{"question": "what is in the tv?", "question_type": "object identification"}
+{"question": "what is in the vase on the floor?", "question_type": "object identification"}
+{"question": "what is in the vase?", "question_type": "object identification"}
+{"question": "what is in the vases?", "question_type": "object identification"}
+{"question": "what is in the wagon?", "question_type": "object identification"}
+{"question": "what is in the water behind the bus?", "question_type": "object identification"}
+{"question": "what is in the water behind them?", "question_type": "object identification"}
+{"question": "what is in the water in the painting?", "question_type": "object identification"}
+{"question": "what is in the water?", "question_type": "object identification"}
+{"question": "what is in the wheelbarrow?", "question_type": "object identification"}
+{"question": "what is in the white cup?", "question_type": "object identification"}
+{"question": "what is in the window behind the people?", "question_type": "object identification"}
+{"question": "what is in the window on the right?", "question_type": "object identification"}
+{"question": "what is in the window?", "question_type": "object identification"}
+{"question": "what is in the windows?", "question_type": "object identification"}
+{"question": "what is in the woman's hair?", "question_type": "object identification"}
+{"question": "what is in the woman's hand in the second image?", "question_type": "object identification"}
+{"question": "what is in the woman's hand on the right?", "question_type": "object identification"}
+{"question": "what is in the woman's hand?", "question_type": "object identification"}
+{"question": "what is in the wooden box?", "question_type": "object identification"}
+{"question": "what is in the yard?", "question_type": "object identification"}
+{"question": "what is in their hand?", "question_type": "object identification"}
+{"question": "what is in their hands?", "question_type": "object identification"}
+{"question": "what is in this image?", "question_type": "object identification"}
+{"question": "what is inside the barn?", "question_type": "object identification"}
+{"question": "what is inside the box?", "question_type": "object identification"}
+{"question": "what is inside the building?", "question_type": "object identification"}
+{"question": "what is inside the cabinet?", "question_type": "object identification"}
+{"question": "what is inside the car?", "question_type": "object identification"}
+{"question": "what is inside the cupboard?", "question_type": "object identification"}
+{"question": "what is inside the flower pot?", "question_type": "object identification"}
+{"question": "what is inside the garage?", "question_type": "object identification"}
+{"question": "what is inside the greenhouse?", "question_type": "object identification"}
+{"question": "what is inside the man's hand?", "question_type": "object identification"}
+{"question": "what is inside the window?", "question_type": "object identification"}
+{"question": "what is kept on the table?", "question_type": "object identification"}
+{"question": "what is located on the left side of the image?", "question_type": "object identification"}
+{"question": "what is located on the right side of the image?", "question_type": "object location"}
+{"question": "what is lying on the bed?", "question_type": "object identification"}
+{"question": "what is made of the playground?", "question_type": "object identification"}
+{"question": "what is making up the hallway?", "question_type": "object identification"}
+{"question": "what is near the bench?", "question_type": "object identification"}
+{"question": "what is near the tv?", "question_type": "object identification"}
+{"question": "what is next to the bed?", "question_type": "object identification"}
+{"question": "what is next to the bench?", "question_type": "object identification"}
+{"question": "what is next to the bookshelf?", "question_type": "object identification"}
+{"question": "what is next to the box?", "question_type": "object identification"}
+{"question": "what is next to the boy?", "question_type": "object identification"}
+{"question": "what is next to the building on the side?", "question_type": "object identification"}
+{"question": "what is next to the building?", "question_type": "object identification"}
+{"question": "what is next to the car?", "question_type": "object identification"}
+{"question": "what is next to the chair?", "question_type": "object identification"}
+{"question": "what is next to the child?", "question_type": "object identification"}
+{"question": "what is next to the children?", "question_type": "object identification"}
+{"question": "what is next to the computer?", "question_type": "object identification"}
+{"question": "what is next to the couch?", "question_type": "object identification"}
+{"question": "what is next to the counter?", "question_type": "object identification"}
+{"question": "what is next to the deck?", "question_type": "object identification"}
+{"question": "what is next to the desk?", "question_type": "object identification"}
+{"question": "what is next to the dog?", "question_type": "object identification"}
+{"question": "what is next to the door?", "question_type": "object identification"}
+{"question": "what is next to the fence?", "question_type": "object identification"}
+{"question": "what is next to the fridge?", "question_type": "object identification"}
+{"question": "what is next to the girl?", "question_type": "object identification"}
+{"question": "what is next to the heart?", "question_type": "object identification"}
+{"question": "what is next to the horse?", "question_type": "object identification"}
+{"question": "what is next to the house?", "question_type": "object identification"}
+{"question": "what is next to the lamp on the left side?", "question_type": "object identification"}
+{"question": "what is next to the lamp?", "question_type": "object identification"}
+{"question": "what is next to the locker?", "question_type": "object identification"}
+{"question": "what is next to the man on the side?", "question_type": "object identification"}
+{"question": "what is next to the man with the guitar?", "question_type": "object identification"}
+{"question": "what is next to the man?", "question_type": "object identification"}
+{"question": "what is next to the microwave?", "question_type": "object identification"}
+{"question": "what is next to the mirror?", "question_type": "object identification"}
+{"question": "what is next to the missile?", "question_type": "object identification"}
+{"question": "what is next to the oven?", "question_type": "object identification"}
+{"question": "what is next to the people?", "question_type": "object identification"}
+{"question": "what is next to the person in the image?", "question_type": "object identification"}
+{"question": "what is next to the person on the table?", "question_type": "object identification"}
+{"question": "what is next to the person?", "question_type": "object identification"}
+{"question": "what is next to the phone?", "question_type": "object identification"}
+{"question": "what is next to the picture on the wall?", "question_type": "spatial relationship"}
+{"question": "what is next to the pineapple?", "question_type": "object identification"}
+{"question": "what is next to the pink building?", "question_type": "object identification"}
+{"question": "what is next to the plane?", "question_type": "object identification"}
+{"question": "what is next to the plate?", "question_type": "object identification"}
+{"question": "what is next to the refrigerator?", "question_type": "object identification"}
+{"question": "what is next to the road?", "question_type": "object identification"}
+{"question": "what is next to the sidewalk?", "question_type": "object identification"}
+{"question": "what is next to the soda can?", "question_type": "object identification"}
+{"question": "what is next to the staircase?", "question_type": "object identification"}
+{"question": "what is next to the stairs?", "question_type": "object identification"}
+{"question": "what is next to the structure?", "question_type": "object identification"}
+{"question": "what is next to the table?", "question_type": "object identification"}
+{"question": "what is next to the tablet?", "question_type": "object identification"}
+{"question": "what is next to the tree?", "question_type": "object identification"}
+{"question": "what is next to the truck?", "question_type": "object identification"}
+{"question": "what is next to the vase?", "question_type": "object identification"}
+{"question": "what is next to the wall?", "question_type": "object identification"}
+{"question": "what is next to the washing machine?", "question_type": "object identification"}
+{"question": "what is next to the water?", "question_type": "object identification"}
+{"question": "what is next to the window?", "question_type": "object identification"}
+{"question": "what is next to the woman on the couch?", "question_type": "object identification"}
+{"question": "what is next to the woman on the floor?", "question_type": "object identification"}
+{"question": "what is next to the woman on the sidewalk?", "question_type": "object identification"}
+{"question": "what is next to the woman?", "question_type": "object identification"}
+{"question": "what is on a shelf?", "question_type": "object identification"}
+{"question": "what is on both sides of the street?", "question_type": "object identification"}
+{"question": "what is on his head?", "question_type": "object identification"}
+{"question": "what is on his lap?", "question_type": "object identification"}
+{"question": "what is on his tie?", "question_type": "object identification"}
+{"question": "what is on one of the buildings?", "question_type": "object identification"}
+{"question": "what is on one of the children's heads?", "question_type": "object identification"}
+{"question": "what is on one of the walls?", "question_type": "object identification"}
+{"question": "what is on the back of the car?", "question_type": "object identification"}
+{"question": "what is on the back of the carriage?", "question_type": "object identification"}
+{"question": "what is on the back of the child?", "question_type": "object identification"}
+{"question": "what is on the back of the man on the right?", "question_type": "object identification"}
+{"question": "what is on the back of the man's head?", "question_type": "object identification"}
+{"question": "what is on the back of the pink car?", "question_type": "object identification"}
+{"question": "what is on the back of the plane?", "question_type": "object identification"}
+{"question": "what is on the background of the image?", "question_type": "object identification"}
+{"question": "what is on the background wall?", "question_type": "object identification"}
+{"question": "what is on the background?", "question_type": "object identification"}
+{"question": "what is on the balcony?", "question_type": "object identification"}
+{"question": "what is on the banana's shirt?", "question_type": "object identification"}
+{"question": "what is on the bar?", "question_type": "object identification"}
+{"question": "what is on the bathroom floor?", "question_type": "object identification"}
+{"question": "what is on the beach?", "question_type": "object identification"}
+{"question": "what is on the bed besides the blanket?", "question_type": "object identification"}
+{"question": "what is on the bed in the image?", "question_type": "object identification"}
+{"question": "what is on the bed next to the man?", "question_type": "object identification"}
+{"question": "what is on the bed with the man?", "question_type": "object identification"}
+{"question": "what is on the bed?", "question_type": "Object identification"}
+{"question": "what is on the beds?", "question_type": "object identification"}
+{"question": "what is on the bench?", "question_type": "object identification"}
+{"question": "what is on the benches?", "question_type": "object identification"}
+{"question": "what is on the bicycle?", "question_type": "object identification"}
+{"question": "what is on the bird's beak?", "question_type": "object identification"}
+{"question": "what is on the blackboard?", "question_type": "object identification"}
+{"question": "what is on the bleachers?", "question_type": "object identification"}
+{"question": "what is on the blue shelf on the wall?", "question_type": "object identification"}
+{"question": "what is on the board in the background?", "question_type": "object identification"}
+{"question": "what is on the board?", "question_type": "object identification"}
+{"question": "what is on the bookshelf in the background?", "question_type": "object identification"}
+{"question": "what is on the bookshelf?", "question_type": "object identification"}
+{"question": "what is on the bookshelves?", "question_type": "object identification"}
+{"question": "what is on the border of the rug?", "question_type": "object identification"}
+{"question": "what is on the box?", "question_type": "object identification"}
+{"question": "what is on the boy on the left's face?", "question_type": "object identification"}
+{"question": "what is on the boy's face?", "question_type": "object identification"}
+{"question": "what is on the boy's shirt?", "question_type": "object identification"}
+{"question": "what is on the boy's shorts?", "question_type": "object identification"}
+{"question": "what is on the brick wall?", "question_type": "object identification"}
+{"question": "what is on the bridge?", "question_type": "object identification"}
+{"question": "what is on the building behind them?", "question_type": "object identification"}
+{"question": "what is on the building in the background?", "question_type": "object identification"}
+{"question": "what is on the building on the left?", "question_type": "object identification"}
+{"question": "what is on the building?", "question_type": "object identification"}
+{"question": "what is on the buildings?", "question_type": "object identification"}
+{"question": "what is on the bulletin board?", "question_type": "object identification"}
+{"question": "what is on the bus?", "question_type": "object identification"}
+{"question": "what is on the cabinet?", "question_type": "object identification"}
+{"question": "what is on the cake stand?", "question_type": "object identification"}
+{"question": "what is on the car?", "question_type": "object identification"}
+{"question": "what is on the cart the man is holding?", "question_type": "object identification"}
+{"question": "what is on the cart?", "question_type": "object identification"}
+{"question": "what is on the ceiling above the building?", "question_type": "object identification"}
+{"question": "what is on the ceiling?", "question_type": "object identification"}
+{"question": "what is on the chair with the man?", "question_type": "object identification"}
+{"question": "what is on the chair?", "question_type": "object identification"}
+{"question": "what is on the chairs on the right side?", "question_type": "object identification"}
+{"question": "what is on the chairs?", "question_type": "object identification"}
+{"question": "what is on the chalkboard?", "question_type": "object identification"}
+{"question": "what is on the character's back?", "question_type": "object identification"}
+{"question": "what is on the character's neck?", "question_type": "object identification"}
+{"question": "what is on the character's shirt?", "question_type": "object identification"}
+{"question": "what is on the child's back?", "question_type": "object identification"}
+{"question": "what is on the child's face?", "question_type": "object identification"}
+{"question": "what is on the child's head?", "question_type": "object identification"}
+{"question": "what is on the child's legs?", "question_type": "object identification"}
+{"question": "what is on the child's neck?", "question_type": "object identification"}
+{"question": "what is on the child's shirt?", "question_type": "object identification"}
+{"question": "what is on the city street?", "question_type": "object identification"}
+{"question": "what is on the clown's head?", "question_type": "object identification"}
+{"question": "what is on the coffee table?", "question_type": "object identification"}
+{"question": "what is on the computer screen?", "question_type": "object identification"}
+{"question": "what is on the couch?", "question_type": "object identification"}
+{"question": "what is on the counter behind the bartender?", "question_type": "object identification"}
+{"question": "what is on the counter behind the woman?", "question_type": "object identification"}
+{"question": "what is on the counter besides the television?", "question_type": "object identification"}
+{"question": "what is on the counter next to the man?", "question_type": "object identification"}
+{"question": "what is on the counter next to the shelf?", "question_type": "object identification"}
+{"question": "what is on the counter?", "question_type": "object identification"}
+{"question": "what is on the cover of the book?", "question_type": "object identification"}
+{"question": "what is on the cupboard?", "question_type": "object identification"}
+{"question": "what is on the curtain?", "question_type": "object identification"}
+{"question": "what is on the deck of the boat?", "question_type": "object identification"}
+{"question": "what is on the deck?", "question_type": "object identification"}
+{"question": "what is on the desk in front of him?", "question_type": "object identification"}
+{"question": "what is on the desk in front of the people character?", "question_type": "object identification"}
+{"question": "what is on the desk in the middle of the room?", "question_type": "object identification"}
+{"question": "what is on the desk next to the man?", "question_type": "object identification"}
+{"question": "what is on the desk?", "question_type": "object identification"}
+{"question": "what is on the desks?", "question_type": "object identification"}
+{"question": "what is on the dinosaur's neck?", "question_type": "object identification"}
+{"question": "what is on the dog's eyes?", "question_type": "object identification"}
+{"question": "what is on the dog's lap?", "question_type": "object identification"}
+{"question": "what is on the dog's nose?", "question_type": "object identification"}
+{"question": "what is on the domes?", "question_type": "object identification"}
+{"question": "what is on the door in the image?", "question_type": "object identification"}
+{"question": "what is on the door in the kitchen?", "question_type": "object identification"}
+{"question": "what is on the door of the building?", "question_type": "object identification"}
+{"question": "what is on the door to the right of the man?", "question_type": "object identification"}
+{"question": "what is on the door to the right?", "question_type": "object identification"}
+{"question": "what is on the door?", "question_type": "object identification"}
+{"question": "what is on the doors?", "question_type": "object identification"}
+{"question": "what is on the dresser?", "question_type": "object identification"}
+{"question": "what is on the elephant?", "question_type": "object identification"}
+{"question": "what is on the end table?", "question_type": "object identification"}
+{"question": "what is on the face?", "question_type": "object identification"}
+{"question": "what is on the far left?", "question_type": "object identification"}
+{"question": "what is on the fence?", "question_type": "object identification"}
+{"question": "what is on the floor behind the man?", "question_type": "object identification"}
+{"question": "what is on the floor besides the children?", "question_type": "object identification"}
+{"question": "what is on the floor in front of the character?", "question_type": "object identification"}
+{"question": "what is on the floor in front of the chicken?", "question_type": "object identification"}
+{"question": "what is on the floor in front of the children?", "question_type": "object identification"}
+{"question": "what is on the floor in front of the door?", "question_type": "object identification"}
+{"question": "what is on the floor in front of the fireplace?", "question_type": "object identification"}
+{"question": "what is on the floor in front of the man?", "question_type": "object identification"}
+{"question": "what is on the floor in front of the person?", "question_type": "object identification"}
+{"question": "what is on the floor in front of the speaker?", "question_type": "object identification"}
+{"question": "what is on the floor in front of the stairs?", "question_type": "object identification"}
+{"question": "what is on the floor in front of the table?", "question_type": "object identification"}
+{"question": "what is on the floor in front of the window?", "question_type": "object identification"}
+{"question": "what is on the floor in the background?", "question_type": "object identification"}
+{"question": "what is on the floor in the image?", "question_type": "Object identification"}
+{"question": "what is on the floor in the picture on the wall?", "question_type": "object identification"}
+{"question": "what is on the floor in the picture?", "question_type": "object identification"}
+{"question": "what is on the floor in the second picture?", "question_type": "object identification"}
+{"question": "what is on the floor near the man?", "question_type": "object identification"}
+{"question": "what is on the floor next to the bed?", "question_type": "object identification"}
+{"question": "what is on the floor next to the couch?", "question_type": "object identification"}
+{"question": "what is on the floor next to the dog?", "question_type": "object identification"}
+{"question": "what is on the floor next to the door?", "question_type": "object identification"}
+{"question": "what is on the floor next to the dresser?", "question_type": "object identification"}
+{"question": "what is on the floor next to the locker?", "question_type": "object identification"}
+{"question": "what is on the floor next to the man?", "question_type": "object identification"}
+{"question": "what is on the floor next to the people?", "question_type": "object identification"}
+{"question": "what is on the floor next to the person on the left?", "question_type": "object identification"}
+{"question": "what is on the floor next to the stairs?", "question_type": "object identification"}
+{"question": "what is on the floor next to the tv?", "question_type": "object identification"}
+{"question": "what is on the floor next to the woman?", "question_type": "object identification"}
+{"question": "what is on the floor of the barn?", "question_type": "object identification"}
+{"question": "what is on the floor of the bathroom?", "question_type": "object identification"}
+{"question": "what is on the floor of the living room?", "question_type": "object identification"}
+{"question": "what is on the floor of the room?", "question_type": "object identification"}
+{"question": "what is on the floor under the shelf?", "question_type": "object identification"}
+{"question": "what is on the floor?", "question_type": "object identification"}
+{"question": "what is on the food cart?", "question_type": "object identification"}
+{"question": "what is on the front of the bike?", "question_type": "object identification"}
+{"question": "what is on the front of the building?", "question_type": "object identification"}
+{"question": "what is on the front of the store?", "question_type": "object identification"}
+{"question": "what is on the girl's collar?", "question_type": "object identification"}
+{"question": "what is on the girl's neck?", "question_type": "object identification"}
+{"question": "what is on the goat's back?", "question_type": "object identification"}
+{"question": "what is on the grass?", "question_type": "object identification"}
+{"question": "what is on the green stroller?", "question_type": "object identification"}
+{"question": "what is on the ground around the house?", "question_type": "object identification"}
+{"question": "what is on the ground around the man?", "question_type": "object identification"}
+{"question": "what is on the ground behind the clown?", "question_type": "object identification"}
+{"question": "what is on the ground behind the man and woman?", "question_type": "object identification"}
+{"question": "what is on the ground behind the man?", "question_type": "object identification"}
+{"question": "what is on the ground beside the person?", "question_type": "object identification"}
+{"question": "what is on the ground in front of the boy?", "question_type": "object identification"}
+{"question": "what is on the ground in front of the boys?", "question_type": "object identification"}
+{"question": "what is on the ground in front of the building?", "question_type": "object identification"}
+{"question": "what is on the ground in front of the cabin?", "question_type": "object identification"}
+{"question": "what is on the ground in front of the couch?", "question_type": "object identification"}
+{"question": "what is on the ground in front of the dome?", "question_type": "object identification"}
+{"question": "what is on the ground in front of the fence?", "question_type": "object identification"}
+{"question": "what is on the ground in front of the house?", "question_type": "object identification"}
+{"question": "what is on the ground in front of the man?", "question_type": "object identification"}
+{"question": "what is on the ground in front of the person?", "question_type": "object identification"}
+{"question": "what is on the ground in front of the tents?", "question_type": "object identification"}
+{"question": "what is on the ground in front of the window?", "question_type": "object identification"}
+{"question": "what is on the ground in front of the windows?", "question_type": "object identification"}
+{"question": "what is on the ground in front of the woman?", "question_type": "object identification"}
+{"question": "what is on the ground in front of them?", "question_type": "object identification"}
+{"question": "what is on the ground in the background?", "question_type": "object identification"}
+{"question": "what is on the ground in the image?", "question_type": "object identification"}
+{"question": "what is on the ground in the images?", "question_type": "object identification"}
+{"question": "what is on the ground in the parking lot?", "question_type": "object identification"}
+{"question": "what is on the ground near the grass?", "question_type": "object identification"}
+{"question": "what is on the ground near the house?", "question_type": "object identification"}
+{"question": "what is on the ground near the man?", "question_type": "object identification"}
+{"question": "what is on the ground near the tree?", "question_type": "object identification"}
+{"question": "what is on the ground near the woman?", "question_type": "object identification"}
+{"question": "what is on the ground next to the bench?", "question_type": "object identification"}
+{"question": "what is on the ground next to the bike?", "question_type": "object identification"}
+{"question": "what is on the ground next to the boy?", "question_type": "object identification"}
+{"question": "what is on the ground next to the car?", "question_type": "object identification"}
+{"question": "what is on the ground next to the man?", "question_type": "object identification"}
+{"question": "what is on the ground next to the stand?", "question_type": "object identification"}
+{"question": "what is on the ground next to the women?", "question_type": "object identification"}
+{"question": "what is on the ground outside the window?", "question_type": "object identification"}
+{"question": "what is on the ground?", "question_type": "object identification"}
+{"question": "what is on the handle of the knife?", "question_type": "object identification"}
+{"question": "what is on the hats?", "question_type": "object identification"}
+{"question": "what is on the head of the cow?", "question_type": "object identification"}
+{"question": "what is on the hill?", "question_type": "object identification"}
+{"question": "what is on the house?", "question_type": "object identification"}
+{"question": "what is on the kitchen counter?", "question_type": "object identification"}
+{"question": "what is on the lamp table?", "question_type": "object identification"}
+{"question": "what is on the lamp?", "question_type": "object identification"}
+{"question": "what is on the laptop screen?", "question_type": "object identification"}
+{"question": "what is on the laptop?", "question_type": "object identification"}
+{"question": "what is on the left and right side of the people?", "question_type": "object identification"}
+{"question": "what is on the left man's pants?", "question_type": "object identification"}
+{"question": "what is on the left of the man?", "question_type": "object identification"}
+{"question": "what is on the left of the room?", "question_type": "spatial orientation"}
+{"question": "what is on the left side of the bed?", "question_type": "object identification"}
+{"question": "what is on the left side of the building?", "question_type": "object identification"}
+{"question": "what is on the left side of the car?", "question_type": "object identification"}
+{"question": "what is on the left side of the image besides the person?", "question_type": "object identification"}
+{"question": "what is on the left side of the image?", "question_type": "object identification"}
+{"question": "what is on the left side of the kitchen?", "question_type": "spatial location"}
+{"question": "what is on the left side of the men?", "question_type": "object identification"}
+{"question": "what is on the left side of the officers?", "question_type": "spatial position"}
+{"question": "what is on the left side of the painting?", "question_type": "object identification"}
+{"question": "what is on the left side of the people?", "question_type": "spatial relationship"}
+{"question": "what is on the left side of the person?", "question_type": "object identification"}
+{"question": "what is on the left side of the picture?", "question_type": "object identification"}
+{"question": "what is on the left side of the room?", "question_type": "spatial orientation"}
+{"question": "what is on the left side of the second image?", "question_type": "object identification"}
+{"question": "what is on the left side of the table?", "question_type": "object identification"}
+{"question": "what is on the left side?", "question_type": "object identification"}
+{"question": "what is on the left?", "question_type": "object identification"}
+{"question": "what is on the license plate?", "question_type": "object identification"}
+{"question": "what is on the lion's head?", "question_type": "object identification"}
+{"question": "what is on the little girl's pants?", "question_type": "object identification"}
+{"question": "what is on the machine?", "question_type": "object identification"}
+{"question": "what is on the magazine?", "question_type": "object identification"}
+{"question": "what is on the man in the green shirt's face?", "question_type": "object identification"}
+{"question": "what is on the man in the middle's face?", "question_type": "object identification"}
+{"question": "what is on the man's back?", "question_type": "object identification"}
+{"question": "what is on the man's belt?", "question_type": "object identification"}
+{"question": "what is on the man's collar?", "question_type": "object identification"}
+{"question": "what is on the man's dress?", "question_type": "object identification"}
+{"question": "what is on the man's eyes?", "question_type": "object identification"}
+{"question": "what is on the man's face on the left side?", "question_type": "object identification"}
+{"question": "what is on the man's face on the left?", "question_type": "object identification"}
+{"question": "what is on the man's face on the right?", "question_type": "object identification"}
+{"question": "what is on the man's face?", "question_type": "object identification"}
+{"question": "what is on the man's hand?", "question_type": "object identification"}
+{"question": "what is on the man's head on the left?", "question_type": "object identification"}
+{"question": "what is on the man's head?", "question_type": "object identification"}
+{"question": "what is on the man's jacket?", "question_type": "object identification"}
+{"question": "what is on the man's left side?", "question_type": "object identification"}
+{"question": "what is on the man's legs?", "question_type": "object identification"}
+{"question": "what is on the man's neck?", "question_type": "object identification"}
+{"question": "what is on the man's pants?", "question_type": "object identification"}
+{"question": "what is on the man's plate?", "question_type": "object identification"}
+{"question": "what is on the man's shirt?", "question_type": "Object identification"}
+{"question": "what is on the man's shoulder?", "question_type": "object identification"}
+{"question": "what is on the man's sweater?", "question_type": "object identification"}
+{"question": "what is on the man's table?", "question_type": "object identification"}
+{"question": "what is on the man's tie?", "question_type": "object identification"}
+{"question": "what is on the man's vest?", "question_type": "object identification"}
+{"question": "what is on the mantle?", "question_type": "object identification"}
+{"question": "what is on the mattress?", "question_type": "object identification"}
+{"question": "what is on the middle man's face?", "question_type": "object identification"}
+{"question": "what is on the middle shelf?", "question_type": "object identification"}
+{"question": "what is on the mirror?", "question_type": "object identification"}
+{"question": "what is on the motorcycle's license plate?", "question_type": "object identification"}
+{"question": "what is on the mound of dirt?", "question_type": "object identification"}
+{"question": "what is on the mountain?", "question_type": "object identification"}
+{"question": "what is on the mural in the background?", "question_type": "object identification"}
+{"question": "what is on the mural?", "question_type": "object identification"}
+{"question": "what is on the neck of the person on the left?", "question_type": "object identification"}
+{"question": "what is on the neck of the woman?", "question_type": "object identification"}
+{"question": "what is on the nightstand?", "question_type": "object identification"}
+{"question": "what is on the paintings?", "question_type": "object identification"}
+{"question": "what is on the parking lot?", "question_type": "object identification"}
+{"question": "what is on the people character's head?", "question_type": "object identification"}
+{"question": "what is on the people' bed?", "question_type": "object identification"}
+{"question": "what is on the people' couch?", "question_type": "object identification"}
+{"question": "what is on the people' head?", "question_type": "object identification"}
+{"question": "what is on the people?", "question_type": "Object identification"}
+{"question": "what is on the person on the right's face?", "question_type": "object identification"}
+{"question": "what is on the person's back?", "question_type": "object identification"}
+{"question": "what is on the person's backpack?", "question_type": "object identification"}
+{"question": "what is on the person's collar?", "question_type": "Object identification"}
+{"question": "what is on the person's eyes?", "question_type": "object identification"}
+{"question": "what is on the person's face?", "question_type": "object identification"}
+{"question": "what is on the person's hand?", "question_type": "object identification"}
+{"question": "what is on the person's head on the left?", "question_type": "object identification"}
+{"question": "what is on the person's head?", "question_type": "object identification"}
+{"question": "what is on the person's lap?", "question_type": "object identification"}
+{"question": "what is on the person's left side?", "question_type": "object identification"}
+{"question": "what is on the person's legs?", "question_type": "object identification"}
+{"question": "what is on the person's neck?", "question_type": "object identification"}
+{"question": "what is on the person's right side?", "question_type": "object identification"}
+{"question": "what is on the person's scarf?", "question_type": "object identification"}
+{"question": "what is on the person's shirt?", "question_type": "object identification"}
+{"question": "what is on the person's tshirt?", "question_type": "object identification"}
+{"question": "what is on the persons' faces?", "question_type": "object identification"}
+{"question": "what is on the phone screen?", "question_type": "object identification"}
+{"question": "what is on the phone?", "question_type": "object identification"}
+{"question": "what is on the picture frame?", "question_type": "object identification"}
+{"question": "what is on the picture?", "question_type": "object identification"}
+{"question": "what is on the pier or boardwalk?", "question_type": "object identification"}
+{"question": "what is on the pier?", "question_type": "object identification"}
+{"question": "what is on the pile of garbage?", "question_type": "object identification"}
+{"question": "what is on the pillow on the right?", "question_type": "object identification"}
+{"question": "what is on the pillow?", "question_type": "object identification"}
+{"question": "what is on the plate in front of the people?", "question_type": "object identification"}
+{"question": "what is on the plate in the second picture?", "question_type": "object identification"}
+{"question": "what is on the plate the people are holding?", "question_type": "object identification"}
+{"question": "what is on the plate the person is holding?", "question_type": "object identification"}
+{"question": "what is on the plate?", "question_type": "object identification"}
+{"question": "what is on the plates in the background?", "question_type": "object identification"}
+{"question": "what is on the plates?", "question_type": "object identification"}
+{"question": "what is on the platform?", "question_type": "object identification"}
+{"question": "what is on the podium?", "question_type": "object identification"}
+{"question": "what is on the pole behind the man?", "question_type": "object identification"}
+{"question": "what is on the pole next to the building?", "question_type": "object identification"}
+{"question": "what is on the pole?", "question_type": "object identification"}
+{"question": "what is on the porch?", "question_type": "object identification"}
+{"question": "what is on the poster?", "question_type": "object identification"}
+{"question": "what is on the purple bowl?", "question_type": "object identification"}
+{"question": "what is on the rabbit's head?", "question_type": "object identification"}
+{"question": "what is on the right of the room?", "question_type": "object identification"}
+{"question": "what is on the right of the table?", "question_type": "spatial location"}
+{"question": "what is on the right of the two men?", "question_type": "object identification"}
+{"question": "what is on the right side of the banana?", "question_type": "object/spatial orientation"}
+{"question": "what is on the right side of the bed?", "question_type": "object identification"}
+{"question": "what is on the right side of the girl?", "question_type": "shape"}
+{"question": "what is on the right side of the house?", "question_type": "direction/location"}
+{"question": "what is on the right side of the image?", "question_type": "object identification"}
+{"question": "what is on the right side of the kitchen?", "question_type": "spatial location"}
+{"question": "what is on the right side of the man?", "question_type": "object identification"}
+{"question": "what is on the right side of the men?", "question_type": "object identification"}
+{"question": "what is on the right side of the path?", "question_type": "object identification"}
+{"question": "what is on the right side of the people?", "question_type": "object identification"}
+{"question": "what is on the right side of the person?", "question_type": "object identification"}
+{"question": "what is on the right side of the picture?", "question_type": "object identification"}
+{"question": "what is on the right side of the room?", "question_type": "spatial orientation"}
+{"question": "what is on the right side of the second image?", "question_type": "object identification"}
+{"question": "what is on the right side of the stage?", "question_type": "spatial location/object identification"}
+{"question": "what is on the right side of the table?", "question_type": "object identification"}
+{"question": "what is on the right side of the tables?", "question_type": "spatial relationship"}
+{"question": "what is on the right side of the woman?", "question_type": "object identification"}
+{"question": "what is on the right side of the women?", "question_type": "object identification"}
+{"question": "what is on the right side?", "question_type": "object identification"}
+{"question": "what is on the right?", "question_type": "object identification"}
+{"question": "what is on the road in the picture?", "question_type": "object identification"}
+{"question": "what is on the road?", "question_type": "object identification"}
+{"question": "what is on the roof of the house?", "question_type": "object identification"}
+{"question": "what is on the roof?", "question_type": "object identification"}
+{"question": "what is on the roofs of the houses?", "question_type": "object identification"}
+{"question": "what is on the scaffolding?", "question_type": "object identification"}
+{"question": "what is on the school building?", "question_type": "object identification"}
+{"question": "what is on the screen of the computer?", "question_type": "object identification"}
+{"question": "what is on the screen of the phone?", "question_type": "object identification"}
+{"question": "what is on the screen of the tv?", "question_type": "object identification"}
+{"question": "what is on the screen?", "question_type": "object identification"}
+{"question": "what is on the seats?", "question_type": "object identification"}
+{"question": "what is on the second dog's neck?", "question_type": "object identification"}
+{"question": "what is on the shelf above the counter?", "question_type": "object identification"}
+{"question": "what is on the shelf above the man?", "question_type": "object identification"}
+{"question": "what is on the shelf above the mirror?", "question_type": "object identification"}
+{"question": "what is on the shelf above the robot?", "question_type": "object identification"}
+{"question": "what is on the shelf behind him?", "question_type": "object identification"}
+{"question": "what is on the shelf behind the bed?", "question_type": "object identification"}
+{"question": "what is on the shelf behind the cat?", "question_type": "object identification"}
+{"question": "what is on the shelf behind the counter?", "question_type": "object identification"}
+{"question": "what is on the shelf behind the man?", "question_type": "object identification"}
+{"question": "what is on the shelf behind the men?", "question_type": "object identification"}
+{"question": "what is on the shelf behind the people?", "question_type": "object identification"}
+{"question": "what is on the shelf behind the person?", "question_type": "object identification"}
+{"question": "what is on the shelf behind the picture frame?", "question_type": "object identification"}
+{"question": "what is on the shelf behind the table?", "question_type": "object identification"}
+{"question": "what is on the shelf behind the woman?", "question_type": "object identification"}
+{"question": "what is on the shelf behind them?", "question_type": "object identification"}
+{"question": "what is on the shelf in the background?", "question_type": "object identification"}
+{"question": "what is on the shelf in the right side of the image?", "question_type": "object identification"}
+{"question": "what is on the shelf next to the cabinet?", "question_type": "object identification"}
+{"question": "what is on the shelf with books?", "question_type": "object identification"}
+{"question": "what is on the shelf with the man?", "question_type": "object identification"}
+{"question": "what is on the shelf?", "question_type": "object identification"}
+{"question": "what is on the shelves above the man?", "question_type": "object identification"}
+{"question": "what is on the shelves behind the bar?", "question_type": "object identification"}
+{"question": "what is on the shelves behind the man?", "question_type": "object identification"}
+{"question": "what is on the shelves behind the men?", "question_type": "object identification"}
+{"question": "what is on the shelves behind the woman?", "question_type": "object identification"}
+{"question": "what is on the shelves in the background?", "question_type": "object identification"}
+{"question": "what is on the shelves in the library?", "question_type": "object identification"}
+{"question": "what is on the shelves?", "question_type": "object identification"}
+{"question": "what is on the side of the bar?", "question_type": "object identification"}
+{"question": "what is on the side of the bed?", "question_type": "object identification"}
+{"question": "what is on the side of the boat?", "question_type": "object identification"}
+{"question": "what is on the side of the bridge?", "question_type": "object identification"}
+{"question": "what is on the side of the building?", "question_type": "object identification"}
+{"question": "what is on the side of the buildings?", "question_type": "object identification"}
+{"question": "what is on the side of the car?", "question_type": "object identification"}
+{"question": "what is on the side of the couch?", "question_type": "object identification"}
+{"question": "what is on the side of the door?", "question_type": "object identification"}
+{"question": "what is on the side of the fridge?", "question_type": "object identification"}
+{"question": "what is on the side of the house?", "question_type": "object identification"}
+{"question": "what is on the side of the image?", "question_type": "object identification"}
+{"question": "what is on the side of the kitchen?", "question_type": "object identification"}
+{"question": "what is on the side of the mountain?", "question_type": "object identification"}
+{"question": "what is on the side of the person?", "question_type": "object identification"}
+{"question": "what is on the side of the picture on the wall?", "question_type": "object identification"}
+{"question": "what is on the side of the porch?", "question_type": "object identification"}
+{"question": "what is on the side of the river?", "question_type": "object identification"}
+{"question": "what is on the side of the road?", "question_type": "object identification"}
+{"question": "what is on the side of the room?", "question_type": "object identification"}
+{"question": "what is on the side of the ship?", "question_type": "object identification"}
+{"question": "what is on the side of the sidewalk?", "question_type": "object identification"}
+{"question": "what is on the side of the stage?", "question_type": "object identification"}
+{"question": "what is on the side of the staircase?", "question_type": "object identification"}
+{"question": "what is on the side of the store?", "question_type": "object identification"}
+{"question": "what is on the side of the street?", "question_type": "object identification"}
+{"question": "what is on the side of the taxi?", "question_type": "object identification"}
+{"question": "what is on the side of the train?", "question_type": "object identification"}
+{"question": "what is on the side of the truck?", "question_type": "object identification"}
+{"question": "what is on the side of the van?", "question_type": "object identification"}
+{"question": "what is on the side of the wall?", "question_type": "object identification"}
+{"question": "what is on the side of the waterfall?", "question_type": "object identification"}
+{"question": "what is on the side of the woman?", "question_type": "object identification"}
+{"question": "what is on the side table?", "question_type": "object identification"}
+{"question": "what is on the sides of the houses?", "question_type": "object identification"}
+{"question": "what is on the sides of the road?", "question_type": "object identification"}
+{"question": "what is on the sides of the stage?", "question_type": "object identification"}
+{"question": "what is on the sides of the windows?", "question_type": "object identification"}
+{"question": "what is on the sidewalk next to the car?", "question_type": "object identification"}
+{"question": "what is on the sidewalk next to them?", "question_type": "object identification"}
+{"question": "what is on the sidewalk?", "question_type": "object identification"}
+{"question": "what is on the sign board?", "question_type": "object identification"}
+{"question": "what is on the sign next to the billboard?", "question_type": "object identification"}
+{"question": "what is on the sign next to the cabin?", "question_type": "object identification"}
+{"question": "what is on the sign on the box?", "question_type": "object identification"}
+{"question": "what is on the sign on the building?", "question_type": "object identification"}
+{"question": "what is on the sign?", "question_type": "object identification"}
+{"question": "what is on the signboard?", "question_type": "object identification"}
+{"question": "what is on the small table?", "question_type": "object identification"}
+{"question": "what is on the small wooden table in the living room?", "question_type": "object identification"}
+{"question": "what is on the sofa besides the people?", "question_type": "object identification"}
+{"question": "what is on the sofa?", "question_type": "object identification"}
+{"question": "what is on the stage behind the men?", "question_type": "object identification"}
+{"question": "what is on the stage?", "question_type": "object identification"}
+{"question": "what is on the stairs?", "question_type": "object identification"}
+{"question": "what is on the stand of the scooter?", "question_type": "object identification"}
+{"question": "what is on the stand?", "question_type": "object identification"}
+{"question": "what is on the steering wheel?", "question_type": "object identification"}
+{"question": "what is on the stool next to the woman?", "question_type": "object identification"}
+{"question": "what is on the stove?", "question_type": "object identification"}
+{"question": "what is on the street?", "question_type": "object identification"}
+{"question": "what is on the suitcase?", "question_type": "object identification"}
+{"question": "what is on the table behind the laptop?", "question_type": "object identification"}
+{"question": "what is on the table behind the man?", "question_type": "object identification"}
+{"question": "what is on the table behind the person?", "question_type": "object identification"}
+{"question": "what is on the table besides food?", "question_type": "object identification"}
+{"question": "what is on the table besides plates and food?", "question_type": "object identification"}
+{"question": "what is on the table besides plates?", "question_type": "object identification"}
+{"question": "what is on the table besides the food?", "question_type": "object identification"}
+{"question": "what is on the table besides the lamps?", "question_type": "object identification"}
+{"question": "what is on the table besides the laptop?", "question_type": "object identification"}
+{"question": "what is on the table besides the people?", "question_type": "object identification"}
+{"question": "what is on the table besides the plates of pizza?", "question_type": "object identification"}
+{"question": "what is on the table besides the vase?", "question_type": "object identification"}
+{"question": "what is on the table in front of him?", "question_type": "object identification"}
+{"question": "what is on the table in front of the chef?", "question_type": "object identification"}
+{"question": "what is on the table in front of the couches?", "question_type": "object identification"}
+{"question": "what is on the table in front of the couple?", "question_type": "object identification"}
+{"question": "what is on the table in front of the man and woman?", "question_type": "object identification"}
+{"question": "what is on the table in front of the man?", "question_type": "object identification"}
+{"question": "what is on the table in front of the people?", "question_type": "object identification"}
+{"question": "what is on the table in front of the person?", "question_type": "object identification"}
+{"question": "what is on the table in front of the persons?", "question_type": "object identification"}
+{"question": "what is on the table in front of the window?", "question_type": "object identification"}
+{"question": "what is on the table in front of the woman?", "question_type": "object identification"}
+{"question": "what is on the table in front of them?", "question_type": "object identification"}
+{"question": "what is on the table in the background?", "question_type": "object identification"}
+{"question": "what is on the table in the foreground?", "question_type": "object identification"}
+{"question": "what is on the table in the image?", "question_type": "object identification"}
+{"question": "what is on the table in the picture?", "question_type": "object identification"}
+{"question": "what is on the table in the room in the background?", "question_type": "object identification"}
+{"question": "what is on the table in the room?", "question_type": "object identification"}
+{"question": "what is on the table in the second image?", "question_type": "object identification"}
+{"question": "what is on the table next to him?", "question_type": "object identification"}
+{"question": "what is on the table next to the bed?", "question_type": "object identification"}
+{"question": "what is on the table next to the boy?", "question_type": "object identification"}
+{"question": "what is on the table next to the chair?", "question_type": "object identification"}
+{"question": "what is on the table next to the couch?", "question_type": "object identification"}
+{"question": "what is on the table next to the door?", "question_type": "object identification"}
+{"question": "what is on the table next to the fireplace?", "question_type": "object identification"}
+{"question": "what is on the table next to the flowers?", "question_type": "object identification"}
+{"question": "what is on the table next to the girl?", "question_type": "object identification"}
+{"question": "what is on the table next to the ice cream?", "question_type": "object identification"}
+{"question": "what is on the table next to the man on the right?", "question_type": "object identification"}
+{"question": "what is on the table next to the man?", "question_type": "object identification"}
+{"question": "what is on the table next to the person on the right?", "question_type": "object identification"}
+{"question": "what is on the table next to the person?", "question_type": "object identification"}
+{"question": "what is on the table next to the statue?", "question_type": "object identification"}
+{"question": "what is on the table next to the television?", "question_type": "object identification"}
+{"question": "what is on the table next to the tv?", "question_type": "object identification"}
+{"question": "what is on the table next to the woman?", "question_type": "object identification"}
+{"question": "what is on the table next to them?", "question_type": "object identification"}
+{"question": "what is on the table on the left side?", "question_type": "object identification"}
+{"question": "what is on the table on the right side?", "question_type": "object identification"}
+{"question": "what is on the table on the table?", "question_type": "object identification"}
+{"question": "what is on the table with the plant in it?", "question_type": "object identification"}
+{"question": "what is on the table?", "question_type": "object identification"}
+{"question": "what is on the tablecloth?", "question_type": "object identification"}
+{"question": "what is on the tables in front of the people?", "question_type": "object identification"}
+{"question": "what is on the tables?", "question_type": "object identification"}
+{"question": "what is on the tablet?", "question_type": "object identification"}
+{"question": "what is on the television screen?", "question_type": "object identification"}
+{"question": "what is on the television?", "question_type": "object identification"}
+{"question": "what is on the top left side of the image?", "question_type": "object identification"}
+{"question": "what is on the top left side?", "question_type": "object identification"}
+{"question": "what is on the top of the building?", "question_type": "object identification"}
+{"question": "what is on the top of the car?", "question_type": "object identification"}
+{"question": "what is on the top of the door?", "question_type": "object identification"}
+{"question": "what is on the top of the flag pole?", "question_type": "object identification"}
+{"question": "what is on the top of the hill?", "question_type": "object identification"}
+{"question": "what is on the top of the image?", "question_type": "object identification"}
+{"question": "what is on the top of the person's head?", "question_type": "object identification"}
+{"question": "what is on the top of the picture?", "question_type": "object identification"}
+{"question": "what is on the top of the pile of books?", "question_type": "object identification"}
+{"question": "what is on the top of the pole?", "question_type": "object identification"}
+{"question": "what is on the top of the room?", "question_type": "object identification"}
+{"question": "what is on the top of the shelves?", "question_type": "object identification"}
+{"question": "what is on the top of the store?", "question_type": "object identification"}
+{"question": "what is on the top of the table?", "question_type": "object identification"}
+{"question": "what is on the top of the wall?", "question_type": "object identification"}
+{"question": "what is on the top of the window?", "question_type": "object identification"}
+{"question": "what is on the top right side of the image?", "question_type": "object identification"}
+{"question": "what is on the track?", "question_type": "object identification"}
+{"question": "what is on the tracks?", "question_type": "object identification"}
+{"question": "what is on the train ceiling?", "question_type": "object identification"}
+{"question": "what is on the tray in front of the woman?", "question_type": "object identification"}
+{"question": "what is on the tray?", "question_type": "object identification"}
+{"question": "what is on the tree?", "question_type": "object identification"}
+{"question": "what is on the trees?", "question_type": "object identification"}
+{"question": "what is on the truck?", "question_type": "object identification"}
+{"question": "what is on the tub?", "question_type": "object identification"}
+{"question": "what is on the tv screen?", "question_type": "object identification"}
+{"question": "what is on the tv stand?", "question_type": "object identification"}
+{"question": "what is on the tv?", "question_type": "object identification"}
+{"question": "what is on the wall above the bar?", "question_type": "object identification"}
+{"question": "what is on the wall above the bed?", "question_type": "object identification"}
+{"question": "what is on the wall above the beds?", "question_type": "object identification"}
+{"question": "what is on the wall above the bench?", "question_type": "object identification"}
+{"question": "what is on the wall above the booth?", "question_type": "object identification"}
+{"question": "what is on the wall above the chairs?", "question_type": "object identification"}
+{"question": "what is on the wall above the children?", "question_type": "object identification"}
+{"question": "what is on the wall above the couch?", "question_type": "object identification"}
+{"question": "what is on the wall above the counter?", "question_type": "object identification"}
+{"question": "what is on the wall above the court?", "question_type": "object identification"}
+{"question": "what is on the wall above the crowd?", "question_type": "object identification"}
+{"question": "what is on the wall above the desk?", "question_type": "object identification"}
+{"question": "what is on the wall above the door?", "question_type": "object identification"}
+{"question": "what is on the wall above the dresser?", "question_type": "object identification"}
+{"question": "what is on the wall above the fireplace?", "question_type": "object identification"}
+{"question": "what is on the wall above the man?", "question_type": "object identification"}
+{"question": "what is on the wall above the people?", "question_type": "object identification"}
+{"question": "what is on the wall above the person?", "question_type": "object identification"}
+{"question": "what is on the wall above the podium?", "question_type": "object identification"}
+{"question": "what is on the wall above the sink?", "question_type": "object identification"}
+{"question": "what is on the wall above the stairs?", "question_type": "object identification"}
+{"question": "what is on the wall above the store?", "question_type": "object identification"}
+{"question": "what is on the wall above the stove?", "question_type": "object identification"}
+{"question": "what is on the wall above the table?", "question_type": "object identification"}
+{"question": "what is on the wall above the television?", "question_type": "object identification"}
+{"question": "what is on the wall above the tv?", "question_type": "object identification"}
+{"question": "what is on the wall above the window?", "question_type": "object identification"}
+{"question": "what is on the wall above the woman?", "question_type": "object identification"}
+{"question": "what is on the wall above them?", "question_type": "object identification"}
+{"question": "what is on the wall behind her?", "question_type": "object identification"}
+{"question": "what is on the wall behind him?", "question_type": "object identification"}
+{"question": "what is on the wall behind the audience?", "question_type": "object identification"}
+{"question": "what is on the wall behind the banana?", "question_type": "object identification"}
+{"question": "what is on the wall behind the bar?", "question_type": "object identification"}
+{"question": "what is on the wall behind the bed?", "question_type": "object identification"}
+{"question": "what is on the wall behind the beds?", "question_type": "object identification"}
+{"question": "what is on the wall behind the boy?", "question_type": "object identification"}
+{"question": "what is on the wall behind the boys?", "question_type": "object identification"}
+{"question": "what is on the wall behind the car?", "question_type": "object identification"}
+{"question": "what is on the wall behind the cat?", "question_type": "object identification"}
+{"question": "what is on the wall behind the chair?", "question_type": "object identification"}
+{"question": "what is on the wall behind the chairs?", "question_type": "object identification"}
+{"question": "what is on the wall behind the character?", "question_type": "object identification"}
+{"question": "what is on the wall behind the chicken?", "question_type": "object identification"}
+{"question": "what is on the wall behind the child?", "question_type": "object identification"}
+{"question": "what is on the wall behind the children?", "question_type": "object identification"}
+{"question": "what is on the wall behind the clown?", "question_type": "object identification"}
+{"question": "what is on the wall behind the computer?", "question_type": "object identification"}
+{"question": "what is on the wall behind the couch?", "question_type": "object identification"}
+{"question": "what is on the wall behind the counter?", "question_type": "object identification"}
+{"question": "what is on the wall behind the creature?", "question_type": "object identification"}
+{"question": "what is on the wall behind the desk?", "question_type": "object identification"}
+{"question": "what is on the wall behind the doctor?", "question_type": "object identification"}
+{"question": "what is on the wall behind the dog?", "question_type": "object identification"}
+{"question": "what is on the wall behind the dogs?", "question_type": "object identification"}
+{"question": "what is on the wall behind the door?", "question_type": "object identification"}
+{"question": "what is on the wall behind the dressers?", "question_type": "object identification"}
+{"question": "what is on the wall behind the girl?", "question_type": "object identification"}
+{"question": "what is on the wall behind the girls?", "question_type": "object identification"}
+{"question": "what is on the wall behind the lectern?", "question_type": "object identification"}
+{"question": "what is on the wall behind the man and woman?", "question_type": "object identification"}
+{"question": "what is on the wall behind the man?", "question_type": "object identification"}
+{"question": "what is on the wall behind the men on the right?", "question_type": "object identification"}
+{"question": "what is on the wall behind the men?", "question_type": "object identification"}
+{"question": "what is on the wall behind the mouse?", "question_type": "object identification"}
+{"question": "what is on the wall behind the people in the library?", "question_type": "object identification"}
