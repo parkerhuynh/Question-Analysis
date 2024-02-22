@@ -37,7 +37,9 @@ def categorize_question(question_input, openKey):
     return question_type
 
 def main():
-    openKey = "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"
+    with open('/home/ndhuynh/github/Question-Analysis/openai_key.txt', 'r') as file:
+        for line in file:
+            openKey = line
     
     question_paths = [
         "/home/ndhuynh/data/simpsonsvqa/v1_Question_Train_simpsons_vqa.json"
@@ -52,7 +54,7 @@ def main():
 
     question_unique_list = question_df["question"].unique()
 
-    for i in range(0, len(question_unique_list)):
+    for i in range(12419, len(question_unique_list)):
         
 
         while True:

@@ -11956,3 +11956,791 @@
 {"question": "what color is the person's tank top?", "question_type": "color"}
 {"question": "what color is the person's tie in the background?", "question_type": "color"}
 {"question": "what color is the person's tie on the right?", "question_type": "color"}
+{"question": "what color is the person's tie who is holding a microphone?", "question_type": "object identification"}
+{"question": "what color is the person's tie?", "question_type": "color"}
+{"question": "what color is the person's tongue?", "question_type": "color"}
+{"question": "what color is the person's trousers?", "question_type": "color"}
+{"question": "what color is the person's tshirt and trousers?", "question_type": "color (for both t-shirt and trousers)"}
+{"question": "what color is the person's tshirt in the background?", "question_type": "color"}
+{"question": "what color is the person's tshirt on the right?", "question_type": "color and object identification"}
+{"question": "what color is the person's tshirt?", "question_type": "color"}
+{"question": "what color is the person's vest?", "question_type": "color"}
+{"question": "what color is the person's wig?", "question_type": "color"}
+{"question": "what color is the person?", "question_type": "color"}
+{"question": "what color is the persond of the man on the right?", "question_type": "color"}
+{"question": "what color is the persond?", "question_type": "color"}
+{"question": "what color is the person\u2019s hair on the left?", "question_type": "color (hair color)"}
+{"question": "what color is the phone box?", "question_type": "color"}
+{"question": "what color is the phone cover?", "question_type": "color"}
+{"question": "what color is the phone he is holding?", "question_type": "color"}
+{"question": "what color is the phone on the wall?", "question_type": "color, object identification"}
+{"question": "what color is the phone's lamp shade?", "question_type": "color"}
+{"question": "what color is the phone?", "question_type": "color"}
+{"question": "what color is the piano player's hat?", "question_type": "color"}
+{"question": "what color is the piano?", "question_type": "color"}
+{"question": "what color is the picture border?", "question_type": "color"}
+{"question": "what color is the picture frame?", "question_type": "color"}
+{"question": "what color is the picture?", "question_type": "color"}
+{"question": "what color is the pig in the image?", "question_type": "color"}
+{"question": "what color is the pig in the stall?", "question_type": "color"}
+{"question": "what color is the pig's jacket?", "question_type": "color"}
+{"question": "what color is the pig's shirt?", "question_type": "object identification (referring to the pig's shirt)"}
+{"question": "what color is the pig?", "question_type": "color"}
+{"question": "what color is the pillow and blanket?", "question_type": "color"}
+{"question": "what color is the pillow in front of the woman?", "question_type": "color"}
+{"question": "what color is the pillow in the background?", "question_type": "color"}
+{"question": "what color is the pillow on the bed behind the boy?", "question_type": "color"}
+{"question": "what color is the pillow on the bed?", "question_type": "color"}
+{"question": "what color is the pillow on the floor?", "question_type": "color"}
+{"question": "what color is the pillow on the table?", "question_type": "color"}
+{"question": "what color is the pillow?", "question_type": "color"}
+{"question": "what color is the pillowcase?", "question_type": "color"}
+{"question": "what color is the pineapple's shirt?", "question_type": "object identification"}
+{"question": "what color is the pink car?", "question_type": "color"}
+{"question": "what color is the pink door?", "question_type": "color"}
+{"question": "what color is the pipe?", "question_type": "color"}
+{"question": "what color is the pizza slice?", "question_type": "color"}
+{"question": "what color is the plane?", "question_type": "color"}
+{"question": "what color is the planet?", "question_type": "color"}
+{"question": "what color is the plant in the pot?", "question_type": "color"}
+{"question": "what color is the plant in the vase?", "question_type": "color"}
+{"question": "what color is the plant pot?", "question_type": "color"}
+{"question": "what color is the plant vase?", "question_type": "color"}
+{"question": "what color is the plant's pot?", "question_type": "color"}
+{"question": "what color is the plant?", "question_type": "color"}
+{"question": "what color is the planter?", "question_type": "color"}
+{"question": "what color is the plate's food?", "question_type": "color"}
+{"question": "what color is the plate?", "question_type": "color"}
+{"question": "what color is the play area?", "question_type": "color"}
+{"question": "what color is the player's cap on the left?", "question_type": "color"}
+{"question": "what color is the player's jersey?", "question_type": "color"}
+{"question": "what color is the player's shirt on the left?", "question_type": "object identification, color"}
+{"question": "what color is the player's shirt?", "question_type": "color"}
+{"question": "what color is the player's uniform?", "question_type": "color"}
+{"question": "what color is the podium made of?", "question_type": "object identification"}
+{"question": "what color is the podium?", "question_type": "color"}
+{"question": "what color is the poker table?", "question_type": "color"}
+{"question": "what color is the polar person?", "question_type": "color"}
+{"question": "what color is the pole in front of the people?", "question_type": "color"}
+{"question": "what color is the pole next to the cage?", "question_type": "color"}
+{"question": "what color is the pole on the car?", "question_type": "color"}
+{"question": "what color is the pole?", "question_type": "color"}
+{"question": "what color is the police car?", "question_type": "color"}
+{"question": "what color is the police officer's hat?", "question_type": "color"}
+{"question": "what color is the police officer's tie?", "question_type": "color"}
+{"question": "what color is the police officer's uniform?", "question_type": "color"}
+{"question": "what color is the police uniform?", "question_type": "color"}
+{"question": "what color is the policeman's tie?", "question_type": "color, object identification"}
+{"question": "what color is the policeman's uniform?", "question_type": "color"}
+{"question": "what color is the pool border?", "question_type": "color"}
+{"question": "what color is the pool floor?", "question_type": "color"}
+{"question": "what color is the pool table?", "question_type": "color"}
+{"question": "what color is the popcorn?", "question_type": "color"}
+{"question": "what color is the pope's robe?", "question_type": "color"}
+{"question": "what color is the porch?", "question_type": "color"}
+{"question": "what color is the poster?", "question_type": "color"}
+{"question": "what color is the pot on the table?", "question_type": "color"}
+{"question": "what color is the pot that the plant is in?", "question_type": "color"}
+{"question": "what color is the pot?", "question_type": "color"}
+{"question": "what color is the pottery on the left?", "question_type": "color"}
+{"question": "what color is the present?", "question_type": "color"}
+{"question": "what color is the presenter's hair?", "question_type": "object identification"}
+{"question": "what color is the priest's cross?", "question_type": "color"}
+{"question": "what color is the priest's shirt?", "question_type": "color"}
+{"question": "what color is the pug's nose?", "question_type": "color"}
+{"question": "what color is the purple blanket?", "question_type": "color"}
+{"question": "what color is the purple container?", "question_type": "color"}
+{"question": "what color is the purse one man is holding?", "question_type": "object identification (purse), color"}
+{"question": "what color is the pyramid behind the man?", "question_type": "color"}
+{"question": "what color is the rabbit's nose?", "question_type": "object identification"}
+{"question": "what color is the rabbit's shirt?", "question_type": "color"}
+{"question": "what color is the rabbit?", "question_type": "color"}
+{"question": "what color is the radio?", "question_type": "color"}
+{"question": "what color is the raft?", "question_type": "color"}
+{"question": "what color is the railing?", "question_type": "color"}
+{"question": "what color is the rat?", "question_type": "color"}
+{"question": "what color is the refrigerator?", "question_type": "color"}
+{"question": "what color is the remote control?", "question_type": "color"}
+{"question": "what color is the remote?", "question_type": "color"}
+{"question": "what color is the restaurant wall?", "question_type": "color"}
+{"question": "what color is the restaurant?", "question_type": "color"}
+{"question": "what color is the ribbon in the background?", "question_type": "color"}
+{"question": "what color is the ribbon on the diaper?", "question_type": "color"}
+{"question": "what color is the ribbon on the gift?", "question_type": "color"}
+{"question": "what color is the ribbon on the person's dress?", "question_type": "color"}
+{"question": "what color is the ribbon that one woman is holding?", "question_type": "color"}
+{"question": "what color is the ribbon?", "question_type": "color"}
+{"question": "what color is the rider's pants?", "question_type": "color"}
+{"question": "what color is the rider's shirt?", "question_type": "color"}
+{"question": "what color is the right horse?", "question_type": "color, object identification"}
+{"question": "what color is the ring around the girl?", "question_type": "color"}
+{"question": "what color is the ring on the robot's nose?", "question_type": "color"}
+{"question": "what color is the ring?", "question_type": "color"}
+{"question": "what color is the river?", "question_type": "color"}
+{"question": "what color is the road?", "question_type": "color"}
+{"question": "what color is the robe of the man in the middle?", "question_type": "color"}
+{"question": "what color is the robe the woman is wearing?", "question_type": "color"}
+{"question": "what color is the robe?", "question_type": "color"}
+{"question": "what color is the robot's shirt?", "question_type": "color"}
+{"question": "what color is the robot?", "question_type": "color"}
+{"question": "what color is the rock in the cave?", "question_type": "color"}
+{"question": "what color is the rock wall?", "question_type": "color"}
+{"question": "what color is the rock?", "question_type": "color"}
+{"question": "what color is the rocket?", "question_type": "color"}
+{"question": "what color is the roller coaster?", "question_type": "color"}
+{"question": "what color is the roof of the building?", "question_type": "color"}
+{"question": "what color is the roof of the buildings?", "question_type": "color"}
+{"question": "what color is the roof of the car?", "question_type": "color"}
+{"question": "what color is the roof of the first house?", "question_type": "color"}
+{"question": "what color is the roof of the front horse?", "question_type": "color and object identification"}
+{"question": "what color is the roof of the house?", "question_type": "color"}
+{"question": "what color is the roof of the houses?", "question_type": "color"}
+{"question": "what color is the roof of the left building?", "question_type": "color"}
+{"question": "what color is the roof of the lighthouse?", "question_type": "color"}
+{"question": "what color is the roof of the pillars?", "question_type": "color"}
+{"question": "what color is the roof of the purple house?", "question_type": "color"}
+{"question": "what color is the roof of the window?", "question_type": "color"}
+{"question": "what color is the roof of the wooden building?", "question_type": "color, object identification"}
+{"question": "what color is the roof on the building?", "question_type": "color"}
+{"question": "what color is the roof on the house?", "question_type": "color"}
+{"question": "what color is the roof on the right building?", "question_type": "color"}
+{"question": "what color is the roof?", "question_type": "color"}
+{"question": "what color is the room and the desk?", "question_type": "color (for both the room and the desk)"}
+{"question": "what color is the room behind them?", "question_type": "color"}
+{"question": "what color is the room in the image?", "question_type": "color"}
+{"question": "what color is the room in the lego movie?", "question_type": "color"}
+{"question": "what color is the room in the picture?", "question_type": "color"}
+{"question": "what color is the room made of?", "question_type": "color"}
+{"question": "what color is the room made up of?", "question_type": "color"}
+{"question": "what color is the room painted?", "question_type": "color"}
+{"question": "what color is the room the woman is standing in?", "question_type": "color"}
+{"question": "what color is the room's ceiling?", "question_type": "color"}
+{"question": "what color is the room's roof?", "question_type": "color"}
+{"question": "what color is the room's wall?", "question_type": "color"}
+{"question": "what color is the room?", "question_type": "color"}
+{"question": "what color is the rope?", "question_type": "color"}
+{"question": "what color is the rose?", "question_type": "color"}
+{"question": "what color is the rug on the couch?", "question_type": "color"}
+{"question": "what color is the rug on the floor?", "question_type": "color"}
+{"question": "what color is the rug on the ground in front of the woman?", "question_type": "color"}
+{"question": "what color is the rug the poodle is sitting on?", "question_type": "color"}
+{"question": "what color is the rug under the fireplace?", "question_type": "color"}
+{"question": "what color is the rug?", "question_type": "color"}
+{"question": "what color is the saddle?", "question_type": "color"}
+{"question": "what color is the saucer?", "question_type": "color"}
+{"question": "what color is the saxophone player's helmet?", "question_type": "color"}
+{"question": "what color is the scarf around the man's neck?", "question_type": "color"}
+{"question": "what color is the scarf around the person's neck?", "question_type": "color"}
+{"question": "what color is the scarf around the woman's neck?", "question_type": "color"}
+{"question": "what color is the scarf of the woman on the right?", "question_type": "color"}
+{"question": "what color is the scarf the person on the far right is wearing?", "question_type": "color, object identification"}
+{"question": "what color is the scarf?", "question_type": "color"}
+{"question": "what color is the scooter?", "question_type": "color"}
+{"question": "what color is the scoreboard?", "question_type": "color"}
+{"question": "what color is the screen?", "question_type": "color"}
+{"question": "what color is the seal's headband?", "question_type": "color"}
+{"question": "what color is the seat?", "question_type": "color"}
+{"question": "what color is the second character's tie?", "question_type": "color"}
+{"question": "what color is the second child's shirt?", "question_type": "color"}
+{"question": "what color is the second dresser?", "question_type": "object identification"}
+{"question": "what color is the second man's jacket?", "question_type": "object identification"}
+{"question": "what color is the second person's pants?", "question_type": "color"}
+{"question": "what color is the second person's shirt?", "question_type": "object identification, color"}
+{"question": "what color is the secretary of defense's necklace?", "question_type": "color"}
+{"question": "what color is the secretary's suit?", "question_type": "color"}
+{"question": "what color is the shed?", "question_type": "color"}
+{"question": "what color is the sheep?", "question_type": "color"}
+{"question": "what color is the shelf?", "question_type": "color"}
+{"question": "what color is the shield?", "question_type": "color"}
+{"question": "what color is the shirt he is wearing?", "question_type": "color"}
+{"question": "what color is the shirt of one character?", "question_type": "color"}
+{"question": "what color is the shirt of one of the children?", "question_type": "color"}
+{"question": "what color is the shirt of one of the people characters?", "question_type": "color"}
+{"question": "what color is the shirt of one of the people?", "question_type": "color"}
+{"question": "what color is the shirt of one of the persons?", "question_type": "color"}
+{"question": "what color is the shirt of one of the simpson's?", "question_type": "color (shirt identification)"}
+{"question": "what color is the shirt of one person?", "question_type": "color"}
+{"question": "what color is the shirt of person on the left?", "question_type": "color"}
+{"question": "what color is the shirt of the boy on the left?", "question_type": "color"}
+{"question": "what color is the shirt of the boy on the right?", "question_type": "color"}
+{"question": "what color is the shirt of the cartoon on the left?", "question_type": "color"}
+{"question": "what color is the shirt of the cat on the left?", "question_type": "color, object identification"}
+{"question": "what color is the shirt of the child on the left?", "question_type": "color"}
+{"question": "what color is the shirt of the first child?", "question_type": "color (shirt identification)"}
+{"question": "what color is the shirt of the first person?", "question_type": "object identification"}
+{"question": "what color is the shirt of the first simpson?", "question_type": "color, object identification"}
+{"question": "what color is the shirt of the girl on the left?", "question_type": "color"}
+{"question": "what color is the shirt of the girl on the right?", "question_type": "color"}
+{"question": "what color is the shirt of the girl with red hair?", "question_type": "color"}
+{"question": "what color is the shirt of the left person wearing?", "question_type": "color"}
+{"question": "what color is the shirt of the man in green?", "question_type": "color"}
+{"question": "what color is the shirt of the man in the back of the car?", "question_type": "color"}
+{"question": "what color is the shirt of the man in the background?", "question_type": "color"}
+{"question": "what color is the shirt of the man in the car?", "question_type": "color"}
+{"question": "what color is the shirt of the man in the image?", "question_type": "color"}
+{"question": "what color is the shirt of the man in the middle?", "question_type": "color"}
+{"question": "what color is the shirt of the man on the left?", "question_type": "color"}
+{"question": "what color is the shirt of the man on the right side of the screen?", "question_type": "color"}
+{"question": "what color is the shirt of the man on the right?", "question_type": "color"}
+{"question": "what color is the shirt of the man sitting in the front of the room?", "question_type": "color"}
+{"question": "what color is the shirt of the man sitting on the chair?", "question_type": "color"}
+{"question": "what color is the shirt of the man to the far right?", "question_type": "color"}
+{"question": "what color is the shirt of the man with the blue scarf on his head?", "question_type": "object identification, color"}
+{"question": "what color is the shirt of the man?", "question_type": "color"}
+{"question": "what color is the shirt of the person behind the front person?", "question_type": "color, object identification"}
+{"question": "what color is the shirt of the person in the chest?", "question_type": "color"}
+{"question": "what color is the shirt of the person in the middle?", "question_type": "color"}
+{"question": "what color is the shirt of the person in the window?", "question_type": "object identification, color"}
+{"question": "what color is the shirt of the person next to the bed?", "question_type": "color"}
+{"question": "what color is the shirt of the person on the left?", "question_type": "color"}
+{"question": "what color is the shirt of the person on the right?", "question_type": "color"}
+{"question": "what color is the shirt of the person on the tablet?", "question_type": "color"}
+{"question": "what color is the shirt of the person standing?", "question_type": "color"}
+{"question": "what color is the shirt of the person wearing green?", "question_type": "color"}
+{"question": "what color is the shirt of the person with the green shirt?", "question_type": "color"}
+{"question": "what color is the shirt of the skeleton?", "question_type": "color"}
+{"question": "what color is the shirt of the woman on the left?", "question_type": "color"}
+{"question": "what color is the shirt of the woman?", "question_type": "color"}
+{"question": "what color is the shirt of the yellow character?", "question_type": "color"}
+{"question": "what color is the shirt on the first dog?", "question_type": "color"}
+{"question": "what color is the shirt on the person in the mirror?", "question_type": "color"}
+{"question": "what color is the shirt that the boy in the blue shirt is wearing?", "question_type": "color + object identification"}
+{"question": "what color is the shirt the boy is wearing?", "question_type": "color"}
+{"question": "what color is the shirt the first skeleton is wearing?", "question_type": "color"}
+{"question": "what color is the shirt the man is wearing?", "question_type": "color"}
+{"question": "what color is the shirt the people is wearing?", "question_type": "color"}
+{"question": "what color is the shirt the person in the middle is wearing?", "question_type": "color"}
+{"question": "what color is the shirt the person is wearing?", "question_type": "color"}
+{"question": "what color is the shirt the person on the left is wearing?", "question_type": "color and object identification"}
+{"question": "what color is the shirt the person on the right is wearing?", "question_type": "color"}
+{"question": "what color is the shirt the woman is wearing?", "question_type": "color"}
+{"question": "what color is the shirt they are wearing?", "question_type": "color"}
+{"question": "what color is the shirt?", "question_type": "color"}
+{"question": "what color is the shopping cart?", "question_type": "color"}
+{"question": "what color is the shutter on the window?", "question_type": "color"}
+{"question": "what color is the shutter?", "question_type": "color"}
+{"question": "what color is the sidewalk made of?", "question_type": "material identification"}
+{"question": "what color is the sidewalk?", "question_type": "color"}
+{"question": "what color is the sign above the building?", "question_type": "color"}
+{"question": "what color is the sign above the man?", "question_type": "color"}
+{"question": "what color is the sign above the men?", "question_type": "color"}
+{"question": "what color is the sign above the stall?", "question_type": "color"}
+{"question": "what color is the sign board?", "question_type": "color"}
+{"question": "what color is the sign frame?", "question_type": "color"}
+{"question": "what color is the sign hanging from the ceiling?", "question_type": "color"}
+{"question": "what color is the sign on the balcony railing?", "question_type": "color"}
+{"question": "what color is the sign on the billboard?", "question_type": "color"}
+{"question": "what color is the sign on the building?", "question_type": "color"}
+{"question": "what color is the sign on the bus?", "question_type": "color"}
+{"question": "what color is the sign on the car?", "question_type": "color"}
+{"question": "what color is the sign on the counter?", "question_type": "color"}
+{"question": "what color is the sign on the door?", "question_type": "color"}
+{"question": "what color is the sign on the left?", "question_type": "color"}
+{"question": "what color is the sign on the podium?", "question_type": "color"}
+{"question": "what color is the sign on the pole?", "question_type": "color"}
+{"question": "what color is the sign on the side of the building?", "question_type": "color"}
+{"question": "what color is the sign on the sidewalk?", "question_type": "color"}
+{"question": "what color is the sign on the store?", "question_type": "color"}
+{"question": "what color is the sign on the table?", "question_type": "color"}
+{"question": "what color is the sign on the tent?", "question_type": "color"}
+{"question": "what color is the sign on the train?", "question_type": "color"}
+{"question": "what color is the sign on the wall?", "question_type": "color"}
+{"question": "what color is the sign on top of the building?", "question_type": "color"}
+{"question": "what color is the sign on top of the steps?", "question_type": "color"}
+{"question": "what color is the sign that the monster is holding?", "question_type": "color"}
+{"question": "what color is the sign?", "question_type": "color"}
+{"question": "what color is the signboard?", "question_type": "color"}
+{"question": "what color is the simpson figure's shirt?", "question_type": "color"}
+{"question": "what color is the simpson wearing a red dress?", "question_type": "color"}
+{"question": "what color is the simpson's dress?", "question_type": "color"}
+{"question": "what color is the simpson's jacket?", "question_type": "color"}
+{"question": "what color is the simpson's shirt on the right?", "question_type": "color"}
+{"question": "what color is the simpson's shirt?", "question_type": "color"}
+{"question": "what color is the simpson's sweater?", "question_type": "color"}
+{"question": "what color is the sink?", "question_type": "color"}
+{"question": "what color is the skateboard ramp made of?", "question_type": "material"}
+{"question": "what color is the skateboard?", "question_type": "color"}
+{"question": "what color is the skateboarder's tshirt?", "question_type": "color"}
+{"question": "what color is the skirt of the person in the middle?", "question_type": "color"}
+{"question": "what color is the skirt?", "question_type": "color"}
+{"question": "what color is the skull's mouth?", "question_type": "color"}
+{"question": "what color is the sky above the building?", "question_type": "color"}
+{"question": "what color is the sky above the buildings?", "question_type": "color"}
+{"question": "what color is the sky above the castle?", "question_type": "color"}
+{"question": "what color is the sky above the houses?", "question_type": "color"}
+{"question": "what color is the sky above the park?", "question_type": "color"}
+{"question": "what color is the sky above the people?", "question_type": "color"}
+{"question": "what color is the sky above the stairs?", "question_type": "color"}
+{"question": "what color is the sky above the trees?", "question_type": "color"}
+{"question": "what color is the sky behind the men?", "question_type": "color"}
+{"question": "what color is the sky behind the trees?", "question_type": "color"}
+{"question": "what color is the sky in the background?", "question_type": "color"}
+{"question": "what color is the sky in the picture?", "question_type": "color"}
+{"question": "what color is the sky outside the window?", "question_type": "color"}
+{"question": "what color is the sky outside the windows?", "question_type": "color"}
+{"question": "what color is the sky outside?", "question_type": "color"}
+{"question": "what color is the sky?", "question_type": "color"}
+{"question": "what color is the sleigh?", "question_type": "color"}
+{"question": "what color is the slide?", "question_type": "color"}
+{"question": "what color is the small boy's suit?", "question_type": "color"}
+{"question": "what color is the smoke?", "question_type": "color"}
+{"question": "what color is the snail in the middle?", "question_type": "color"}
+{"question": "what color is the snail on the left?", "question_type": "color identification"}
+{"question": "what color is the snake on the counter?", "question_type": "object identification, color"}
+{"question": "what color is the snake?", "question_type": "color"}
+{"question": "what color is the snow on the ground?", "question_type": "color"}
+{"question": "what color is the snow on the rocks?", "question_type": "color"}
+{"question": "what color is the snow?", "question_type": "color"}
+{"question": "what color is the snowboard?", "question_type": "color"}
+{"question": "what color is the snowman's coat?", "question_type": "color"}
+{"question": "what color is the snowman's nose?", "question_type": "shape"}
+{"question": "what color is the soccer field?", "question_type": "color"}
+{"question": "what color is the sofa behind them?", "question_type": "color"}
+{"question": "what color is the sofa?", "question_type": "color"}
+{"question": "what color is the space shuttle?", "question_type": "color"}
+{"question": "what color is the spatula being held?", "question_type": "color"}
+{"question": "what color is the spatula on top of the stove?", "question_type": "color"}
+{"question": "what color is the spatula?", "question_type": "color"}
+{"question": "what color is the speaker?", "question_type": "color"}
+{"question": "what color is the spoon?", "question_type": "color"}
+{"question": "what color is the square behind her?", "question_type": "shape"}
+{"question": "what color is the square they are standing on?", "question_type": "color"}
+{"question": "what color is the stage cloth?", "question_type": "color"}
+{"question": "what color is the stage curtain?", "question_type": "color"}
+{"question": "what color is the stage screen?", "question_type": "color"}
+{"question": "what color is the stage?", "question_type": "color"}
+{"question": "what color is the staircase?", "question_type": "color"}
+{"question": "what color is the stall?", "question_type": "color"}
+{"question": "what color is the stand in front of the man?", "question_type": "shape"}
+{"question": "what color is the stand?", "question_type": "color"}
+{"question": "what color is the standing person's jacket?", "question_type": "color"}
+{"question": "what color is the star on the building?", "question_type": "color"}
+{"question": "what color is the star on the man's head?", "question_type": "color"}
+{"question": "what color is the star on the tree?", "question_type": "color"}
+{"question": "what color is the statue in the background?", "question_type": "color"}
+{"question": "what color is the statue of liberty?", "question_type": "color"}
+{"question": "what color is the statue of the person?", "question_type": "color"}
+{"question": "what color is the statue?", "question_type": "color"}
+{"question": "what color is the steering wheel?", "question_type": "color"}
+{"question": "what color is the stick?", "question_type": "color"}
+{"question": "what color is the stomach?", "question_type": "color"}
+{"question": "what color is the stool?", "question_type": "color"}
+{"question": "what color is the stop sign?", "question_type": "color"}
+{"question": "what color is the store sign?", "question_type": "color"}
+{"question": "what color is the store?", "question_type": "color"}
+{"question": "what color is the stove next to the pot?", "question_type": "color"}
+{"question": "what color is the stove?", "question_type": "color"}
+{"question": "what color is the strap on the face mask?", "question_type": "color"}
+{"question": "what color is the strap?", "question_type": "color"}
+{"question": "what color is the straw?", "question_type": "color"}
+{"question": "what color is the street sign?", "question_type": "color"}
+{"question": "what color is the street?", "question_type": "color"}
+{"question": "what color is the stripe on the car?", "question_type": "color"}
+{"question": "what color is the stripe on the horse's face?", "question_type": "color"}
+{"question": "what color is the stripe on the man's shirt?", "question_type": "color"}
+{"question": "what color is the stripe on the side of the group?", "question_type": "color"}
+{"question": "what color is the stripe on the train?", "question_type": "color"}
+{"question": "what color is the stripe on the truck?", "question_type": "color"}
+{"question": "what color is the stripe?", "question_type": "color"}
+{"question": "what color is the stuffed animal's coat?", "question_type": "color"}
+{"question": "what color is the stuffed animal?", "question_type": "color"}
+{"question": "what color is the subway train?", "question_type": "color"}
+{"question": "what color is the suit jacket?", "question_type": "color"}
+{"question": "what color is the suit of one man?", "question_type": "color (identifying the color of the suit)"}
+{"question": "what color is the suit of the man in the middle?", "question_type": "object identification"}
+{"question": "what color is the suit of the man on the left?", "question_type": "object identification"}
+{"question": "what color is the suit of the man on the steps of the building?", "question_type": "color"}
+{"question": "what color is the suit of the person on the left?", "question_type": "color"}
+{"question": "what color is the suit of the person on the right?", "question_type": "color"}
+{"question": "what color is the suit of the simpson on the left?", "question_type": "color"}
+{"question": "what color is the suit the man is wearing?", "question_type": "color"}
+{"question": "what color is the suit?", "question_type": "color"}
+{"question": "what color is the suitcase?", "question_type": "color"}
+{"question": "what color is the sun's shirt?", "question_type": "color"}
+{"question": "what color is the sun's skirt?", "question_type": "color"}
+{"question": "what color is the superhero costume?", "question_type": "color"}
+{"question": "what color is the supervillain's tie?", "question_type": "color"}
+{"question": "what color is the surface?", "question_type": "color"}
+{"question": "what color is the surfboard cover?", "question_type": "color"}
+{"question": "what color is the surfboard on the left?", "question_type": "color"}
+{"question": "what color is the surfboard?", "question_type": "color"}
+{"question": "what color is the suv parked on the street?", "question_type": "color"}
+{"question": "what color is the suv?", "question_type": "color"}
+{"question": "what color is the swan?", "question_type": "color"}
+{"question": "what color is the sweater of one elf?", "question_type": "color"}
+{"question": "what color is the sweater of the man on the right?", "question_type": "color(identity)"}
+{"question": "what color is the sweater of the man?", "question_type": "color"}
+{"question": "what color is the sweater the man in the middle is wearing?", "question_type": "color"}
+{"question": "what color is the sweater the man is wearing?", "question_type": "color"}
+{"question": "what color is the sweater?", "question_type": "color"}
+{"question": "what color is the sweatshirt of the person on the left?", "question_type": "color, object identification"}
+{"question": "what color is the sweatshirt?", "question_type": "color"}
+{"question": "what color is the swing?", "question_type": "color"}
+{"question": "what color is the sword?", "question_type": "color"}
+{"question": "what color is the syringe?", "question_type": "color"}
+{"question": "what color is the t shirt of the person?", "question_type": "color"}
+{"question": "what color is the t-shirt of the person in the middle?", "question_type": "color"}
+{"question": "what color is the t-shirt of the person?", "question_type": "color"}
+{"question": "what color is the t-shirt the man is wearing?", "question_type": "color"}
+{"question": "what color is the t-shirt the person is wearing?", "question_type": "color"}
+{"question": "what color is the t-shirt?", "question_type": "color"}
+{"question": "what color is the table cloth on the table?", "question_type": "color"}
+{"question": "what color is the table cloth?", "question_type": "color"}
+{"question": "what color is the table holding the computer?", "question_type": "object identification"}
+{"question": "what color is the table in front of the character?", "question_type": "color"}
+{"question": "what color is the table in front of the man?", "question_type": "color"}
+{"question": "what color is the table in the background?", "question_type": "color"}
+{"question": "what color is the table in the kitchen?", "question_type": "color"}
+{"question": "what color is the table in the middle of the kitchen?", "question_type": "color"}
+{"question": "what color is the table made of?", "question_type": "color"}
+{"question": "what color is the table next to the woman?", "question_type": "color"}
+{"question": "what color is the table top?", "question_type": "color"}
+{"question": "what color is the table?", "question_type": "color"}
+{"question": "what color is the tablecloth on the bar?", "question_type": "color"}
+{"question": "what color is the tablecloth on the ground?", "question_type": "color"}
+{"question": "what color is the tablecloth on the table?", "question_type": "color"}
+{"question": "what color is the tablecloth?", "question_type": "color"}
+{"question": "what color is the tablet computer?", "question_type": "color"}
+{"question": "what color is the tablet screen?", "question_type": "color"}
+{"question": "what color is the tablet?", "question_type": "color"}
+{"question": "what color is the tabletop?", "question_type": "color"}
+{"question": "what color is the tag around the man's neck?", "question_type": "color"}
+{"question": "what color is the tag on his ear?", "question_type": "color"}
+{"question": "what color is the tag on the man's neck?", "question_type": "color"}
+{"question": "what color is the tag?", "question_type": "color"}
+{"question": "what color is the tail light?", "question_type": "color"}
+{"question": "what color is the tail?", "question_type": "color"}
+{"question": "what color is the tank top of the person on the right?", "question_type": "color"}
+{"question": "what color is the tank top?", "question_type": "color"}
+{"question": "what color is the teacher's jacket?", "question_type": "color"}
+{"question": "what color is the teacher's skirt?", "question_type": "color"}
+{"question": "what color is the teacher's suit?", "question_type": "color"}
+{"question": "what color is the teddy person's dress?", "question_type": "color"}
+{"question": "what color is the teddy person's shirt?", "question_type": "color"}
+{"question": "what color is the teddy person?", "question_type": "color"}
+{"question": "what color is the telephone on the nightstand?", "question_type": "color"}
+{"question": "what color is the telescope?", "question_type": "color"}
+{"question": "what color is the television screen?", "question_type": "color"}
+{"question": "what color is the television?", "question_type": "color"}
+{"question": "what color is the tent behind him?", "question_type": "color"}
+{"question": "what color is the tent?", "question_type": "color"}
+{"question": "what color is the text on the blackboard?", "question_type": "color"}
+{"question": "what color is the text on the screen?", "question_type": "color"}
+{"question": "what color is the text on the sign?", "question_type": "color"}
+{"question": "what color is the text on the wall?", "question_type": "color"}
+{"question": "what color is the text?", "question_type": "color"}
+{"question": "what color is the third character's shirt?", "question_type": "object identification"}
+{"question": "what color is the third man's hat?", "question_type": "color, object identification"}
+{"question": "what color is the third person's hair?", "question_type": "hair color"}
+{"question": "what color is the tie of one police officer?", "question_type": "color"}
+{"question": "what color is the tie of the man in blue suit?", "question_type": "color"}
+{"question": "what color is the tie of the man in the blue suit?", "question_type": "color"}
+{"question": "what color is the tie of the man in the brown jacket?", "question_type": "color, object identification"}
+{"question": "what color is the tie of the man in the image?", "question_type": "color"}
+{"question": "what color is the tie of the man in the middle?", "question_type": "color"}
+{"question": "what color is the tie of the man next to the man in the middle?", "question_type": "object identification"}
+{"question": "what color is the tie of the man on the left?", "question_type": "color"}
+{"question": "what color is the tie of the man on the podium?", "question_type": "color"}
+{"question": "what color is the tie of the man on the right?", "question_type": "color"}
+{"question": "what color is the tie of the man sitting in the front of the room?", "question_type": "color"}
+{"question": "what color is the tie of the man?", "question_type": "color"}
+{"question": "what color is the tie of the person in the background?", "question_type": "color"}
+{"question": "what color is the tie of the person on the left?", "question_type": "object identification (tie), positional information (left), color"}
+{"question": "what color is the tie of the person on the right?", "question_type": "color"}
+{"question": "what color is the tie of the person wearing a white shirt?", "question_type": "color"}
+{"question": "what color is the tie that the man is wearing?", "question_type": "color"}
+{"question": "what color is the tie the man in the green suit is wearing?", "question_type": "color"}
+{"question": "what color is the tie the man in the middle is wearing?", "question_type": "object identification"}
+{"question": "what color is the tie the man is holding?", "question_type": "color"}
+{"question": "what color is the tie the man is wearing?", "question_type": "object identification"}
+{"question": "what color is the tie the man on the left is wearing?", "question_type": "color"}
+{"question": "what color is the tie the man on the right is wearing?", "question_type": "color"}
+{"question": "what color is the tie the policeman is wearing?", "question_type": "color"}
+{"question": "what color is the tie the woman is wearing?", "question_type": "color"}
+{"question": "what color is the tie worn by the man on the left?", "question_type": "color | object identification"}
+{"question": "what color is the tie?", "question_type": "color"}
+{"question": "what color is the tint on the car?", "question_type": "color"}
+{"question": "what color is the tire on the bulldozer?", "question_type": "color"}
+{"question": "what color is the tire?", "question_type": "color"}
+{"question": "what color is the toaster?", "question_type": "color"}
+{"question": "what color is the toilet?", "question_type": "color"}
+{"question": "what color is the tongue of the dog?", "question_type": "color"}
+{"question": "what color is the tongue of the monster?", "question_type": "color"}
+{"question": "what color is the tongue sticking out of the woman's mouth?", "question_type": "color"}
+{"question": "what color is the tongue?", "question_type": "color"}
+{"question": "what color is the toothbrush?", "question_type": "color"}
+{"question": "what color is the toothpaste?", "question_type": "color"}
+{"question": "what color is the top hat?", "question_type": "color"}
+{"question": "what color is the top of the black car in the background?", "question_type": "color"}
+{"question": "what color is the top of the girl in the middle?", "question_type": "color"}
+{"question": "what color is the top of the lighthouse?", "question_type": "color"}
+{"question": "what color is the towel on the wall?", "question_type": "color"}
+{"question": "what color is the towel?", "question_type": "color"}
+{"question": "what color is the tower?", "question_type": "color"}
+{"question": "what color is the town?", "question_type": "color"}
+{"question": "what color is the toy car?", "question_type": "color"}
+{"question": "what color is the toy?", "question_type": "color"}
+{"question": "what color is the tractor?", "question_type": "color"}
+{"question": "what color is the train car behind it?", "question_type": "object identification"}
+{"question": "what color is the train car?", "question_type": "color"}
+{"question": "what color is the train's mane?", "question_type": "color"}
+{"question": "what color is the train?", "question_type": "color"}
+{"question": "what color is the trash can next to the fence?", "question_type": "color"}
+{"question": "what color is the trash can?", "question_type": "color"}
+{"question": "what color is the trash in the trash can?", "question_type": "color"}
+{"question": "what color is the trashcan?", "question_type": "color"}
+{"question": "what color is the tray?", "question_type": "color"}
+{"question": "what color is the treadmill's frame?", "question_type": "color"}
+{"question": "what color is the treadmill?", "question_type": "color"}
+{"question": "what color is the tree base?", "question_type": "color"}
+{"question": "what color is the tree behind the women?", "question_type": "color"}
+{"question": "what color is the tree behind them?", "question_type": "color"}
+{"question": "what color is the tree on the couch?", "question_type": "color"}
+{"question": "what color is the tree trunk?", "question_type": "color"}
+{"question": "what color is the tree's trunk?", "question_type": "color"}
+{"question": "what color is the tree?", "question_type": "color"}
+{"question": "what color is the tricycle?", "question_type": "color"}
+{"question": "what color is the trim of the door?", "question_type": "color"}
+{"question": "what color is the trim of the house?", "question_type": "color"}
+{"question": "what color is the trim of the pink building?", "question_type": "color"}
+{"question": "what color is the trim on the building?", "question_type": "color"}
+{"question": "what color is the trim on the house?", "question_type": "color"}
+{"question": "what color is the trim on the sign?", "question_type": "color"}
+{"question": "what color is the trim on the wall?", "question_type": "color"}
+{"question": "what color is the trim?", "question_type": "color"}
+{"question": "what color is the tripod?", "question_type": "color"}
+{"question": "what color is the troll's hair?", "question_type": "color"}
+{"question": "what color is the troll's vest?", "question_type": "color"}
+{"question": "what color is the trolley?", "question_type": "color"}
+{"question": "what color is the trophy?", "question_type": "color"}
+{"question": "what color is the truck on the left?", "question_type": "object identification, color"}
+{"question": "what color is the truck?", "question_type": "color"}
+{"question": "what color is the trunk of the trees?", "question_type": "color"}
+{"question": "what color is the tshirt of the man in the middle?", "question_type": "color"}
+{"question": "what color is the tshirt that the man on the left is wearing?", "question_type": "color"}
+{"question": "what color is the tshirt the man is wearing?", "question_type": "color"}
+{"question": "what color is the tshirt?", "question_type": "color"}
+{"question": "what color is the turkey's tail?", "question_type": "color"}
+{"question": "what color is the tv frame?", "question_type": "color"}
+{"question": "what color is the tv room?", "question_type": "color"}
+{"question": "what color is the tv screen?", "question_type": "color"}
+{"question": "what color is the tv?", "question_type": "color"}
+{"question": "what color is the typewriter?", "question_type": "color"}
+{"question": "what color is the umbrella?", "question_type": "color"}
+{"question": "what color is the unicorn?", "question_type": "color"}
+{"question": "what color is the uniform of one police officer?", "question_type": "color"}
+{"question": "what color is the uniform of the man standing in the middle?", "question_type": "color"}
+{"question": "what color is the uniform of the police officer on the left?", "question_type": "color"}
+{"question": "what color is the uniform?", "question_type": "color"}
+{"question": "what color is the van in the window?", "question_type": "object identification"}
+{"question": "what color is the van parked on the sidewalk?", "question_type": "object identification, color"}
+{"question": "what color is the van's tire?", "question_type": "color"}
+{"question": "what color is the van?", "question_type": "color"}
+{"question": "what color is the vase on the floor?", "question_type": "color"}
+{"question": "what color is the vase on the table?", "question_type": "color"}
+{"question": "what color is the vase on the window sill?", "question_type": "color"}
+{"question": "what color is the vase?", "question_type": "color"}
+{"question": "what color is the vehicle?", "question_type": "color"}
+{"question": "what color is the vending machine?", "question_type": "color"}
+{"question": "what color is the vest of the man in white shirt?", "question_type": "object identification (referring to the vest)"}
+{"question": "what color is the vest of the man on the left?", "question_type": "color"}
+{"question": "what color is the vest?", "question_type": "color"}
+{"question": "what color is the violin?", "question_type": "color"}
+{"question": "what color is the wagon with dogs in it?", "question_type": "Question type: color"}
+{"question": "what color is the walking stick?", "question_type": "color"}
+{"question": "what color is the wall and the door?", "question_type": "color"}
+{"question": "what color is the wall behind her?", "question_type": "color"}
+{"question": "what color is the wall behind him?", "question_type": "color"}
+{"question": "what color is the wall behind it?", "question_type": "color"}
+{"question": "what color is the wall behind the audience?", "question_type": "color"}
+{"question": "what color is the wall behind the baby?", "question_type": "color"}
+{"question": "what color is the wall behind the banana?", "question_type": "color"}
+{"question": "what color is the wall behind the bed?", "question_type": "color"}
+{"question": "what color is the wall behind the bedroom simpson episode?", "question_type": "color"}
+{"question": "what color is the wall behind the bench?", "question_type": "color"}
+{"question": "what color is the wall behind the boy and girl?", "question_type": "color"}
+{"question": "what color is the wall behind the boy?", "question_type": "color"}
+{"question": "what color is the wall behind the boys?", "question_type": "color"}
+{"question": "what color is the wall behind the car?", "question_type": "color"}
+{"question": "what color is the wall behind the cartoon?", "question_type": "color"}
+{"question": "what color is the wall behind the chair?", "question_type": "color"}
+{"question": "what color is the wall behind the character?", "question_type": "color"}
+{"question": "what color is the wall behind the chest of drawers?", "question_type": "color"}
+{"question": "what color is the wall behind the children?", "question_type": "color"}
+{"question": "what color is the wall behind the clown?", "question_type": "color"}
+{"question": "what color is the wall behind the couch?", "question_type": "color"}
+{"question": "what color is the wall behind the desk?", "question_type": "color"}
+{"question": "what color is the wall behind the dinosaur?", "question_type": "color"}
+{"question": "what color is the wall behind the doctor and patient?", "question_type": "Question type: color"}
+{"question": "what color is the wall behind the dogs?", "question_type": "color"}
+{"question": "what color is the wall behind the door?", "question_type": "color"}
+{"question": "what color is the wall behind the family?", "question_type": "color"}
+{"question": "what color is the wall behind the fireplace?", "question_type": "color"}
+{"question": "what color is the wall behind the girl?", "question_type": "color"}
+{"question": "what color is the wall behind the green wall?", "question_type": "Question type: color"}
+{"question": "what color is the wall behind the group?", "question_type": "color"}
+{"question": "what color is the wall behind the image?", "question_type": "color"}
+{"question": "what color is the wall behind the laptop?", "question_type": "color"}
+{"question": "what color is the wall behind the little girl?", "question_type": "color (wall)"}
+{"question": "what color is the wall behind the man and the woman?", "question_type": "color"}
+{"question": "what color is the wall behind the man and woman?", "question_type": "color"}
+{"question": "what color is the wall behind the man?", "question_type": "color"}
+{"question": "what color is the wall behind the men?", "question_type": "color"}
+{"question": "what color is the wall behind the mice?", "question_type": "color"}
+{"question": "what color is the wall behind the minions?", "question_type": "color"}
+{"question": "what color is the wall behind the monster?", "question_type": "color"}
+{"question": "what color is the wall behind the people?", "question_type": "color"}
+{"question": "what color is the wall behind the person?", "question_type": "color"}
+{"question": "what color is the wall behind the picture?", "question_type": "color"}
+{"question": "what color is the wall behind the podium?", "question_type": "color"}
+{"question": "what color is the wall behind the sign?", "question_type": "color"}
+{"question": "what color is the wall behind the signs?", "question_type": "color"}
+{"question": "what color is the wall behind the simpson character?", "question_type": "color"}
+{"question": "what color is the wall behind the simpson figure?", "question_type": "color"}
+{"question": "what color is the wall behind the statues?", "question_type": "color"}
+{"question": "what color is the wall behind the table?", "question_type": "color"}
+{"question": "what color is the wall behind the television?", "question_type": "color"}
+{"question": "what color is the wall behind the thing?", "question_type": "color"}
+{"question": "what color is the wall behind the troll?", "question_type": "color"}
+{"question": "what color is the wall behind the truck?", "question_type": "color"}
+{"question": "what color is the wall behind the tv?", "question_type": "color"}
+{"question": "what color is the wall behind the window?", "question_type": "color"}
+{"question": "what color is the wall behind the woman and man?", "question_type": "color"}
+{"question": "what color is the wall behind the woman?", "question_type": "color"}
+{"question": "what color is the wall behind the wood?", "question_type": "color"}
+{"question": "what color is the wall behind the yellow character?", "question_type": "color"}
+{"question": "what color is the wall behind the yellow creature?", "question_type": "color"}
+{"question": "what color is the wall behind them?", "question_type": "color"}
+{"question": "what color is the wall behind?", "question_type": "color"}
+{"question": "what color is the wall in front of the chairs?", "question_type": "color"}
+{"question": "what color is the wall in the background?", "question_type": "color"}
+{"question": "what color is the wall in the bedroom?", "question_type": "color"}
+{"question": "what color is the wall in the hallway?", "question_type": "color"}
+{"question": "what color is the wall in the kitchen?", "question_type": "color"}
+{"question": "what color is the wall in the living room?", "question_type": "color"}
+{"question": "what color is the wall in the picture?", "question_type": "color"}
+{"question": "what color is the wall in the room?", "question_type": "color"}
+{"question": "what color is the wall in the second image?", "question_type": "object identification"}
+{"question": "what color is the wall in the second picture?", "question_type": "color, object identification"}
+{"question": "what color is the wall made of?", "question_type": "color"}
+{"question": "what color is the wall next to the man?", "question_type": "color"}
+{"question": "what color is the wall next to them?", "question_type": "color"}
+{"question": "what color is the wall of the bar?", "question_type": "color"}
+{"question": "what color is the wall of the room?", "question_type": "color"}
+{"question": "what color is the wall sign?", "question_type": "color"}
+{"question": "what color is the wall the man is standing in front of?", "question_type": "color"}
+{"question": "what color is the wall with the sign on it?", "question_type": "color"}
+{"question": "what color is the wall?", "question_type": "color"}
+{"question": "what color is the wallet?", "question_type": "color"}
+{"question": "what color is the wardrobe on the left?", "question_type": "object identification"}
+{"question": "what color is the wardrobe?", "question_type": "color"}
+{"question": "what color is the washing machine?", "question_type": "color"}
+{"question": "what color is the watch?", "question_type": "color"}
+{"question": "what color is the water?", "question_type": "color"}
+{"question": "what color is the whale?", "question_type": "color"}
+{"question": "what color is the whisk?", "question_type": "color"}
+{"question": "what color is the whiteboard on the table?", "question_type": "color"}
+{"question": "what color is the whiteboard?", "question_type": "color"}
+{"question": "what color is the wig he is wearing?", "question_type": "color"}
+{"question": "what color is the wig on the person's head?", "question_type": "color"}
+{"question": "what color is the wig the person on the left is wearing?", "question_type": "object identification, color"}
+{"question": "what color is the wig?", "question_type": "color"}
+{"question": "what color is the window curtain?", "question_type": "color"}
+{"question": "what color is the window frame?", "question_type": "color"}
+{"question": "what color is the window made of?", "question_type": "material identification"}
+{"question": "what color is the window shade?", "question_type": "color"}
+{"question": "what color is the window trim?", "question_type": "color"}
+{"question": "what color is the window's frame?", "question_type": "color"}
+{"question": "what color is the window?", "question_type": "color"}
+{"question": "what color is the windshield?", "question_type": "color"}
+{"question": "what color is the wine glass?", "question_type": "color"}
+{"question": "what color is the wine in the glass?", "question_type": "color"}
+{"question": "what color is the woman in the middle's necklace?", "question_type": "color"}
+{"question": "what color is the woman in the middle's shirt?", "question_type": "color"}
+{"question": "what color is the woman on the far left's scarf?", "question_type": "color"}
+{"question": "what color is the woman on the left's jacket?", "question_type": "color"}
+{"question": "what color is the woman on the left's shirt?", "question_type": "color"}
+{"question": "what color is the woman on the left's wig?", "question_type": "color"}
+{"question": "what color is the woman on the right's hair?", "question_type": "color"}
+{"question": "what color is the woman's apron?", "question_type": "color"}
+{"question": "what color is the woman's backpack?", "question_type": "color"}
+{"question": "what color is the woman's bag?", "question_type": "color"}
+{"question": "what color is the woman's baseball cap?", "question_type": "color"}
+{"question": "what color is the woman's bathing suit?", "question_type": "color"}
+{"question": "what color is the woman's belt?", "question_type": "color"}
+{"question": "what color is the woman's blanket?", "question_type": "color"}
+{"question": "what color is the woman's blazer?", "question_type": "color"}
+{"question": "what color is the woman's blouse?", "question_type": "color"}
+{"question": "what color is the woman's bookmark?", "question_type": "color"}
+{"question": "what color is the woman's bow tie?", "question_type": "color"}
+{"question": "what color is the woman's bow?", "question_type": "color"}
+{"question": "what color is the woman's calendar?", "question_type": "color"}
+{"question": "what color is the woman's camera?", "question_type": "color"}
+{"question": "what color is the woman's cap?", "question_type": "color"}
+{"question": "what color is the woman's chair?", "question_type": "color"}
+{"question": "what color is the woman's clothes?", "question_type": "color"}
+{"question": "what color is the woman's coat?", "question_type": "color"}
+{"question": "what color is the woman's collar?", "question_type": "color"}
+{"question": "what color is the woman's dress at the front?", "question_type": "color, object identification"}
+{"question": "what color is the woman's dress in front?", "question_type": "color"}
+{"question": "what color is the woman's dress in the middle?", "question_type": "color, object identification"}
+{"question": "what color is the woman's dress on the far left?", "question_type": "color"}
+{"question": "what color is the woman's dress on the left?", "question_type": "color"}
+{"question": "what color is the woman's dress?", "question_type": "color"}
+{"question": "what color is the woman's earring?", "question_type": "color"}
+{"question": "what color is the woman's eyes?", "question_type": "color"}
+{"question": "what color is the woman's flower?", "question_type": "color"}
+{"question": "what color is the woman's glasses?", "question_type": "color"}
+{"question": "what color is the woman's hair and persond?", "question_type": "object identification (persond)"}
+{"question": "what color is the woman's hair on the left?", "question_type": "object identification (identifying the woman's hair color)"}
+{"question": "what color is the woman's hair tie?", "question_type": "color"}
+{"question": "what color is the woman's hair?", "question_type": "color"}
+{"question": "what color is the woman's hat on the left?", "question_type": "color"}
+{"question": "what color is the woman's hat?", "question_type": "color"}
+{"question": "what color is the woman's headband?", "question_type": "color"}
+{"question": "what color is the woman's heart?", "question_type": "color"}
+{"question": "what color is the woman's hoodie?", "question_type": "color"}
+{"question": "what color is the woman's jacket on the left?", "question_type": "color"}
+{"question": "what color is the woman's jacket?", "question_type": "color"}
+{"question": "what color is the woman's jumpsuit?", "question_type": "color"}
+{"question": "what color is the woman's kimono?", "question_type": "color"}
+{"question": "what color is the woman's lab coat?", "question_type": "color"}
+{"question": "what color is the woman's leash?", "question_type": "color"}
+{"question": "what color is the woman's lip stick?", "question_type": "color"}
+{"question": "what color is the woman's lipstick?", "question_type": "color"}
+{"question": "what color is the woman's motorcycle?", "question_type": "color"}
+{"question": "what color is the woman's mug?", "question_type": "color"}
+{"question": "what color is the woman's necklace?", "question_type": "color"}
+{"question": "what color is the woman's nose?", "question_type": "color"}
+{"question": "what color is the woman's pant?", "question_type": "color"}
+{"question": "what color is the woman's pants?", "question_type": "color"}
+{"question": "what color is the woman's persond?", "question_type": "object identification"}
+{"question": "what color is the woman's pillow?", "question_type": "color"}
+{"question": "what color is the woman's purse?", "question_type": "color"}
+{"question": "what color is the woman's right shoe?", "question_type": "color, object identification"}
+{"question": "what color is the woman's robe?", "question_type": "color"}
+{"question": "what color is the woman's room?", "question_type": "color"}
+{"question": "what color is the woman's scarf?", "question_type": "color"}
+{"question": "what color is the woman's shirt and pants?", "question_type": "color"}
+{"question": "what color is the woman's shirt collar?", "question_type": "color"}
+{"question": "what color is the woman's shirt in front?", "question_type": "color"}
+{"question": "what color is the woman's shirt in the middle?", "question_type": "color"}
+{"question": "what color is the woman's shirt on the far left?", "question_type": "color"}
+{"question": "what color is the woman's shirt on the left?", "question_type": "color"}
+{"question": "what color is the woman's shirt who is holding the green plate?", "question_type": "color"}
+{"question": "what color is the woman's shirt who is smoking?", "question_type": "color"}
+{"question": "what color is the woman's shirt?", "question_type": "color"}
+{"question": "what color is the woman's shoes?", "question_type": "color"}
+{"question": "what color is the woman's shorts?", "question_type": "color"}
+{"question": "what color is the woman's skirt?", "question_type": "color"}
+{"question": "what color is the woman's steering wheel?", "question_type": "color"}
+{"question": "what color is the woman's suit?", "question_type": "color"}
+{"question": "what color is the woman's surfboard?", "question_type": "color"}
+{"question": "what color is the woman's sweater?", "question_type": "color"}
+{"question": "what color is the woman's sweatshirt?", "question_type": "color"}
+{"question": "what color is the woman's t-shirt?", "question_type": "color"}
+{"question": "what color is the woman's tank top?", "question_type": "color"}
+{"question": "what color is the woman's tie?", "question_type": "color"}
+{"question": "what color is the woman's tongue?", "question_type": "color"}
+{"question": "what color is the woman's top?", "question_type": "color"}
+{"question": "what color is the woman's tshirt?", "question_type": "color"}
