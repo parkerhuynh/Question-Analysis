@@ -4,10 +4,8 @@ import json
 import time
 
 def categorize_question(question_input, openKey):
-    content = f"""Please categorize the following questions into ONE of the provided question types: 
-    'object identification', 'activity recognition', 'sport identification',
-    'color', 'shape', 'counting', 'location and spatial relations', 'time and sequence', 'person identification',
-    'text and signage recognition', 'emotion and sentiment', 'comparison', 'weather', 'animal'.
+    content = f"""Please categorize the following questions into the question types such as 'object identification', 'activity recognition', 'sport identification',
+    'color', 'shape',...
 
     Question: What color are the clouds?
     Question Type: color
@@ -39,7 +37,9 @@ def categorize_question(question_input, openKey):
     return question_type
 
 def main():
-    openKey = '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'
+    with open('/home/ndhuynh/github/Question-Analysis/openai_key.txt', 'r') as file:
+        for line in file:
+            openKey = line
     
     question_paths = [
         "/home/ndhuynh/data/simpsonsvqa/v1_Question_Val_simpsons_vqa.json"
@@ -54,7 +54,7 @@ def main():
 
     question_unique_list = question_df["question"].unique()
 
-    for i in range(7641, len(question_unique_list)):
+    for i in range(0, len(question_unique_list)):
         while True:
             try:
                 question_str = question_unique_list[i]
@@ -65,7 +65,7 @@ def main():
                         "question_type":chatgpt_question_type}
 
                 # Specify the file name where you want to save the JSON data
-                file_name = "val_question_type_gpt.json"
+                file_name = "val_question_type_gpt_v4.json"
                 # Open the file in append mode and save the current item to it in JSON format
                 with open(file_name, 'a') as json_file:
                     json.dump(data, json_file)

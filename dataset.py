@@ -155,41 +155,39 @@ class QuestionDataset(Dataset):
         
         self.tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
         self.ans_type_to_idx = {
-            "yes/no":0,
+            'object identification': 0,
             'color': 1,
-            'object identification': 2,
+            'location and spatial relations': 2,
             'counting': 3,
-            'location and spatial relations': 4,
-            'activity recognition': 5,
-            'person identification': 6,
-            'comparison': 7,
-            'sport identification': 8,
-            'emotion and sentiment': 9,
-            'signage recognition': 10,
+            'activity recognition': 4,
+            'person identification': 5,
+            'comparison': 6,
+            'text and signage recognition': 7,
+            'emotion and sentiment': 8,
+            'sport identification': 9,
+            'animal': 10,
             'weather': 11,
             'shape': 12,
             'time and sequence': 13,
-            'animal': 14,
-            'other': 15
-            }
+            'other': 14,
+            'material': 15}
         self.idx_to_ans_type = {
-            0: "yes/no",
+            0: 'object identification',
             1: 'color',
-            2: 'object identification',
+            2: 'location and spatial relations',
             3: 'counting',
-            4: 'location and spatial relations',
-            5: 'activity recognition',
-            6: 'person identification',
-            7: 'comparison',
-            8: 'sport identification',
-            9: 'emotion and sentiment',
-            10: 'signage recognition',
+            4: 'activity recognition',
+            5: 'person identification',
+            6: 'comparison',
+            7: 'text and signage recognition',
+            8: 'emotion and sentiment',
+            9: 'sport identification',
+            10: 'animal',
             11: 'weather',
             12: 'shape',
             13: 'time and sequence',
-            14: 'animal',
-            15: 'other'
-            }
+            14: 'other',
+            15: 'material'}
         self.question_type_dict = self.load_question_type()
         self.questions = self.load_questions()
         
@@ -262,7 +260,7 @@ class QuestionDataset(Dataset):
     
     def load_question_type(self):
         question_type_dict = {}
-        with open('/home/ndhuynh/github/Question-Analysis/train_question_type_gpt_v2.json', 'r') as file:
+        with open('/home/ndhuynh/github/Question-Analysis/train_question_type_gpt.json', 'r') as file:
             for line in file:
                 question_object = json.loads(line)
                 question_str = question_object["question"]
@@ -271,7 +269,7 @@ class QuestionDataset(Dataset):
                 question_type_dict[question_str] = question_type
         file.close()
         
-        with open('/home/ndhuynh/github/Question-Analysis/val_question_type_gpt_v2.json', 'r') as file:
+        with open('/home/ndhuynh/github/Question-Analysis/val_question_type_gpt.json', 'r') as file:
             for line in file:
                 question_object = json.loads(line)
                 question_str = question_object["question"]
@@ -295,32 +293,50 @@ def question_type_processing(question_type):
     question_type = question_type.replace("[", "")
     question_type = question_type.replace("]", "")
     question_type = question_type.replace("-", "")
-    question_type = question_type.split('(')[0].strip()
+    # question_type = question_type.split('(')[0].strip()
 
-    question_type = question_type.replace("-", "")
-    if "yes/no" in question_type:
-        return 'yes/no'
+    if "object identification or animal" in question_type or "object identification (dog)" in question_type or "object identification (for the presence of a cat)" in question_type:
+        return 'animal'
+    elif "counting" in question_type:
+         return 'counting'
+    elif "sentiment" in question_type:
+        return 'emotion and sentiment'
     elif "color" in question_type:
         return 'color'
-    elif "object identification" in question_type:
+    elif "texture" in question_type or "text" in question_type :
+        return 'text and signage recognition'
+    elif "material" in question_type:
+        return 'material'
+    elif "object recognition" in question_type or "appearance" in question_type or "object identification" in question_type or "transportation" in question_type:
         return 'object identification'
-    elif "signage recognition" in question_type:
-        return 'signage recognition'
+    elif "food" in question_type:
+        return 'object identification'
+    # elif "signage recognition" in question_type:
+    #     return 'signage recognition'
+    # elif "spatial relations" in question_type:
+    #     return 'location and spatial relations'
+    # elif "emoition and sentiment" in question_type or 'emotikon and sentiment' in question_type:
+    #     return 'emotion and sentiment'
+    elif "comparison" in question_type or " comparison" in question_type:
+        return 'comparison'
     elif "spatial relations" in question_type:
         return 'location and spatial relations'
-    elif "emoition and sentiment" in question_type or 'emotikon and sentiment' in question_type:
-        return 'emotion and sentiment'
-    elif "compariosn" in question_type or "comparision" in question_type:
-        return 'comparison'
-    elif "counting" in question_type:
-        return 'counting'
-    elif "personal  " in question_type:
-        return 'person identification'
+    elif "activity recognition" in question_type or "what is the train doing?" in question_type:
+        return 'activity recognition'
 
-    if question_type not in ['yes/no', 'color', 'object identification', 'counting', 
-                             'location and spatial relations', 'person identification',
-                             'activity recognition', 'comparison', 'sport identification', 
-                             'emotion and sentiment', 'signage recognition', 'weather', 'shape', 
-                             'time and sequence', 'animal']:
+    elif "person identification" in question_type:
+        return 'person identification'
+	
+
+    elif "action recognition" in question_type:
+        return 'activity recognition'
+    elif "binary question" in question_type:
+        return 'animal'
+    elif "time and sequence" in question_type:
+        return 'time and sequence'
+    
+    if question_type not in ['object identification', 'color', 'location and spatial relations', 'counting', 'activity recognition', 
+    'person identification', 'comparison', 'text and signage recognition', 'emotion and sentiment', 'sport identification', 
+    'animal', 'weather', 'shape', 'time and sequence', 'material']:
         return 'other'
     return question_type

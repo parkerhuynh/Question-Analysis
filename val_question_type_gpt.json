@@ -1085,7 +1085,7 @@
 {"question": "is there a child in the image?", "question_type": "object identification"}
 {"question": "is there a clock in the background?", "question_type": "object identification"}
 {"question": "is there a clock in the image?", "question_type": "object identification"}
-{"question": "is there a clock on the wall?", "question_type": "yes/no"}
+{"question": "is there a clock on the wall?", "question_type": "object identification"}
 {"question": "is there a cloud in the image?", "question_type": "object identification"}
 {"question": "is there a cloud in the sky?", "question_type": "location and spatial relations"}
 {"question": "is there a computer?", "question_type": "object identification"}
@@ -1320,8 +1320,8 @@
 {"question": "is there a sheep in the picture?", "question_type": "animal"}
 {"question": "is there a shelf in the image?", "question_type": "object identification"}
 {"question": "is there a shelf in the room?", "question_type": "object identification"}
-{"question": "is there a shelf on the wall?", "question_type": "yes/no"}
-{"question": "is there a sidewalk?", "question_type": "location and spatial relations"}
+{"question": "is there a shelf on the wall?", "question_type": "object identification"}
+{"question": "is there a sidewalk?", "question_type": "object identification"}
 {"question": "is there a sign above the door?", "question_type": "object identification"}
 {"question": "is there a sign board?", "question_type": "text and signage recognition"}
 {"question": "is there a sign in front of the people?", "question_type": "text and signage recognition"}
@@ -6474,7 +6474,7 @@
 {"question": "what genders are shown?", "question_type": "person identification"}
 {"question": "is the elephant reaching for something?", "question_type": "activity recognition"}
 {"question": "what is the treat in this lunch?", "question_type": "object identification"}
-{"question": "are there soffits under the roof overhangs?", "question_type": "yes/no"}
+{"question": "are there soffits under the roof overhangs?", "question_type": "object recognition"}
 {"question": "what is in the bucket?", "question_type": "object identification"}
 {"question": "do the headboards match?", "question_type": "comparison"}
 {"question": "what color is the band around the man's head?", "question_type": "color"}
@@ -6726,7 +6726,7 @@
 {"question": "is this a wireless mouse?", "question_type": "object identification"}
 {"question": "is the man young?", "question_type": "person identification"}
 {"question": "what brand is the racket?", "question_type": "object identification"}
-{"question": "are there shadows in the picture?", "question_type": "yes/no question"}
+{"question": "are there shadows in the picture?", "question_type": "object recognition"}
 {"question": "do some fans have on face paint?", "question_type": "object identification"}
 {"question": "what color is the main bike?", "question_type": "color"}
 {"question": "is the horse happy?", "question_type": "emotion and sentiment"}
@@ -8513,7 +8513,7 @@
 {"question": "what is this dog holding in it's mouth?", "question_type": "object identification"}
 {"question": "are both his hands pointing in the same direction?", "question_type": "location and spatial relations"}
 {"question": "is there tea with cake?", "question_type": "text and signage recognition"}
-{"question": "is this camp for kids?", "question_type": "Yes/No"}
+{"question": "is this camp for kids?", "question_type": "other"}
 {"question": "is the boy afraid of the giraffes?", "question_type": "emotion and sentiment"}
 {"question": "are the cars in motion?", "question_type": "activity recognition"}
 {"question": "is that a tennis ball in his pocket?", "question_type": "object identification"}
@@ -10403,7 +10403,7 @@
 {"question": "could this be a birthday party?", "question_type": "comparison"}
 {"question": "what kind of skis is the man riding?", "question_type": "object identification"}
 {"question": "can you see the plane's wheels?", "question_type": "object identification"}
-{"question": "has the car fallen?", "question_type": "yes/no (does not fit into any of the provided question types)"}
+{"question": "has the car fallen?", "question_type": "activity recognition"}
 {"question": "is this the zebra's natural environment?", "question_type": "animal"}
 {"question": "what is the fork made out of?", "question_type": "object identification"}
 {"question": "is this a military copter?", "question_type": "object identification"}

@@ -29,7 +29,7 @@
 {"question": "are all the people looking at the camera?", "question_type": "comparison"}
 {"question": "are all the people looking in the same direction?", "question_type": "location and spatial relations"}
 {"question": "are all the people on the billboard the same color?", "question_type": "comparison"}
-{"question": "are all the people on the bus?", "question_type": "Yes/No"}
+{"question": "are all the people on the bus?", "question_type": "location and spatial relations"}
 {"question": "are all the people sitting on a chair?", "question_type": "location and spatial relations"}
 {"question": "are all the people sitting on chairs?", "question_type": "location and spatial relations"}
 {"question": "are all the people sitting?", "question_type": "activity recognition"}
@@ -1309,7 +1309,7 @@
 {"question": "are there doors in the background?", "question_type": "object identification"}
 {"question": "are there doors in the image?", "question_type": "object identification"}
 {"question": "are there doors in the picture?", "question_type": "object identification"}
-{"question": "are there doors in the room?", "question_type": "yes/no (this question does not fit into any of the provided categories)"}
+{"question": "are there doors in the room?", "question_type": "object identification"}
 {"question": "are there doors on both sides of the image?", "question_type": "location and spatial relations"}
 {"question": "are there doors on the building?", "question_type": "object identification"}
 {"question": "are there dots on the bottom of the screen?", "question_type": "object identification"}
@@ -1368,7 +1368,7 @@
 {"question": "are there lights above the podium?", "question_type": "location and spatial relations"}
 {"question": "are there lights above the wall?", "question_type": "location and spatial relations"}
 {"question": "are there lights hanging from a tree?", "question_type": "location and spatial relations"}
-{"question": "are there lights hanging from the ceiling?", "question_type": "yes/no"}
+{"question": "are there lights hanging from the ceiling?", "question_type": "location and spatial relations"}
 {"question": "are there lights hanging?", "question_type": "object identification"}
 {"question": "are there lights in the background?", "question_type": "object identification"}
 {"question": "are there lights in the backyard?", "question_type": "object identification"}
@@ -2036,8 +2036,8 @@
 {"question": "can people swim on the ice?", "question_type": "activity recognition"}
 {"question": "can the dog fly?", "question_type": "animal"}
 {"question": "can the hangers be used to hang clothes?", "question_type": "object identification"}
-{"question": "can the man see outside?", "question_type": "yes/no"}
-{"question": "can the man see the screen?", "question_type": "object identification"}
+{"question": "can the man see outside?", "question_type": "location and spatial relations"}
+{"question": "can the man see the screen?", "question_type": "location and spatial relations"}
 {"question": "can the man see the sky?", "question_type": "location and spatial relations"}
 {"question": "can the man see the two brown wooden doors?", "question_type": "location and spatial relations"}
 {"question": "can the man stand up?", "question_type": "location and spatial relations"}
@@ -2045,7 +2045,7 @@
 {"question": "can the people see the sky?", "question_type": "location and spatial relations"}
 {"question": "can the person make a call with the phone?", "question_type": "activity recognition"}
 {"question": "can the person see far away with the telescope?", "question_type": "location and spatial relations"}
-{"question": "can the person see outside of the train?", "question_type": "yes/no"}
+{"question": "can the person see outside of the train?", "question_type": "location and spatial relations"}
 {"question": "can the person see themselves in the mirror?", "question_type": "person identification"}
 {"question": "can the train fly?", "question_type": "object identification"}
 {"question": "can the turtles fly?", "question_type": "animal"}
@@ -5510,7 +5510,7 @@
 {"question": "is the mirror on the wall or on the table?", "question_type": "location and spatial relations"}
 {"question": "is the mirror on the wall or the floor?", "question_type": "location and spatial relations"}
 {"question": "is the mirror on the wall?", "question_type": "location and spatial relations"}
-{"question": "is the mirror reflecting the person?", "question_type": "yes/no query"}
+{"question": "is the mirror reflecting the person?", "question_type": "Object identification"}
 {"question": "is the mirror round or square?", "question_type": "shape"}
 {"question": "is the mirror small or large?", "question_type": "comparison"}
 {"question": "is the money falling from the sky?", "question_type": "activity recognition"}
@@ -5959,7 +5959,7 @@
 {"question": "is the robot in front of a bookshelf?", "question_type": "location and spatial relations"}
 {"question": "is the robot on the table?", "question_type": "location and spatial relations"}
 {"question": "is the robot wearing a headset?", "question_type": "object identification"}
-{"question": "is the rocket flying high?", "question_type": "yes/no"}
+{"question": "is the rocket flying high?", "question_type": "object identification"}
 {"question": "is the rocket in front of or behind the dinosaur?", "question_type": "location and spatial relations"}
 {"question": "is the roller coaster visible in the image?", "question_type": "object identification"}
 {"question": "is the roof of the house brown?", "question_type": "color"}
@@ -5985,7 +5985,7 @@
 {"question": "is the room made of lego?", "question_type": "object identification"}
 {"question": "is the room made of wood?", "question_type": "object identification"}
 {"question": "is the room made up of wood panels?", "question_type": "object identification"}
-{"question": "is the room messy?", "question_type": "yes/no or binary"}
+{"question": "is the room messy?", "question_type": "other"}
 {"question": "is the room outdoors or indoors?", "question_type": "location and spatial relations"}
 {"question": "is the room pink and purple?", "question_type": "color"}
 {"question": "is the room pink or blue?", "question_type": "color"}
@@ -8873,7 +8873,7 @@
 {"question": "is there only one person at the table?", "question_type": "person identification"}
 {"question": "is there only one person in the image?", "question_type": "Question: person identification"}
 {"question": "is there only one person in the picture?", "question_type": "person identification"}
-{"question": "is there only one person in the room?", "question_type": "yes/no (binary question)"}
+{"question": "is there only one person in the room?", "question_type": "object recognition"}
 {"question": "is there only one person sitting on a chair at the table?", "question_type": "location and spatial relations"}
 {"question": "is there only one person standing in the image?", "question_type": "object identification"}
 {"question": "is there only one person standing?", "question_type": "comparison"}
@@ -18960,7 +18960,7 @@
 {"question": "is the dog outside or inside?", "question_type": "location and spatial relations"}
 {"question": "what is covering the hill?", "question_type": "object identification"}
 {"question": "what brand is shown?", "question_type": "object identification"}
-{"question": "has some of this food been eaten?", "question_type": "yes/no question"}
+{"question": "has some of this food been eaten?", "question_type": "other"}
 {"question": "how many bears are in the picture?", "question_type": "counting"}
 {"question": "what color is this women's tennis skirt?", "question_type": "color"}
 {"question": "are there many tools used to apply this type of motion the batter is using?", "question_type": "comparison"}
@@ -22678,7 +22678,7 @@
 {"question": "how many tennis balls are on the court?", "question_type": "counting"}
 {"question": "is there broccoli in the kitchen?", "question_type": "object identification"}
 {"question": "is one of the signs weathered?", "question_type": "text and signage recognition"}
-{"question": "does everyone have a seat?", "question_type": "yes/no"}
+{"question": "does everyone have a seat?", "question_type": "object identification"}
 {"question": "is the man practicing new ballet moves?", "question_type": "activity recognition"}
 {"question": "what is the woman holding above her head?", "question_type": "object identification"}
 {"question": "is this zebra in the wild?", "question_type": "animal"}
@@ -24252,7 +24252,7 @@
 {"question": "how many males do you see?", "question_type": "counting"}
 {"question": "are all the donuts the same?", "question_type": "comparison"}
 {"question": "what color is the tile behind the toilet?", "question_type": "color"}
-{"question": "is this water clear?", "question_type": "Yes/No"}
+{"question": "is this water clear?", "question_type": "object identification"}
 {"question": "is this a circus?", "question_type": "comparison"}
 {"question": "is this man shy?", "question_type": "emotion and sentiment"}
 {"question": "is this scene bucolic?", "question_type": "emotion and sentiment"}
@@ -25294,7 +25294,7 @@
 {"question": "what does the man hold?", "question_type": "object identification"}
 {"question": "what color is the shop?", "question_type": "color"}
 {"question": "is the cat one color?", "question_type": "color"}
-{"question": "does the bird eat at the water's edge?", "question_type": "yes/no"}
+{"question": "does the bird eat at the water's edge?", "question_type": "location and spatial relations"}
 {"question": "how many slices of meat are on the plate?", "question_type": "counting"}
 {"question": "what is this made of?", "question_type": "object identification"}
 {"question": "how many toothbrushes can you spot?", "question_type": "counting"}
@@ -31736,7 +31736,7 @@
 {"question": "is the van door ajar?", "question_type": "object identification"}
 {"question": "what color is the big truck?", "question_type": "color"}
 {"question": "if i drove up through here, what would i be most likely trying to order?", "question_type": "comparison"}
-{"question": "is this a dangerous job?", "question_type": "Yes/No (It is not specifically mentioned in the provided question types, but it can be classified as a yes/no question)"}
+{"question": "is this a dangerous job?", "question_type": "other"}
 {"question": "are there books on the counter?", "question_type": "object identification"}
 {"question": "what color are the lady's scissors?", "question_type": "color"}
 {"question": "is the weather overcast?", "question_type": "weather"}
@@ -32498,7 +32498,7 @@
 {"question": "are all of the foods composed of the same veggie?", "question_type": "comparison"}
 {"question": "what is the color of the trucks?", "question_type": "color"}
 {"question": "how many brown bricks?", "question_type": "counting"}
-{"question": "are there spectators at this event?", "question_type": "yes/no question (cannot be categorized into one of the provided question types)"}
+{"question": "are there spectators at this event?", "question_type": "other"}
 {"question": "is everyone in a bathing suit?", "question_type": "comparison"}
 {"question": "how many veggies are on display?", "question_type": "counting"}
 {"question": "is there a soda can?", "question_type": "object identification"}
@@ -35603,7 +35603,7 @@
 {"question": "are all of the zebra standing?", "question_type": "activity recognition"}
 {"question": "what is on the mans lap?", "question_type": "object identification"}
 {"question": "what is the shower door made of?", "question_type": "object identification"}
-{"question": "are the vegetables cooked?", "question_type": "yes/no"}
+{"question": "are the vegetables cooked?", "question_type": "object identification"}
 {"question": "is there chocolate mousse on the plate?", "question_type": "object identification"}
 {"question": "what is the blue object the man is flying over?", "question_type": "object identification"}
 {"question": "what type of flag is hanging from the pole?", "question_type": "object identification"}
@@ -35633,7 +35633,7 @@
 {"question": "are his jeans ripped?", "question_type": "object identification"}
 {"question": "is the woman working in an office?", "question_type": "activity recognition"}
 {"question": "are all of the horses standing still?", "question_type": "activity recognition"}
-{"question": "is a shower available?", "question_type": "yes/no question"}
+{"question": "is a shower available?", "question_type": "object recognition"}
 {"question": "what are the toys called?", "question_type": "text and signage recognition"}
 {"question": "is this picture taken in a temperate climate area or a tropical area?", "question_type": "weather"}
 {"question": "how many of the dogs are awake?", "question_type": "counting"}
@@ -37240,7 +37240,7 @@
 {"question": "is there blueberries in the picture?", "question_type": "text and signage recognition"}
 {"question": "are the two cats the same color?", "question_type": "comparison"}
 {"question": "how many monitors are on?", "question_type": "counting"}
-{"question": "is there a reflection on the water?", "question_type": "boolean (yes/no)"}
+{"question": "is there a reflection on the water?", "question_type": "object recognition"}
 {"question": "is the vase decorative?", "question_type": "object identification"}
 {"question": "what size is the wave?", "question_type": "shape"}
 {"question": "is the closest surfboard ready for use?", "question_type": "location and spatial relations"}
@@ -39521,7 +39521,7 @@
 {"question": "can you get to the other side from here?", "question_type": "location and spatial relations"}
 {"question": "how many goals can be seen?", "question_type": "counting"}
 {"question": "how many horse's are in the field?", "question_type": "counting"}
-{"question": "is this bird in danger?", "question_type": "Yes/No (could be categorized as 'animal' if needed)"}
+{"question": "is this bird in danger?", "question_type": "other"}
 {"question": "is there a window in this scene?", "question_type": "location and spatial relations"}
 {"question": "which toothbrush is more worn out?", "question_type": "comparison"}
 {"question": "what is the stretch of pavement on the right called?", "question_type": "location and spatial relations"}
@@ -40169,7 +40169,7 @@
 {"question": "is this airplane going to leave soon?", "question_type": "time and sequence"}
 {"question": "are there mountains within view?", "question_type": "location and spatial relations"}
 {"question": "what number of yellow boards are in this image?", "question_type": "counting"}
-{"question": "has any of the pizza been eaten yet?", "question_type": "yes/no"}
+{"question": "has any of the pizza been eaten yet?", "question_type": "object identification"}
 {"question": "is the old man playing?", "question_type": "activity recognition"}
 {"question": "what is the boy holding in his right hand?", "question_type": "object identification"}
 {"question": "are there condiments on these hot dogs?", "question_type": "object identification"}
@@ -41058,7 +41058,7 @@
 {"question": "what kind of weather is happening in this picture?", "question_type": "weather"}
 {"question": "what color is the bench the man is sitting on?", "question_type": "color"}
 {"question": "how many red scooters are in the scene?", "question_type": "counting"}
-{"question": "is the pot finished?", "question_type": "yes/no (since it does not fit into any of the provided question types)"}
+{"question": "is the pot finished?", "question_type": "other"}
 {"question": "what color are the train's doors?", "question_type": "color"}
 {"question": "how many pieces of silverware are on the table?", "question_type": "counting"}
 {"question": "what race is the woman?", "question_type": "person identification"}
@@ -41216,14 +41216,14 @@
 {"question": "where does the road lead too?", "question_type": "location and spatial relations"}
 {"question": "is the bear sleeping?", "question_type": "animal"}
 {"question": "what kind of bird is closest to the camera?", "question_type": "object identification"}
-{"question": "has the cake been eaten?", "question_type": "yes/no question"}
+{"question": "has the cake been eaten?", "question_type": "object identification"}
 {"question": "are the man's skis parallel in this picture?", "question_type": "location and spatial relations"}
 {"question": "how many meals are on the table?", "question_type": "counting"}
 {"question": "are the bikes ready to race?", "question_type": "sport identification"}
 {"question": "what is the color of the box under the table?", "question_type": "color"}
 {"question": "what kind of cups are on the coffee table?", "question_type": "object identification"}
 {"question": "is there a map shown?", "question_type": "object identification"}
-{"question": "is there electricity in the buildings?", "question_type": "yes/no (This question does not fit into any of the provided question types)"}
+{"question": "is there electricity in the buildings?", "question_type": "other"}
 {"question": "what color are the lines painted on the pavement?", "question_type": "color"}
 {"question": "is this american food?", "question_type": "text and signage recognition"}
 {"question": "does this look like an airport?", "question_type": "location and spatial relations"}
@@ -41969,8 +41969,8 @@
 {"question": "what two colors are on the bed?", "question_type": "color"}
 {"question": "how many fingers is he holding up?", "question_type": "counting"}
 {"question": "what base is the batter on?", "question_type": "sport identification"}
-{"question": "is the bus current in use?", "question_type": "yes/no (as it is a yes/no question)"}
-{"question": "is the boat ready to sail?", "question_type": "yes/no (comparison)"}
+{"question": "is the bus current in use?", "question_type": "other"}
+{"question": "is the boat ready to sail?", "question_type": "other"}
 {"question": "what color box is holding the supplies?", "question_type": "color"}
 {"question": "is he in a store?", "question_type": "location and spatial relations"}
 {"question": "how many sofas are shown?", "question_type": "counting"}
@@ -42035,7 +42035,7 @@
 {"question": "what color is the small sheep's face?", "question_type": "color"}
 {"question": "what is the child sitting with?", "question_type": "object identification"}
 {"question": "do the residents of the houses hope that they will not need the red item?", "question_type": "emotion and sentiment"}
-{"question": "is the toast buttered?", "question_type": "yes/no"}
+{"question": "is the toast buttered?", "question_type": "object identification"}
 {"question": "is the design of the bench ergonomic?", "question_type": "comparison"}
 {"question": "why is the woman dress that way?", "question_type": "emotion and sentiment"}
 {"question": "what is the girl on?", "question_type": "object identification"}
@@ -42729,7 +42729,7 @@
 {"question": "do these flowers look healthy?", "question_type": "comparison"}
 {"question": "are the bananas hanging?", "question_type": "object identification"}
 {"question": "is this building new?", "question_type": "object identification"}
-{"question": "does this kitchen appear dirty?", "question_type": "yes/no question"}
+{"question": "does this kitchen appear dirty?", "question_type": "object identification"}
 {"question": "is the slicer dirty?", "question_type": "object identification"}
 {"question": "what topping is on this hot dog?", "question_type": "object identification"}
 {"question": "is one of the men black?", "question_type": "person identification"}
@@ -42785,7 +42785,7 @@
 {"question": "does the temperature appear over 75 degrees fahrenheit?", "question_type": "weather"}
 {"question": "what word is written on the plane?", "question_type": "text and signage recognition"}
 {"question": "what is the yellow object in the water?", "question_type": "object identification"}
-{"question": "will a replacement roll of toilet paper be needed by the next user?", "question_type": "Yes/No or Unknown"}
+{"question": "will a replacement roll of toilet paper be needed by the next user?", "question_type": "other"}
 {"question": "what brand laptop is on the bed?", "question_type": "object identification"}
 {"question": "could there be a control tower?", "question_type": "location and spatial relations"}
 {"question": "are the waves very high?", "question_type": "comparison"}
@@ -43525,7 +43525,7 @@
 {"question": "is this giraffe intimidating?", "question_type": "emotion and sentiment"}
 {"question": "what is the object on the left?", "question_type": "object identification"}
 {"question": "is he a pitcher?", "question_type": "sport identification"}
-{"question": "can you prepare food here?", "question_type": "yes/no (unclear)"}
+{"question": "can you prepare food here?", "question_type": "other"}
 {"question": "are the scissors real?", "question_type": "object identification"}
 {"question": "do two tracks merge into one?", "question_type": "location and spatial relations"}
 {"question": "does he show signs of stage fright?", "question_type": "emotion and sentiment"}
