@@ -260,7 +260,7 @@ class QuestionDataset(Dataset):
     
     def load_question_type(self):
         question_type_dict = {}
-        with open('/home/ndhuynh/github/Question-Analysis/train_question_type_gpt.json', 'r') as file:
+        with open('/home/ndhuynh/github/Question-Analysis/train_question_type_gpt_1.json', 'r') as file:
             for line in file:
                 question_object = json.loads(line)
                 question_str = question_object["question"]
@@ -269,7 +269,7 @@ class QuestionDataset(Dataset):
                 question_type_dict[question_str] = question_type
         file.close()
         
-        with open('/home/ndhuynh/github/Question-Analysis/val_question_type_gpt.json', 'r') as file:
+        with open('/home/ndhuynh/github/Question-Analysis/val_question_type_gpt_1.json', 'r') as file:
             for line in file:
                 question_object = json.loads(line)
                 question_str = question_object["question"]
