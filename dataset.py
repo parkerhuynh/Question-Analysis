@@ -155,40 +155,26 @@ class QuestionDataset(Dataset):
         
         self.tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
         self.ans_type_to_idx = {
-            "yes/no":0,
+            'yes/no': 0,
             'color': 1,
-            'object identification': 2,
-            'counting': 3,
-            'location and spatial relations': 4,
-            'activity recognition': 5,
-            'person identification': 6,
-            'comparison': 7,
-            'sport identification': 8,
-            'emotion and sentiment': 9,
-            'signage recognition': 10,
-            'weather': 11,
-            'shape': 12,
-            'time and sequence': 13,
-            'animal': 14,
-            'other': 15
+            'object': 2,
+            'number': 3,
+            'location': 4,
+            'action': 5,
+            'other': 6,
+            'human': 7,
+            'sport': 8
             }
         self.idx_to_ans_type = {
-            0: "yes/no",
+            0: 'yes/no',
             1: 'color',
-            2: 'object identification',
-            3: 'counting',
-            4: 'location and spatial relations',
-            5: 'activity recognition',
-            6: 'person identification',
-            7: 'comparison',
-            8: 'sport identification',
-            9: 'emotion and sentiment',
-            10: 'signage recognition',
-            11: 'weather',
-            12: 'shape',
-            13: 'time and sequence',
-            14: 'animal',
-            15: 'other'
+            2: 'object',
+            3: 'number',
+            4: 'location',
+            5: 'action',
+            6: 'other',
+            7: 'human',
+            8: 'sport'
             }
         self.question_type_dict = self.load_question_type()
         self.questions = self.load_questions()
@@ -207,6 +193,7 @@ class QuestionDataset(Dataset):
         que = self.questions[ann["id"]]
         question_id = ann["id"]
         question = que["question"]
+        
         label = que["question_type"]
         
         encoding = self.tokenizer.encode_plus(
@@ -262,16 +249,17 @@ class QuestionDataset(Dataset):
     
     def load_question_type(self):
         question_type_dict = {}
-        with open('/home/ndhuynh/github/Question-Analysis/train_question_type_gpt_v2.json', 'r') as file:
+        with open('/home/ndhuynh/github/Question-Analysis/train_question_type_gpt_v6.json', 'r') as file:
             for line in file:
                 question_object = json.loads(line)
                 question_str = question_object["question"]
                 question_type = question_object["question_type"]
                 question_type = question_type_processing(question_type)
-                question_type_dict[question_str] = question_type
+                if question_str not in question_type_dict.keys():
+                    question_type_dict[question_str] = question_type
         file.close()
         
-        with open('/home/ndhuynh/github/Question-Analysis/val_question_type_gpt_v2.json', 'r') as file:
+        with open('/home/ndhuynh/github/Question-Analysis/val_question_type_gpt_v6.json', 'r') as file:
             for line in file:
                 question_object = json.loads(line)
                 question_str = question_object["question"]
@@ -283,11 +271,14 @@ class QuestionDataset(Dataset):
         return question_type_dict
         
 def question_type_processing(question_type):
-    question_type = question_type.split(",")[0]
+    question_type = question_type.strip()
+    question_type = question_type.split(':')[-1]
     question_type = question_type.lower()
+    question_type = re.sub(r'\([^)]*\)', '', question_type)
     question_type = question_type.replace("'", "")
     question_type = question_type.replace(".", "")
     question_type = question_type.replace("`", "")
+    question_type = question_type.replace(";", ",")
     question_type = question_type.replace('"', "")
     question_type = question_type.replace("question type: ", "")
     question_type = question_type.replace("question: ", "")
@@ -295,32 +286,32 @@ def question_type_processing(question_type):
     question_type = question_type.replace("[", "")
     question_type = question_type.replace("]", "")
     question_type = question_type.replace("-", "")
-    question_type = question_type.split('(')[0].strip()
-
-    question_type = question_type.replace("-", "")
-    if "yes/no" in question_type:
-        return 'yes/no'
-    elif "color" in question_type:
-        return 'color'
-    elif "object identification" in question_type:
-        return 'object identification'
-    elif "signage recognition" in question_type:
-        return 'signage recognition'
-    elif "spatial relations" in question_type:
-        return 'location and spatial relations'
-    elif "emoition and sentiment" in question_type or 'emotikon and sentiment' in question_type:
-        return 'emotion and sentiment'
-    elif "compariosn" in question_type or "comparision" in question_type:
-        return 'comparison'
-    elif "counting" in question_type:
-        return 'counting'
-    elif "personal  " in question_type:
-        return 'person identification'
-
-    if question_type not in ['yes/no', 'color', 'object identification', 'counting', 
-                             'location and spatial relations', 'person identification',
-                             'activity recognition', 'comparison', 'sport identification', 
-                             'emotion and sentiment', 'signage recognition', 'weather', 'shape', 
-                             'time and sequence', 'animal']:
-        return 'other'
+    question_type = question_type.replace(" or ", ", ")
+    question_type = question_type.replace("+", ", ")
+    question_type = question_type.replace(" , ", ", ")
+    question_type = re.sub('\s+', ' ', question_type).strip()
+    # 
+    for word in ["clothing", "object", "material", "shape", "food", "transportation", "pattern", "letter", "drink"]:
+        if word in question_type:
+            return "object"
+    for word in ["age", "animal", "body parts", "gender", "body part", "person", "emotion"]:
+        if word in question_type:
+            return "human"
+    for word in ["weather", "season", "time", "unknown", "any", "not", "event", "geometry", "music", "description", "flavor", "sound", "taste"]:        
+        if word in question_type:
+            return "other"
+    for word in ["activity", "action"]:        
+        if word in question_type:
+            return "action"
+    for word in ["direction"]:        
+        if word in question_type:
+            return "location"
+    for word in ["yes/no"]:        
+        if word in question_type:
+            return "yes/no"
+    for word in ["number"]:        
+        if word in question_type:
+            return "number"
+    question_type = question_type.split(",")
+    question_type =  [item.strip() for item in question_type][0]
     return question_type

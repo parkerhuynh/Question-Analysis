@@ -4,19 +4,17 @@ import json
 import time
 
 def categorize_question(question_input, openKey):
-    content = f"""Please categorize the following questions into ONE of the provided question types: 
-    'object identification', 'activity recognition', 'sport identification',
-    'color', 'shape', 'counting', 'location and spatial relations', 'time and sequence', 'person identification',
-    'text and signage recognition', 'emotion and sentiment', 'comparison', 'weather', 'animal'.
+    content = f"""your task is to categorize the following question into only one of the provided question types: 
+    ['color', 'number', 'object', 'yes/no', 'action', 'location', 'sport', 'human', 'other']. 
 
     Question: What color are the clouds?
     Question Type: color
     
     Question: What is the person doing?
-    Question Type: activity recognition
+    Question Type: action
     
     Question: How many people are there?
-    Question Type: counting
+    Question Type: number
     
     Question: {question_input}
     Question Type:
@@ -39,7 +37,7 @@ def categorize_question(question_input, openKey):
     return question_type
 
 def main():
-    with open('/home/ndhuynh/openai.txt', 'r') as file:
+    with open('/home/ndhuynh/github/Question-Analysis/openai_key.txt', 'r') as file:
         for line in file:
             openKey = line
     
@@ -56,7 +54,7 @@ def main():
 
     question_unique_list = question_df["question"].unique()
 
-    for i in range(25291, len(question_unique_list)):
+    for i in range(0, len(question_unique_list)):
         
 
         while True:
@@ -69,7 +67,7 @@ def main():
                         "question_type":chatgpt_question_type}
 
                 # Specify the file name where you want to save the JSON data
-                file_name = "train_question_type_gpt.json"
+                file_name = "train_question_type_gpt_v6.json"
                 # Open the file in append mode and save the current item to it in JSON format
                 with open(file_name, 'a') as json_file:
                     json.dump(data, json_file)
