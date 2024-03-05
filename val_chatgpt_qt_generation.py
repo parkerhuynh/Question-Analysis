@@ -4,17 +4,17 @@ import json
 import time
 
 def categorize_question(question_input, openKey):
-    content = f"""Please categorize the following questions into the question types such as 'object identification', 'activity recognition', 'sport identification',
-    'color', 'shape',...
+    content = f"""your task is to categorize the following question into only one of the provided question types: 
+    ['color', 'number', 'object', 'yes/no', 'action', 'location', 'sport', 'human', 'other']. 
 
     Question: What color are the clouds?
     Question Type: color
     
     Question: What is the person doing?
-    Question Type: activity recognition
+    Question Type: action
     
     Question: How many people are there?
-    Question Type: counting
+    Question Type: number
     
     Question: {question_input}
     Question Type:
@@ -65,7 +65,7 @@ def main():
                         "question_type":chatgpt_question_type}
 
                 # Specify the file name where you want to save the JSON data
-                file_name = "val_question_type_gpt_v4.json"
+                file_name = "val_question_type_gpt_v6.json"
                 # Open the file in append mode and save the current item to it in JSON format
                 with open(file_name, 'a') as json_file:
                     json.dump(data, json_file)
