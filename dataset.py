@@ -7,6 +7,7 @@ import en_core_web_lg, random, re, json
 import numpy as np
 import random
 import pandas as pd
+from transformers import BertTokenizer, BertForSequenceClassification, AdamW
 contractions = {
     "aint": "ain't", "arent": "aren't", "cant": "can't", "couldve":
     "could've", "couldnt": "couldn't", "couldn'tve": "couldn't've",
@@ -151,29 +152,46 @@ class QuestionDataset(Dataset):
     def __init__(self, args, split):
         self.args = args
         self.split = split
-        self.token_to_ix, self.pretrained_emb = self.load_vocal()
-        self.token_size = len(self.token_to_ix)
-        with open('super_answer_type_simpsons.json', 'r') as file:
-            self.super_types = json.load(file)
+        self.tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+        self.ans_type_to_idx = {
+            'yes/no': 0,
+            'color': 1,
+            'object': 2,
+            'number': 3,
+            'location': 4,
+            'action': 5,
+            'other': 6,
+            'human': 7,
+            'sport': 8
+            }
+        self.idx_to_ans_type = {
+            0: 'yes/no',
+            1: 'color',
+            2: 'object',
+            3: 'number',
+            4: 'location',
+            5: 'action',
+            6: 'other',
+            7: 'human',
+            8: 'sport'
+            }
+        self.question_type_dict = self.load_question_type()
         self.questions = self.load_questions()
-        
-        self.ans_type_to_idx = {'yes/no': 0, 'action': 1, 'object': 2, 'location': 3, 'other': 4, 'color': 5, 'human': 6, 'number': 7}
-        self.idx_to_ans_type = {0: 'yes/no', 1: 'action', 2: 'object', 3: 'location', 4: 'other', 5: 'color', 6: 'human', 7: 'number'}
         
         self.annotations = self.load_annotations()
         self.output_dim = len(self.ans_type_to_idx.keys())
         random.shuffle(self.annotations)
-        print(f"sample number: {len(self.annotations)}")
-        print(f"output_dim: {self.output_dim }")
-        print(f"token_size: {self.token_size }")
-        print(f"ans_type_to_idx: {self.ans_type_to_idx }")
+
     def __len__(self):
+        if self.args.debug:
+            return 500
         return len(self.annotations)
 
     def __getitem__(self, idx):
         ann = self.annotations[idx]
         que = self.questions[ann["id"]]
         question_id = ann["id"]
+<<<<<<< HEAD
         question = torch.from_numpy(que["question"])
         label = self.ans_type_to_idx[ann['answer_type']]
         return  question, label, question_id
@@ -188,6 +206,31 @@ class QuestionDataset(Dataset):
         # pickle.dump([token_to_ix, pretrained_emb], open("./question_dict.pkl", 'wb'))
         return token_to_ix, pretrained_emb
     
+=======
+        question = que["question"]
+        
+        label = que["question_type"]
+        
+        encoding = self.tokenizer.encode_plus(
+            question,
+            add_special_tokens=True,
+            max_length=self.args.max_ques_len,
+            return_token_type_ids=False,
+            padding='max_length',
+            truncation=True,
+            return_attention_mask=True,
+            return_tensors='pt',
+        )
+        
+        return {
+            'question_id': question_id,
+            'question_text': question,
+            'input_ids': encoding['input_ids'].flatten(),
+            'attention_mask': encoding['attention_mask'].flatten(),
+            'labels': torch.tensor(label, dtype=torch.long)
+        }
+    
+>>>>>>> 72eaee9aea74171c63c77398cd8ece74f53033df
     def load_questions(self):
         if self.split == "train":
             question_path = self.args.train_question
@@ -197,7 +240,9 @@ class QuestionDataset(Dataset):
             questions = json.load(file)["questions"]
         processed_questions = {}
         for question in questions:
-            question['question'] = rnn_proc_ques(question["question"], self.token_to_ix, self.args.max_ques_len)
+            question_type_str = self.question_type_dict[question["question"]]
+            question_type_idx = self.ans_type_to_idx[question_type_str]
+            question["question_type"] = question_type_idx
             processed_questions[question["id"]] = question
         return processed_questions
     
@@ -215,8 +260,74 @@ class QuestionDataset(Dataset):
                 if judge["answer"] == 1:
                     ans_count += 1
             if ans_count >= 2 or ann["overall_scores"]["question"] < 0.5:
-                ann["answer"] = prep_ans(ann["answer"])
-                ann["answer_type"] = self.super_types[ann["answer"]]
                 processed_annotations.append(ann)
-
         return processed_annotations
+    
+    def load_question_type(self):
+        question_type_dict = {}
+        with open('/home/ndhuynh/github/Question-Analysis/train_question_type_gpt_v6.json', 'r') as file:
+            for line in file:
+                question_object = json.loads(line)
+                question_str = question_object["question"]
+                question_type = question_object["question_type"]
+                question_type = question_type_processing(question_type)
+                if question_str not in question_type_dict.keys():
+                    question_type_dict[question_str] = question_type
+        file.close()
+        
+        with open('/home/ndhuynh/github/Question-Analysis/val_question_type_gpt_v6.json', 'r') as file:
+            for line in file:
+                question_object = json.loads(line)
+                question_str = question_object["question"]
+                if question_str not in question_type_dict:
+                    question_type = question_object["question_type"]
+                    question_type = question_type_processing(question_type)
+                    question_type_dict[question_str] = question_type
+        file.close()
+        return question_type_dict
+        
+def question_type_processing(question_type):
+    question_type = question_type.strip()
+    question_type = question_type.split(':')[-1]
+    question_type = question_type.lower()
+    question_type = re.sub(r'\([^)]*\)', '', question_type)
+    question_type = question_type.replace("'", "")
+    question_type = question_type.replace(".", "")
+    question_type = question_type.replace("`", "")
+    question_type = question_type.replace(";", ",")
+    question_type = question_type.replace('"', "")
+    question_type = question_type.replace("question type: ", "")
+    question_type = question_type.replace("question: ", "")
+    question_type = question_type.replace("’", "")
+    question_type = question_type.replace("[", "")
+    question_type = question_type.replace("]", "")
+    question_type = question_type.replace("-", "")
+    question_type = question_type.replace(" or ", ", ")
+    question_type = question_type.replace("+", ", ")
+    question_type = question_type.replace(" , ", ", ")
+    question_type = re.sub('\s+', ' ', question_type).strip()
+    # 
+    for word in ["clothing", "object", "material", "shape", "food", "transportation", "pattern", "letter", "drink"]:
+        if word in question_type:
+            return "object"
+    for word in ["age", "animal", "body parts", "gender", "body part", "person", "emotion"]:
+        if word in question_type:
+            return "human"
+    for word in ["weather", "season", "time", "unknown", "any", "not", "event", "geometry", "music", "description", "flavor", "sound", "taste"]:        
+        if word in question_type:
+            return "other"
+    for word in ["activity", "action"]:        
+        if word in question_type:
+            return "action"
+    for word in ["direction"]:        
+        if word in question_type:
+            return "location"
+    for word in ["yes/no"]:        
+        if word in question_type:
+            return "yes/no"
+    for word in ["number"]:        
+        if word in question_type:
+            return "number"
+    question_type = question_type.split(",")
+    question_type =  [item.strip() for item in question_type][0]
+    return question_type
