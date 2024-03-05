@@ -152,6 +152,7 @@ class QuestionDataset(Dataset):
     def __init__(self, args, split):
         self.args = args
         self.split = split
+        
         self.tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
         self.ans_type_to_idx = {
             'yes/no': 0,
@@ -191,22 +192,6 @@ class QuestionDataset(Dataset):
         ann = self.annotations[idx]
         que = self.questions[ann["id"]]
         question_id = ann["id"]
-<<<<<<< HEAD
-        question = torch.from_numpy(que["question"])
-        label = self.ans_type_to_idx[ann['answer_type']]
-        return  question, label, question_id
-    
-    def load_vocal(self):
-        stat_ques_list = []
-        for file_path in self.args.stat_ques_list:
-            with open(file_path, 'r') as file:
-                question_i = json.load(file)["questions"]
-                stat_ques_list += question_i
-        token_to_ix, pretrained_emb = LSTM_tokenize(stat_ques_list, self.args)
-        # pickle.dump([token_to_ix, pretrained_emb], open("./question_dict.pkl", 'wb'))
-        return token_to_ix, pretrained_emb
-    
-=======
         question = que["question"]
         
         label = que["question_type"]
@@ -230,7 +215,6 @@ class QuestionDataset(Dataset):
             'labels': torch.tensor(label, dtype=torch.long)
         }
     
->>>>>>> 72eaee9aea74171c63c77398cd8ece74f53033df
     def load_questions(self):
         if self.split == "train":
             question_path = self.args.train_question
