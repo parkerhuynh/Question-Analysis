@@ -36,7 +36,7 @@ enable_wrap,
 wrap,
 )
 import random
-os.environ["WANDB_START_METHOD"] = "thread"
+os.environ["wandb_START_METHOD"] = "thread"
 import shutil
 def setup(rank, world_size):
     os.environ['MASTER_ADDR'] = 'localhost'
@@ -108,8 +108,9 @@ def test(model, rank, world_size, test_loader, epoch):
             logits = output.logits
             probabilities = F.softmax(logits, dim=1)
             pred = torch.argmax(probabilities, dim=1)
-            loss = output.loss
             local_preds = pred.cpu().numpy().tolist()
+            loss = output.loss
+            
             
             local_question_ids = question_id.cpu().numpy().tolist()
             ids.update(set(local_question_ids))
@@ -143,11 +144,7 @@ def test(model, rank, world_size, test_loader, epoch):
 def fsdp_main(rank, world_size, args):
     setup(rank, world_size)
     
-    wandb.init(
-            project="Question Type",
-            group="BERT-Chatgpt-v1",
-            name= f"BERT-Chatgpt-v1-{rank}",
-            config=vars(args))
+    wandb.init(project="Question Type", group="BERT-Chatgpt-v1_vqav2", name= f"BERT-Chatgpt-v1-{rank}", config=vars(args))
     
     directory_path = "./"
     extensions = ['.py', '.yaml', ".ipynb"]
@@ -156,8 +153,8 @@ def fsdp_main(rank, world_size, args):
     for filename in files_list:
         file_path = os.path.join(directory, filename)
         wandb.save(file_path, directory)
-    wandb.save("./train_question_type_gpt.json")
-    wandb.save("./val_question_type_gpt.json")
+    #wandb.save("./train_question_type_gpt.json")
+    #wandb.save("./val_question_type_gpt.json")
     seed = args.seed
     torch.manual_seed(seed)
     np.random.seed(seed)

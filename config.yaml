@@ -1,9 +1,8 @@
 ## Training:
-question_path: "/home/ndhuynh/data/simpsonsvqa/v1_Question_Train_simpsons_vqa.json"
-stat_ques_list: ["/home/ndhuynh/data/simpsonsvqa/v1_Question_Train_simpsons_vqa.json","/home/ndhuynh/data/simpsonsvqa/v1_Question_Val_simpsons_vqa.json"]
+stat_ques_list: ["/home/ndhuynh/data/vqav2/v2_OpenEnded_mscoco_train2014_questions.json","/home/ndhuynh/data/vqav2/v2_OpenEnded_mscoco_val2014_questions.json"]
 use_glove: False
-train_question: '/home/ndhuynh/data/simpsonsvqa/v1_Question_Train_simpsons_vqa.json'
-val_question: '/home/ndhuynh/data/simpsonsvqa/v1_Question_Val_simpsons_vqa.json'
+train_question: '/home/ndhuynh/data/vqav2/v2_OpenEnded_mscoco_train2014_questions.json'
+val_question: '/home/ndhuynh/data/vqav2/v2_OpenEnded_mscoco_val2014_questions.json'
 max_ques_len: 20
-train_annotation: '/home/ndhuynh/data/simpsonsvqa/v1_Annotation_Train_simpsons_vqa.json'
-val_annotation : '/home/ndhuynh/data/simpsonsvqa/v1_Annotation_Val_simpsons_vqa.json'
+train_annotation: '/home/ndhuynh/data/vqav2/v2_mscoco_train2014_annotations.json'
+val_annotation : '/home/ndhuynh/data/vqav2/v2_mscoco_val2014_annotations.json'
